@@ -1,0 +1,198 @@
+.intro_landing_page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw 4vw 0vw 4vw;
+}
+
+html:not([data-scroll='0']) .intro_landing_page {
+    padding: 6vw 4vw 0vw 4vw;
+}
+
+.intro_landing_page_text_section{
+    align-items: center;
+    display: flex;
+}
+
+.intro_landing_page_text h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+
+.intro_landing_page_text p{
+    font-size: 1.3vw;
+    margin-bottom: 3vw;
+}
+
+.intro_car_family_image{
+    width: 55vw;
+}
+
+.intro_circle_yellow{
+    background-color: #FBC02D;
+    border-radius: 50%;
+    height: 45vw;
+    position: absolute;
+    right: -10vw;
+    top: -5vw;
+    width: 45vw;
+    z-index: -1;
+}
+
+.intro_landing_page_btn_rent{
+    background-color: #FBC02D;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.15vw;
+    font-weight: bold;
+    padding: 0.6vw 4vw;
+    text-decoration: none;
+}
+
+/*----------------Finder Bar---------------*/
+
+.intro_landing_page_finder_section{
+    margin-top: 4.5vw;
+}
+
+.intro_landing_page_form_finder{
+    align-items: center;
+    background-color: #dfe5ed;
+    display: flex;
+    height: 5vw;
+    justify-content: space-evenly;
+    width: 70vw;
+}
+
+#intro_landing_page_finder_select_location, #intro_landing_page_finder_select_fecha_recepcion,#intro_landing_page_finder_select_fecha_regreso {
+    border-radius: 15.3407px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-size: 17px;
+    padding: 10px;
+    width: 25%;
+}
+
+.intro_landing_page_finder_btn_buscar{
+    background-color: #fbc02d;
+    border-radius: 12px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0.6vw;
+    width: 10%;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .intro_landing_page{
+        padding: 4vh 4vw 0vw 4vw;
+    }
+    .intro_landing_page_text_section h2 {
+        font-size: 3.7vw;
+        margin-bottom: 2vw;
+    }
+    .intro_landing_page_text p{
+        font-size: 1.7vw;
+    }
+    .intro_landing_page_btn_rent{
+        font-size: 1.8vw;
+    }
+    .intro_circle_yellow{
+        height: 52vw;
+        width: 50vw;
+    }
+    html:not([data-scroll='0']) .intro_circle_yellow{
+        top: -15vw;
+    }
+    
+    /*-------------------Finder Bar-----------------------*/
+
+    .intro_landing_page_finder_section{
+        margin-top: 7vh;
+    }
+    .intro_landing_page_form_finder{
+        height: 6vh;
+        width: 90vw;
+    }
+    #intro_landing_page_finder_select_location, #intro_landing_page_finder_select_fecha_recepcion,#intro_landing_page_finder_select_fecha_regreso {
+        border-radius: 15px;
+        border: 1.5px solid rgba(0, 0, 0, 0.1);
+        font-size: 1.7vw;
+    } 
+    .intro_landing_page_finder_btn_buscar{
+        border-radius: 12px;
+        border: 1.5px solid rgba(0, 0, 0, 0.1);
+        font-size: 2vw;
+        width: 12%;
+        padding: 0.9vw;
+    }
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .intro_landing_page_text_section {
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+    .intro_landing_page_text_section h2 {
+        font-size: 8vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .intro_landing_page_text {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+    .intro_landing_page_text p {
+        font-size: 4vw;
+        text-align: center;
+    }
+    .intro_landing_page_btn_rent{
+        display: none;
+        font-size: 2.65vw;
+    }
+    .intro_image_family_car{
+        position: relative;
+    }
+    .intro_car_family_image {
+        width: 85vw;
+    }
+    .intro_circle_yellow {
+        height: 15vw;
+        right: -2vw;
+        top: 33vw;
+        width: 88vw;  
+    }
+    .intro_landing_page_form_finder {
+        border-radius: 20px;
+        flex-direction: column;
+        height: 30vh;
+        margin-top: 5vh;
+        width: 90vw;
+    }    
+    #intro_landing_page_finder_select_location, #intro_landing_page_finder_select_fecha_recepcion, #intro_landing_page_finder_select_fecha_regreso {
+        background-color: #ffffff;
+        font-size: 2.9vw;
+        margin-top: 8px;
+        width: 90%;
+    }
+    .intro_landing_page_finder_btn_buscar {
+        font-size: 3.8vw;
+        margin: 10px;
+        padding: 8px 10px;
+        width: 30%;
+    }
+    html:not([data-scroll='0']) .intro_circle_yellow{
+        top: 32vw;
+    }
+}
+

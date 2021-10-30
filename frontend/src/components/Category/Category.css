@@ -1,0 +1,34 @@
+.car_card_car_type_menu ul {
+    display: flex;
+    margin-top: 2vw;
+}
+.car_type_menu_category_link{
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.9vw;
+    font-weight: bold; 
+    position: relative;
+}
+.car_type_menu_category{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.car_card_car_type_menu ul li a span{
+    color:black;
+}
+
+/* .car_type_menu_category_link::before{
+  content:'';
+  background: var(--primary-color);
+  position:absolute;
+  bottom:-5px; 
+  width: 0;
+  height: 0.46vh;
+  transition: all 700ms
+}
+.car_type_menu_category_link:hover::before{
+  width:100%;
+  background-color: var(--primary-color);
+} */

@@ -1,0 +1,117 @@
+.step_rent{
+    align-items: center;
+    display: flex;
+    margin-top: 3vw;
+    position: relative;
+}
+
+.i_step_rent_div{
+    align-items: center;
+    background-color: #FBC02D;
+    border-radius: 50%;
+    box-sizing: content-box;
+    display: flex;
+    height: 2.5vw;
+    justify-content: center;
+    margin-right: 1.5vw;
+    padding: 1.2vw;
+    width: 2.5vw;
+}
+
+.i_step_rent{
+    font-size: 2.25vw;
+}
+
+.step_rent_text h3{
+    font-size: 1.25vw;
+    margin-bottom: 0.5vw;
+}
+
+.step_rent_text p{
+    font-size: 1vw;
+    margin-top: 0vw;
+}
+
+.i_arrow_step_rent{
+    bottom: -2.5vw;
+    font-size: 2vw;
+    left: 1.85vw;
+    position: absolute;
+}
+
+/*-------------------Tablet Design-----------------------*/
+@media (min-width: 600px) and (max-width: 1000px){
+    /*-----global div-----*/
+    .step_rent{
+        margin-top: 3vw;
+        position: relative;
+    }
+    /*-----global div icon-----*/
+    .i_step_rent_div{
+        height: 4.5vw;
+        margin-right: 1.5vw;
+        padding: 1.2vw;
+        width: 4.5vw;
+    }
+    /*-----icono circle yellow-----*/
+    .i_step_rent{
+        font-size: 3vw;
+    }
+    /*-----global div text step-----*/
+    .step_rent_text{
+        box-sizing: border-box;
+        width: 80%;
+    }
+    /*-----title step-----*/
+    .step_rent_text h3{
+        font-size: 2.25vw;
+        margin-bottom: 0.5vw;
+    }
+    /*-----description step-----*/
+    .step_rent_text p{
+        font-size: 1.6vw;
+        margin-top: 0vw;
+    }
+    /*-----arrow step-----*/
+    .i_arrow_step_rent{
+        bottom: -2.5vw;
+        font-size: 2.5vw;
+        left: 2.5vw;
+        position: absolute;
+    }
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .step_rent{
+        margin: 3vh 0vw;
+    }
+    .car-dealer-image {
+        display: none;
+    }
+    .i_step_rent_div {
+        height: 12vw;
+        width: 12vw;
+    }
+    .step_rent_text{
+        box-sizing: border-box;
+        width: 80%;
+    }
+    .i_step_rent {
+        font-size: 7vw;
+    }
+    .i_arrow_step_rent {
+        bottom: -5vw;
+        font-size: 5vw;
+        left: 5.5vw;
+    }
+    .step_rent_text h3 {
+        font-size: 4.5vw;
+        margin-left: 7px;
+    }
+    .step_rent_text p {
+        font-size: 3vw;
+        margin-left: 7px;
+    }
+}

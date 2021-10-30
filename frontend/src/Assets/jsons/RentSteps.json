@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Solicitud",
+      "text": "En nuestra web, o acercandose a una de nuestras vitrinas podra realizar su solicitud.",
+      "icon" : "faMapMarkerAlt"
+    },
+    {
+      "title": "Verificacion",
+      "text": "Sus documentos seran verificados garantizando transparencia.",
+      "icon": "faTasks"
+    },
+    {
+      "title": "Inspeccion",
+      "text": "El vehiculo sera inspeccionado por nuestros tecnicos, aprobando su funcionamiento.",
+      "icon": "faCar"
+    },
+    {
+      "title": "Contrato",
+      "text": "Firme el documento, y disfrute de nuestro servicios y acompañamiento 24/7.",
+      "icon": "faFileSignature"
+    }
+]

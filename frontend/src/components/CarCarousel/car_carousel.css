@@ -1,0 +1,58 @@
+.car_options_landing_page_section_car_list{
+    display: flex;
+    margin: 1vw 2vw 1vw 2vw;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.carousel_landing_page_arrow_div{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_landing_page_arrow_div:hover{
+    transform: scale(1.1);
+}
+
+.carousel_landing_page_arrow{
+    font-size: 1.5vw;
+}
+
+/*------------------Tablet Desing------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .carousel_landing_page_arrow_div{
+        width: 4vw;
+        height: 4vw;
+    }
+    .carousel_landing_page_arrow{
+        font-size: 2.5vw;
+    }
+}
+
+/*------------------Mobile Desing------------------*/
+
+@media (max-width: 599px) {
+    .car_options_landing_page_section_car_list{
+        flex-direction: column;
+        margin: 2vh 5vw 0vh 5vw;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
+    .carousel_landing_page_arrow_div{
+        width: 10vw;
+        height: 10vw;
+        margin: 1vh 0vw
+    }
+    .carousel_landing_page_arrow{
+        font-size: 6vw;
+        transform: rotate(90deg);
+    }
+}

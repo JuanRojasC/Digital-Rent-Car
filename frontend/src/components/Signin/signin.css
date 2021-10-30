@@ -1,0 +1,166 @@
+.container_form_registro{
+	align-items: center;
+	border-radius: 15px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 50px;
+    align-self: center;
+	background-color: #dfe5ed;
+    display: flex;
+    width: 700px;
+}
+
+.container_form_registro h1 {
+	color: var(--secondary-color);
+	font-size: 2.6rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.form_registro{
+	align-items: center;
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_registro_divider{
+	justify-content: space-between;
+	width: 100%;
+    display: flex;
+}
+
+.form_registro_divider .form_registro_group input{
+	width: 95%;
+}
+
+.form_registro_group {
+	display: flex;
+	flex-direction: column;
+	margin: 6px 0;
+	width: 100%;
+    position: relative;
+}
+.form_registro_group label {
+	color: var(--secondary-color);
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+	text-align: start;
+	width: 100%;
+}
+
+.form_registro_group input {
+	font-size: 1.6rem;
+	margin-bottom: 6px;
+	padding: 10px;
+	width: 98%;
+    height: 35px;
+	border:none;
+	border-radius:5px;
+	color: var(--secondary-color);
+	font-size:1.6rem;
+	line-height:25px;
+}
+
+.form_registro button {
+	border-radius: 0.5rem;
+	background: var(--secondary-color);
+	border: 1px;
+	color: white;
+	cursor: pointer;
+	border: none;
+	/* box-shadow: 6px 6px 12px #000000, -6px -6px 12px #37464e; */
+	font-size: 1.6rem;
+	padding: 0.5rem;
+	transition: all 0.3s;
+	display: block;
+	margin-top: 10px;
+	width: 60%;
+}
+
+.form_registro button:hover {
+	border: 1px solid rgba(253, 253, 253, 0.274);
+}
+
+.form_registro button:active {
+	box-shadow: 6px 6px 12px #2c2c2c, -6px -6px 12px #4f646e;
+}
+#show_hide_password{
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    height: 40px;
+    left: 90%;
+    padding: 0;
+    position: absolute;
+    top: -14%;
+    transition: none;
+    width: 40px;
+}
+.form_registro_text{
+	color: var(--secondary-color);
+    margin-top: 20px;
+}
+.form_registro_text a{
+	color: var(--secondary-color);
+}
+.form_login_text{
+	font-size: 1.8rem;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+	#show_hide_password {
+		top: -7%;
+		width: 45px;
+	}
+	.form_login_text{
+		font-size: 2.0rem;
+	}
+	.form_registro_divider{
+		flex-direction: column;
+	}
+	.form_registro_group input {
+		width: 95%;
+		height: 40px;
+	}
+}
+/*-------------------Movile Design-----------------------*/
+
+@media (max-width: 599px) {
+	.container_form_registro {
+		padding: 12px 21px;
+		width: 90vw;
+	}
+	.form_registro_divider .form_registro_group input {
+		margin-left: 1px;
+		width: 98%;
+	}
+	.form_registro_group input {
+		width: 99%;
+		height: 30px;
+	}
+	.form_registro_group label {
+		font-size: 1.2rem;
+	}
+	.container_form_registro h1 {
+		font-size: 2.3rem;
+	}
+	.form_login_text {
+		font-size: 1.2rem;
+	}
+	.form_registro button {
+		font-size: 1.4rem;
+	}
+	#show_hide_password {
+		left: 85%;
+		top: -5%;
+	}
+	.form_registro_divider{
+		flex-direction: column;
+	}
+}
