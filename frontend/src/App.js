@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";

@@ -27,6 +27,20 @@
         padding: 25vh 5vw 0vh 0vh;
         font-size: 7vw;
     }
+    /*-----button on menu mobile-----*/
+    .btn_nav_header_mobile{
+        display: block;
+        color: black;
+        font-weight: 600;
+        font-size: 5vw;
+        margin-right: 0vw;
+        margin: 1.5vh 5vw;
+        text-align: right;
+        text-decoration: none;
+    }
+    .btn_nav_header_mobile:hover{
+        color: var(--primary-color);
+    }
     /*-----user profile div-----*/
     .nav_header_profile_user{
         display: flex;
@@ -47,18 +61,6 @@
         font-size: 5vw;
         margin: 0vw;
     }
-    .btn_nav_header_mobile{
-        text-decoration: none;
-        color: black;
-        font-weight: 600;
-        font-size: 5vw;
-        margin-right: 0vw;
-        margin: 1.5vh 5vw;
-        text-align: right;
-    }
-    .btn_nav_header_mobile:hover{
-        color: var(--primary-color);
-    }
     .line_horizontal_menu_mobile{
         height: 3px;
         background-color: black;
@@ -70,15 +72,17 @@
         top: 3vw;
         left: 3vw;
     }
+    /*-----div social networks icons-----*/
     .social_networks_logos_mobile_menu{
         display: flex;
         position: absolute;
-        bottom: 3vh;
+        bottom: 8vh;
         right: 5vw;
-        z-index: 1000;
+        z-index: 1003;
     }
     html:not([data-scroll='0']) .social_networks_logos_mobile_menu {
-        bottom: 3vh;
+        bottom: 1vh;
+        z-index: 1003;
     }
     .icon_social_network_mobile_menu{
         margin-left: 3vw;

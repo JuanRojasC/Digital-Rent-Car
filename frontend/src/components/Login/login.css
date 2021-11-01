@@ -152,15 +152,17 @@
 		margin-bottom: 8px;
 		font-size: 2.0rem;
 	}
-	#show_hide_password {
-		top: -7%;
-		width: 45px;
+	/*-----show/hide password icon-----*/
+	.show_hide_password_icon{
+		bottom: 3vw;
+		right: 2vw;
+		font-size: 3.5vw;
 	}
 	.form_login_text {
 		font-size: 2.0rem;
 	}
 }
-/*-------------------Movile Design-----------------------*/
+/*-------------------Mobile Design-----------------------*/
 
 @media (max-width: 599px) {
 	.container_form_login {
@@ -182,13 +184,17 @@
 	.form_login_text a {
 		font-size: 1.2rem;
 	}
-	.form_login button {
-		font-size: 1.4rem;
-		margin-top: 7.3vw;
+	/*-----show/hide password icon-----*/
+	.show_hide_password_icon{
+		bottom: 5vw;
+		right: 2vw;
+		font-size: 5vw;
 	}
-	#show_hide_password {
-		top: -11%;
-		left: 86%;
+	/*-----button login-----*/
+	.form_login button {
+		font-size: max(5vw, min(15px));
+		margin: 3vh 0px 7px;
+		padding: 0.35vw 8vw;
 	}
 	.login_error{
 		left: 2.3%;

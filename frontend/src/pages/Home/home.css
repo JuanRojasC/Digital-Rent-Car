@@ -33,7 +33,7 @@
 /*-------------------Categories Grid-----------------------*/
 .title_cars_categories{
     font-size: 2vw;
-    padding-top: 4vw;
+    padding-top: 5vw;
 }
 .car_categories_landing_page_options{
     display: flex;
@@ -61,7 +61,7 @@
     /*-------------------Categories Grid-----------------------*/
     .title_cars_categories {
         font-size: 5vw;
-        margin-top: 0vh;
+        margin-top: 6vh;
         margin-bottom: 1vh;
         padding-top: 0vw;
     }
@@ -102,7 +102,7 @@
     /*-------------------Categories Grid-----------------------*/
     .title_cars_categories {
         font-size: 3.5vw;
-        margin-top: 2vh;
+        margin-top: 6vh;
         margin-bottom: 1vh;
     }
     .car_categories_landing_page_options{

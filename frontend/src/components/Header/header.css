@@ -90,7 +90,7 @@ html:not([data-scroll='0']) .header_landing_page {
 @media (max-width: 599px) {
     /*-----div global-----*/
     .header_landing_page{
-        padding: 1.5vh 5vw;
+        padding: 1vh 5vw;
         align-items: center;
     }
     /*-----logo company header-----*/
@@ -100,7 +100,7 @@ html:not([data-scroll='0']) .header_landing_page {
         /*3.557 relation*/
     }
     html:not([data-scroll='0']) .header_landing_page {
-        padding: 1.5vh 5vw;
+        padding: 0.5vh 5vw;
         background-color: var(--primary-color);
     }
     /*-----bars icon menu mobile-----*/

@@ -54,12 +54,12 @@ export default function Header(props) {
 					<img src={logo} alt='Logo de la Compañia' className='logo_company_header' />
 				</Link>
 				{isPhone? 
-					<HeaderMobile userLogged={logged} userData={user} logOut={logOut} setMenuDeploy={setDeployMenu}/> 
+					<HeaderMobile setMenuDeploy={setDeployMenu}/> 
 					: 
 					<HeaderDesktop userLogged={logged} userData={user} logOut={logOut} headerMain={props.headerMain}/>}
 			</div>
 			{/*-----Out becuase has position absolute-----*/}
-			<MenuMobile deployMenu={deployMenu} setMenuDeploy={setDeployMenu}/>
+			<MenuMobile deployMenu={deployMenu} setMenuDeploy={setDeployMenu} userLogged={logged} userData={user} logOut={logOut}/>
 		</>
 	);
 }
