@@ -1,0 +1,202 @@
+.header_landing_page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    width: 100vw;
+    z-index: 999;
+}
+html:not([data-scroll='0']) .header_landing_page {
+    position: fixed;
+    padding: 0.25vw 2vw;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+}
+html:not([data-scroll='0']) .logo_company_header {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.logo_company_header{
+    width: 12vw;
+    height: 3.37vw;
+    /*3.557 relation*/
+}
+
+.btns_nav_header{
+    display: flex;
+}
+
+.btn_nav_header, .user_title{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 1.1vw;
+    margin-right: 1.5vw;
+    position: relative;
+}
+
+.btn_nav_header::before{
+    content:'';
+    background: black;
+    position:absolute;
+    bottom:-3px; 
+    width: 0;
+    height: 0.3vh;
+    transition: all 700ms
+}
+.btn_nav_header:hover::before{
+    width:100%;
+    background-color: black;
+}
+
+.select_header_landing_page{
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1vw;
+    margin-right: 1.8vw;
+    cursor: pointer;
+    background-color: #FBC02D;
+}
+
+/*----------------Profile Header--------------*/
+.nav_header_profile_user{
+    display: flex;
+}
+.circle_user_profile{
+    background-color: #dfe5ed;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1vw;
+    padding: 0.75vw;
+    font-weight: 600;
+    margin-right: 0.5vw;
+}
+.nav_header_profile_text{
+    display: flex;
+    flex-direction: column;
+}
+.user_profile_greeting{
+    font-size: 1vw;
+    margin-bottom: -0.5vw;
+}
+.btn_nav_header_logout{
+    margin-top: 1vw;
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .header_landing_page{
+        padding: 1.5vh 5vw;
+        align-items: center;
+    }
+    .logo_company_header{
+        width: 35vw;
+        height: 9.8vw;
+        /*3.557 relation*/
+    }
+    html:not([data-scroll='0']) .header_landing_page {
+        padding: 1.5vh 5vw;
+        background-color: var(--primary-color);
+    }
+    .header_bar_menu{
+        font-size: 7vw;
+    }
+    .btns_nav_header_menu_mobile{
+        display: none;
+        flex-direction: column;
+        background-color: #dfe5ed;
+        position: fixed;
+        right: 0vw;
+        top: 0vw;
+        height: 100vh;
+    }
+    .menu_title_nav_header_mobile{
+        background-color: var(--primary-color);
+        width: 70vw;
+        text-align: right;
+        padding: 25vh 5vw 0vh 0vh;
+        font-size: 7vw;
+    }
+    /*-----user profile div-----*/
+    .nav_header_profile_user{
+        display: flex;
+        flex-direction: column;
+        margin-top: -5vh;
+    }
+    .circle_user_profile{
+        font-size: 6vw;
+        padding: 1.5vw;
+        align-self: flex-end;
+    }
+    .user_profile_greeting{
+        display: block;
+        font-size: 5vw;
+    }
+    .user_title{
+        display: block;
+        font-size: 5vw;
+        margin: 0vw;
+    }
+    .btn_nav_header_mobile{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 5vw;
+        margin-right: 0vw;
+        margin: 1.5vh 5vw;
+        text-align: right;
+    }
+    .btn_nav_header_mobile:hover{
+        color: var(--primary-color);
+    }
+    .line_horizontal_menu_mobile{
+        height: 3px;
+        background-color: black;
+        margin: 0vw 5vw;
+    }
+    .header_close_menu_mobile{
+        position: absolute;
+        font-size: 8vw;
+        top: 3vw;
+        left: 3vw;
+    }
+    .social_networks_logos_mobile_menu{
+        display: flex;
+        position: absolute;
+        bottom: 3vh;
+        right: 5vw;
+        z-index: 1000;
+    }
+    html:not([data-scroll='0']) .social_networks_logos_mobile_menu {
+        bottom: 3vh;
+    }
+    .icon_social_network_mobile_menu{
+        margin-left: 3vw;
+        font-size: 7vw;
+        color: black;
+    }
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .header_landing_page{
+        padding: 1.5vh 5vw;
+        align-items: center;
+    }
+    html:not([data-scroll='0']) .header_landing_page {
+        padding: 0.25vh 2vw;
+    }
+    .logo_company_header{
+        width: 22vw;
+        height: 6.18vw;
+        /*3.557 relation*/
+    }
+    .btn_nav_header, .user_title{
+        font-size: 2vw;
+        margin-right: 1.5vw;
+    }
+}

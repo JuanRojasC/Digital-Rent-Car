@@ -1,0 +1,116 @@
+/*-------------------Rent Steps-----------------------*/
+.rent_steps_landing_page_section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw 5vw;
+}
+
+.title_rent_steps{
+    align-self: flex-start;
+    font-size: 1.5vw;
+}
+
+.rent_steps_div{
+    align-items: center;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1vw;
+}
+
+.rent_steps_landing_page{
+    margin-right: 2vw;
+    width: 50%;
+}
+
+.car-dealer-image{
+    margin-top: 3vw;
+    width: 40vw;
+}
+
+/*-------------------Categories Grid-----------------------*/
+.title_cars_categories{
+    font-size: 2vw;
+    padding-top: 4vw;
+}
+.car_categories_landing_page_options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1vw 10vw;
+}
+/*-------------------Cars Catalogue-----------------------*/
+.car_options_landing_page_section{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 0vw 5vw;
+}
+.title_cars_catalogue{
+    align-self: flex-start;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+}
+
+
+/*-------------------Movile Design-----------------------*/
+
+@media (max-width: 599px) {
+    /*-------------------Rent Steps-----------------------*/
+    .rent_steps_landing_page {
+        margin-right: 2vw;
+        width: 100%;
+    }
+    .title_rent_steps{
+        align-self: flex-start;
+        font-size: 5vw;
+    }
+    /*-------------------Categories Grid-----------------------*/
+    .title_cars_categories {
+        font-size: 5vw;
+        margin-top: 6vh;
+        margin-bottom: 1vh;
+    }
+    .car_categories_landing_page_options{
+        padding: 1vw 0vw;
+    }
+    /*-------------------Cars Catalogue-----------------------*/
+    .title_cars_catalogue{
+        font-size: 5vw;
+        margin-top: 3vh;
+        align-self: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    /*-------------------Rent Steps-----------------------*/
+    .rent_steps_landing_page {
+        margin-right: 2vw;
+        width: 100%;
+    }
+    .title_rent_steps{
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+    .car-dealer-image{
+        margin-top: 3vw;
+        width: 35vw;
+    }
+    /*-------------------Categories Grid-----------------------*/
+    .title_cars_categories {
+        font-size: 3.5vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+    .car_categories_landing_page_options{
+        padding: 1vw 0vw;
+    }
+    /*-------------------Cars Catalogue-----------------------*/
+    .title_cars_catalogue{
+        font-size: 3vw;
+        margin-top: 5vh;
+        align-self: flex-start;
+    }
+}
