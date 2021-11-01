@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./header.css";
 
-export default function HeaderDesktop({userLogged, userData, logOut}){
+export default function HeaderDesktop({userLogged, userData, logOut, headerMain}){
+
+    let [ currentURL ] = useState(window.location.href);
+
     return(
         !userLogged? 
             <>
@@ -10,19 +14,23 @@ export default function HeaderDesktop({userLogged, userData, logOut}){
                     <Link to='/login' className='btn_nav_header'>Login</Link>
                     <Link to='/registro' className='btn_nav_header'>Registrarse</Link>
                 </div>
-                {/* <div className='form_header'>
-                    <form>
-                        <select name="select_country_header" id="select_country_header" className="select_header_landing_page">
-                            <option value="Argentina">Argentina</option>
-                            <option value="Colombia">Colombia</option>
-                        </select>
-                        <select name="select_coin_header" id="select_coin_header" className="select_header_landing_page">
-                            <option value="USD">USD</option>
-                            <option value="ARS">ARS</option>
-                            <option value="COP">COP</option>
-                        </select>
-                    </form>
-                </div> */}
+                {headerMain?                 
+                    <div className='form_header'>
+                        <form>
+                            <select name="select_country_header" id="select_country_header" className="select_header_landing_page">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Colombia">Colombia</option>
+                            </select>
+                            <select name="select_coin_header" id="select_coin_header" className="select_header_landing_page">
+                                <option value="USD">USD</option>
+                                <option value="ARS">ARS</option>
+                                <option value="COP">COP</option>
+                            </select>
+                        </form>
+                    </div>
+                    :
+                    ""
+                }
             </>
         :
             <>

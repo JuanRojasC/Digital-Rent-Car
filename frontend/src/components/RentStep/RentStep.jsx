@@ -9,10 +9,10 @@ export default function RentStep({title, text, icon}){
                 <FontAwesomeIcon icon={icon} className="i_step_rent"/>
             </div>
             <div className="step_rent_text">
-                <h3>{title}</h3>
-                <p>{text}</p>
+                <h3 className="step_rent_text_title">{title}</h3>
+                <p className="step_rent_text_description">{text}</p>
             </div>
-            <FontAwesomeIcon icon={faAngleDown} className="i_arrow_step_rent"/>
+            {title!=="Contrato"? <FontAwesomeIcon icon={faAngleDown} className="i_arrow_step_rent"/> : ""}
         </div>
     );
 }

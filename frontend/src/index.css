@@ -5,6 +5,7 @@
     --secondary-color:  #263238;
     --tertiary-color: #607D8B;
     --quaternary-color: #FFFBE2;
+    --gray-color: #dfe5ed;
 }
 
 *{
@@ -12,6 +13,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+}
+
+body{
+    width: 100vw;
 }
 
 html{

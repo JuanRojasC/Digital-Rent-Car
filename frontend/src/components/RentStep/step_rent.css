@@ -1,41 +1,43 @@
+/*-----global div-----*/
 .step_rent{
-    align-items: center;
     display: flex;
+    align-items: center;
     margin-top: 3vw;
     position: relative;
 }
-
+/*-----div for icon and circle yellow-----*/
 .i_step_rent_div{
-    align-items: center;
     background-color: #FBC02D;
     border-radius: 50%;
     box-sizing: content-box;
     display: flex;
-    height: 2.5vw;
     justify-content: center;
+    align-items: center;
+    height: 2vw;
+    width: 2vw;
     margin-right: 1.5vw;
-    padding: 1.2vw;
-    width: 2.5vw;
+    padding: 1vw;
 }
-
+/*-----icon on circle yellow-----*/
 .i_step_rent{
-    font-size: 2.25vw;
+    font-size: 1.8vw;
 }
-
-.step_rent_text h3{
+/*-----title step-----*/
+.step_rent_text_title{
     font-size: 1.25vw;
-    margin-bottom: 0.5vw;
+    font-size: max(1.25vw, min(16px));
+    margin-bottom: 0vw;
 }
-
-.step_rent_text p{
-    font-size: 1vw;
+/*-----description step text-----*/
+.step_rent_text_description{
+    font-size: max(0.9vw, min(14px));
     margin-top: 0vw;
 }
-
+/*-----arrow next step-----*/
 .i_arrow_step_rent{
     bottom: -2.5vw;
-    font-size: 2vw;
-    left: 1.85vw;
+    font-size: 1.8vw;
+    left: 1.5vw;
     position: absolute;
 }
 

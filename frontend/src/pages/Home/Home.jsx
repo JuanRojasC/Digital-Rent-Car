@@ -3,11 +3,11 @@ import { faTasks, faMapMarkerAlt, faCar, faFileSignature } from '@fortawesome/fr
 import RentStep from "../../components/RentStep/RentStep";
 import rentStepsImage from "../../Assets/Dealer-Image.jpg";
 import Intro from "../../components/Intro/Intro";
-import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import CarCarousel from "../../components/CarCarousel/CarCarousel";
 import rentSteps from "../../Assets/jsons/RentSteps.json";
-import categoriesList from "../../Assets/jsons/CategoriesList.json";
+
 import "./home.css";
+import CategoriesCards from "../../components/CategoriesCards/CategoriesCards";
 
 export default function Home() {
 
@@ -18,7 +18,6 @@ export default function Home() {
         faFileSignature: faFileSignature
     })
 
-
     return (
         <>
             <section className="intro_landing_page_section">
@@ -27,9 +26,7 @@ export default function Home() {
 
             <section id="car-options" className="car_options_landing_page_section">
                 <h2 className="title_cars_categories">¡Un vehiculo para cada ocasión!</h2>
-                <div className="car_categories_landing_page_options">
-                    {categoriesList.map((category, index)=><CategoryCard title={category.titulo} image={category.url} key={index}/>)} 
-                </div>
+                <CategoriesCards />
                 <h2 className="title_cars_catalogue">Recomendaciones</h2>
                 <CarCarousel />
             </section>

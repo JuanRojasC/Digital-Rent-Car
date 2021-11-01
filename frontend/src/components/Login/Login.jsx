@@ -61,18 +61,17 @@ export default function Login(props) {
 				<div className='form_login_group'>
 					<label>Contraseña</label>
 					<input type={showPass.type} />
-					<button id='show_hide_password' onClick={handlePass} type='button'>
-						<FontAwesomeIcon icon={showPass.icon} />
-					</button>
+					<FontAwesomeIcon icon={showPass.icon} className="show_hide_password_icon" onClick={handlePass}/>
 				</div>
 				{error && (
-					<p className="login_error">Por favor, vuelva a intentarlo sus credenciales son inválidas</p>
+					<p className="login_error">credenciales inválidas*</p>
 				)}
 				<button type='submit'>Ingresar</button>
 			</form>
-			<p className='form_login_text'>
-				¿Aun no estas registrado? <Link to='/registro'>Registrate</Link>
-			</p>
+			<div className='form_login_text_signup'>
+				<p>¿Aun no estas registrado?</p>
+				<Link to='/registro'>Registrate</Link>
+			</div>
 		</div>
 	);
 }

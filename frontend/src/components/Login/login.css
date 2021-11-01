@@ -1,33 +1,35 @@
+/*-----div global-----*/
 .container_form_login {
-    align-items: center;
-    align-self: center;
-    background-color: #dfe5ed;
-    border-radius: 15px;
-    display: flex;
+	display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 70px 63px;
+    align-items: center;
+    align-self: center;
     width: 35vw;
+	background-color: #dfe5ed;
+    border-radius: 15px;
+	padding: 3vh 4vw;
+	margin: 22vh 0vw 0vh 0vw;
 }
-
-.container_form_login h1 {
-	color: var(--secondary-color);
-    font-size: 3.6rem;
-	font-weight: 600;
-    margin-bottom: 10px;
-	margin: 5px 0px;
-}
-
+/*-----div icon and title form----*/
 .icon_group{
 	display: flex;
+	align-items: center;
+	font-size: max(1.6vw, min(18px));
 }
-
+/*-----icon title form-----*/
 .icon_user_logIn{
-    color: var(--secondary-color);
-	font-size: 3.5rem;
+	color: var(--secondary-color);
 	margin: 12px 12px;
 }
-
+/*-----title form-----*/
+.container_form_login h1{
+	color: var(--secondary-color);
+	font-size: max(1.6vw, min(18px));
+	font-weight: 600;
+	margin: 1vh 0vw 2vh 0vw;
+}
+/*-----form login-----*/
 .form_login {
     align-items: center;
     display: flex;
@@ -35,35 +37,36 @@
 	position: relative;
 	width: 100%;
 }
-
+/*-----div label/input-----*/
 .form_login_group {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 0px;
+	margin: 0.75vh 0px;
     position: relative;
 	width: 100%;
 }
-
+/*-----label-----*/
 .form_login_group label {
 	color: var(--secondary-color);
-	font-size: 2.0rem;
+	font-size: max(1vw, min(15px));
 	font-weight: 400;
 	margin-bottom: 5px;
 	width: 100%;
 }
-
+/*-----input-----*/
 .form_login_group input {
 	border: none;
     border-radius: 5px;
     color: var(--secondary-color);
     font-size: 1.5rem;
-    height: 2.5vw;
     line-height: 25px;
     margin-bottom: 10px;
     padding: 10px;
 	width: 100%;
+    height: 2vw;
+	position: relative;
 }
-
+/*-----button login-----*/
 .form_login button {
 	background: var(--secondary-color);
 	border-radius: 0.5rem;
@@ -72,54 +75,47 @@
     color: white;
 	cursor: pointer;
     display: block;
-	font-size: 1.8rem;
-    margin: 54px 0px 7px;
-	padding: 0.5rem;
+	font-size: max(1vw, min(15px));
+    margin: 3vh 0px 7px;
+	padding: 0.25vw 3.5vw;
 	transition: all 0.2s;
-    width: 60%;
-}
-
-.form_login button:hover {
 	border: 0.5px solid rgba(253, 253, 253, 0.274);
+}
+/*-----button login hover-----*/
+.form_login button:hover {
+	transform: scale(1.05);
 }
 
 .form_login button:active {
 	box-shadow: 6px 6px 12px #2c2c2c, -6px -6px 12px #4f646e;
 }
-
-#show_hide_password{
-	background: none;
-    border: none;
-    box-shadow: none;
-    color: var(--primary-color);
-    font-size: 2rem;
-    height: 40px;
-    left: 90%;
-    padding: 0;
-    position: absolute;
-	transition: none;
-	top: -14%;
-    width: 40px;
+/*-----show/hide password icon-----*/
+.show_hide_password_icon{
+	position: absolute;
+	color: var(--secondary-color);
+	font-size: max(1.1vw, min(11px));
+	bottom: 1vw;
+	right: 0.75vw;
 }
-
-.form_login_text{
-    color: var(--secondary-color);
-	margin-top: 15px;
+/*-----invitation to signup text-----*/
+.form_login_text_signup{
+	display: flex;
+	margin-top: 0.8vw;
+	font-size: max(1vw, min(12px));
+	color: var(--secondary-color);
 }
-
-.form_login_text a{
+/*-----signup button-----*/
+.form_login_text_signup a{
     color: var(--secondary-color);
     font-weight: bold;
+	margin: 0vw 0.4vw;
 }
-
+/*-----wrong credentials text-----*/
 .login_error {
     color: #df2537;
-    font-size: 1.8rem;
     font-weight: bold;
-    left: -0.7%;
-    position: absolute;
-    top: 68%;
     text-align: center;
+	font-size: max(0.9vw, min(15px));
 }
 /*-------------------Tablet Design-----------------------*/
 

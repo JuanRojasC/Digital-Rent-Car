@@ -1,22 +1,23 @@
+/*-----div global-----*/
 .footer_page {
     align-items: center;
     background-color: #263238;
     display: flex;
     justify-content: space-between;
     margin-top: 2vw;
-    padding: 2vh 2vw;
+    padding: 0.75vw 2vw;
 }
-
+/*-----logo company-----*/
 .logo_company_footer{
-    width: 12vw;
-    height: 3.0vw;
+    width: 8vw;
+    height: 2vw;
     /*3.557 relation*/
 }
-
+/*-----copyright text-----*/
 .footer_page p {
     font-family: sans-serif;
     color: white;
-    font-size: 1.0vw;
+    font-size: 0.9vw;
 }
 
 .footer_page_links_div{
@@ -39,11 +40,11 @@
     color: white;
     font-size: 0.8vw;
 }
-
+/*-----icon social network-----*/
 .icon_social_network_footer{
     color: white;
-    font-size: 1.8vw;
-    margin-right: 1vw;
+    font-size: 1.5vw;
+    margin: 0vw 0.5vw
 }
 
 /*-------------------Tablet Design-----------------------*/

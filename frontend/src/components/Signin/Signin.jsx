@@ -41,16 +41,19 @@ export default function Signin() {
 					<input type='email' name='email' required/>
 				</div>
 				<div className='form_registro_group'>
-					<label>Confirmacion Correo Electronico</label>
-					<input type='email' name='Verificacion' required/>
+					<label>Contraseña</label>
+					<input type='password' name='contrasena' required/>
 				</div>
 				<div className='form_registro_group'>
-					<label>Contraseña</label>
+					<label>Confirmar Contraseña</label>
 					<input type='password' name='contrasena' required/>
 				</div>
 				<button type='submit'>Registrarse</button>
 			</form>
-			<p className="form_login_text">¿Ya tienes cuenta? <Link to="/login">Inicia Sesión</Link></p>
+			<div className="form_registro_text">
+				<p>¿Ya tienes cuenta? </p>
+				<Link to="/login">Inicia Sesión</Link>
+			</div>
 		</div>
 	);
 }

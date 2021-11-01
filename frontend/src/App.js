@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
@@ -6,16 +7,27 @@ import Registro from "./pages/Registro/Registro";
 import NotFound from "./pages/NotFound";
 
 function App() {
+
 	return (
 		<BrowserRouter>
-			<Layout>
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route exact path='/login' component={Login} />
-					<Route exact path='/registro' component={Registro} />
-					<Route component={NotFound} />
-				</Switch>
-			</Layout>
+			<Switch>
+				<Route exact path='/' >
+					<Layout headerMain={true}>
+						<Home />
+					</Layout>
+				</Route>
+				<Route exact path='/login' >
+					<Layout headerMain={false}>
+						<Login />
+					</Layout>
+				</Route>
+				<Route exact path='/registro' >
+					<Layout headerMain={false}>
+						<Registro />
+					</Layout>
+				</Route>
+				<Route component={NotFound} />
+			</Switch>
 		</BrowserRouter>
 	);
 }

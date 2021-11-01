@@ -7,7 +7,7 @@ export default function Layout(props) {
 	return (
 		<Fragment>
 			<UserProvider>
-				<Header />
+				<Header headerMain={props.headerMain}/>
 				{props.children}
 				<Footer />
 			</UserProvider>

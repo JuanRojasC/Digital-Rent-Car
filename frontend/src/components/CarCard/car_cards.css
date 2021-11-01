@@ -1,65 +1,73 @@
+/*-----div global-----*/
 .car_card{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 18vw;
-    padding: 1.5vw;
+    padding: 2vw 2.5vw;
     border-radius: 10px;
     background-color: #dfe5ed;
+    border: 1px solid white;
 }
-
+/*-----div global hover-----*/
 .car_card:hover{
     transform: scale(1.02);
+    border: 1px solid black;
 }
-
+/*-----div car image-----*/
+.car_card_div_image_car{
+    height: 20vh;
+}
+/*-----car image-----*/
 .car_card_img_car{
     display: block;
     margin-bottom: 1.5vw;
     width: 14vw;
 }
-
+/*-----car name/title-----*/
 .car_card_car_name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.25vw;
     font-weight: 700;
     margin-bottom: 1.8vw;
 }
-
+/*-----div container icons-----*/
 .car_card_icons_container{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5vw;
     width: 100%;
 }
-
+/*-----div icon + text-----*/
 .car_card_div_icon_description{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
+/*-----icon-----*/
 .car_card_icon{
     margin-bottom: 0.25vw;
     width: 1.6vw;
 }
-
+/*-----text-----*/
 .car_card_icon_text{
     font-size: 0.9vw;
 }
-
+/*-----button view more-----*/
 .car_card_btn_more{
     background-color: #FBC02D;
     border-radius: 5px;
+    border: 2px solid var(--gray-color);
     color: black;
     font-size: 0.9vw;
     padding: 0.25vw 2vw;
     text-decoration: none;
 }
-
+/*-----button view more hover-----*/
 .car_card_btn_more:hover{
-    transform: scale(1.05);
-    border: 2px solid black;
+    transform: scale(1.1);
+    font-weight: bold;
 }
 
 /*------------------Tablet Desing------------------*/
@@ -69,6 +77,10 @@
     .car_card{
         width: 25vw;
         padding: 2.5vw;
+    }
+    /*-----div car image-----*/
+    .car_card_div_image_car{
+        height: 20vh;
     }
     /*-----car image-----*/
     .car_card_img_car{
@@ -115,6 +127,10 @@
     .car_card {
         margin: 1vh;
         width: 90%;
+    }
+    /*-----div car image-----*/
+    .car_card_div_image_car{
+        height: 13vh;
     }
     .car_card_img_car {
         width: 40vw;

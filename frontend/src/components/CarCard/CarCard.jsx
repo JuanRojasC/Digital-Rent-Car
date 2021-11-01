@@ -13,7 +13,9 @@ export default function CarCard(props) {
 
     return(
         <div className="car_card">
-            <img className="car_card_img_car" src={car.img} alt="vehicle"/>
+            <div className="car_card_div_image_car">
+                <img className="car_card_img_car" src={car.img} alt="vehicle"/>
+            </div>
             <h3 className="car_card_car_name">{car.title}</h3>
             <div className="car_card_icons_container">
                 {
