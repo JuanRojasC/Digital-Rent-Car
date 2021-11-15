@@ -1,0 +1,311 @@
+[2021-04-14 20:04:29] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-04-14 20:04:29] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-04-14 20:04:45] [INFO ] [ProductService:107] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-05-14 20:05:51] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-05-14 20:05:52] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-06-14 20:06:04] [INFO ] [ProductService:107] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-06-14 20:06:40] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-06-14 20:06:40] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-06-14 20:06:45] [INFO ] [ProductService:107] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-06-14 20:06:46] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-06-14 20:06:48] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-06-14 20:06:49] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-06-14 20:06:50] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-07-14 20:07:27] [INFO ] [ProductService:107] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-07-14 20:07:29] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-07-14 20:07:30] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-07-14 20:07:31] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-07-14 20:07:32] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-50-14 20:50:06] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-50-14 20:50:06] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-50-14 20:50:14] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-50-14 20:50:14] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-50-14 20:50:15] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-50-14 20:50:16] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [86, 87, 88, 89, 90] guardadas
+[2021-50-14 20:50:17] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-50-14 20:50:19] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 11: Producto de Testeo
+[2021-50-14 20:50:19] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 11
+[2021-50-14 20:50:20] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-50-14 20:50:20] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-50-14 20:50:20] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-50-14 20:50:21] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 14 obtenidas
+[2021-50-14 20:50:25] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [86, 87, 88, 89, 90] obtenidas
+[2021-50-14 20:50:25] [INFO ] [ProductService:109] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-50-14 20:50:27] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-50-14 20:50:29] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-50-14 20:50:30] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-50-14 20:50:31] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-51-14 20:51:22] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 11
+[2021-51-14 20:51:22] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-51-14 20:51:22] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-51-14 20:51:22] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-51-14 20:51:23] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 14 obtenidas
+[2021-51-14 20:51:23] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [86, 87, 88, 89, 90] obtenidas
+[2021-51-14 20:51:35] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 11
+[2021-51-14 20:51:35] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-51-14 20:51:35] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-51-14 20:51:35] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-51-14 20:51:37] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 14 obtenidas
+[2021-51-14 20:51:37] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [86, 87, 88, 89, 90] obtenidas
+[2021-52-14 20:52:58] [ERROR] [GlobalExceptionHandler:24] Error en búsqueda [No se encontraron productos con name Chevrolet]
+[2021-55-14 20:55:45] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-55-14 20:55:46] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-55-14 20:55:50] [INFO ] [ProductService:81] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-55-14 20:55:50] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-55-14 20:55:51] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-55-14 20:55:52] [INFO ] [CityService:63] CITY-API-FIND: Cities con ids: [1, 1] obtenidas
+[2021-55-14 20:55:52] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-56-14 20:56:39] [INFO ] [ProductService:110] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-56-14 20:56:40] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-56-14 20:56:41] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-56-14 20:56:42] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-56-14 20:56:43] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-57-14 20:57:08] [INFO ] [ProductService:81] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-57-14 20:57:08] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-57-14 20:57:09] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-57-14 20:57:10] [INFO ] [CityService:63] CITY-API-FIND: Cities con ids: [1, 1] obtenidas
+[2021-57-14 20:57:10] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-57-14 20:57:32] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 11
+[2021-57-14 20:57:33] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-57-14 20:57:33] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-57-14 20:57:33] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-57-14 20:57:34] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 14 obtenidas
+[2021-57-14 20:57:38] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [86, 87, 88, 89, 90] obtenidas
+[2021-58-14 20:58:20] [INFO ] [ProductService:110] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-58-14 20:58:21] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-58-14 20:58:23] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-58-14 20:58:24] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-58-14 20:58:24] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-00-14 21:00:32] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-00-14 21:00:33] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-01-14 21:01:24] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-01-14 21:01:25] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-02-14 21:02:42] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-02-14 21:02:43] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-02-14 21:02:49] [ERROR] [SpecsService:93] SPECS-API FALLO: [500] during [PUT] to [http://localhost:9003/specs/update/specs] [SpecsFeignClient#editSpecs(Specs)]: [{"timestamp":"2021-11-15T02:02:49.820+00:00","status":500,"error":"Internal Server Error","path":"/specs/update/specs"}]
+[2021-02-14 21:02:50] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 11
+[2021-03-14 21:03:03] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 11
+[2021-03-14 21:03:04] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-03-14 21:03:04] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-03-14 21:03:04] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-03-14 21:03:05] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 14 obtenidas
+[2021-03-14 21:03:05] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] obtenidas
+[2021-03-14 21:03:54] [ERROR] [SpecsService:106] SPECS-API FALLO: [500] during [DELETE] to [http://localhost:9003/specs/delete/14] [SpecsFeignClient#deleteSpecs(Long)]: [{"timestamp":"2021-11-15T02:03:54.122+00:00","status":500,"error":"Internal Server Error","path":"/specs/delete/14"}]
+[2021-03-14 21:03:54] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-03-14 21:03:55] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 11
+[2021-08-14 21:08:57] [ERROR] [GlobalExceptionHandler:24] Error en búsqueda [No se encontró producto con id 11]
+[2021-09-14 21:09:28] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-09-14 21:09:28] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-09-14 21:09:28] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-09-14 21:09:29] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [92, 93, 94, 95, 96] guardadas
+[2021-09-14 21:09:30] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-09-14 21:09:31] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 12: Producto de Testeo
+[2021-11-14 21:11:09] [ERROR] [SpecsService:93] SPECS-API FALLO: [500] during [PUT] to [http://localhost:9003/specs/update/specs] [SpecsFeignClient#editSpecs(Specs)]: [{"timestamp":"2021-11-15T02:11:09.787+00:00","status":500,"error":"Internal Server Error","path":"/specs/update/specs"}]
+[2021-11-14 21:11:10] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 12
+[2021-13-14 21:13:23] [ERROR] [SpecsService:106] SPECS-API FALLO: [500] during [DELETE] to [http://localhost:9003/specs/delete/15] [SpecsFeignClient#deleteSpecs(Long)]: [{"timestamp":"2021-11-15T02:13:23.563+00:00","status":500,"error":"Internal Server Error","path":"/specs/delete/15"}]
+[2021-13-14 21:13:24] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-13-14 21:13:24] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 12
+[2021-14-14 21:14:40] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-14-14 21:14:40] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-14-14 21:14:41] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-14-14 21:14:41] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [98, 99, 100, 101, 102] guardadas
+[2021-14-14 21:14:43] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-14-14 21:14:44] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 13: Producto de Testeo
+[2021-14-14 21:14:54] [ERROR] [SpecsService:93] SPECS-API FALLO: [500] during [PUT] to [http://localhost:9003/specs/update/specs] [SpecsFeignClient#editSpecs(Specs)]: [{"timestamp":"2021-11-15T02:14:54.482+00:00","status":500,"error":"Internal Server Error","path":"/specs/update/specs"}]
+[2021-14-14 21:14:55] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 13
+[2021-17-14 21:17:38] [ERROR] [SpecsService:106] SPECS-API FALLO: [500] during [DELETE] to [http://localhost:9003/specs/delete/16] [SpecsFeignClient#deleteSpecs(Long)]: [{"timestamp":"2021-11-15T02:17:38.231+00:00","status":500,"error":"Internal Server Error","path":"/specs/delete/16"}]
+[2021-17-14 21:17:38] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-17-14 21:17:39] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 13
+[2021-17-14 21:17:43] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-17-14 21:17:43] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-17-14 21:17:43] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-17-14 21:17:44] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [104, 105, 106, 107, 108] guardadas
+[2021-17-14 21:17:45] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-17-14 21:17:46] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 14: Producto de Testeo
+[2021-17-14 21:17:54] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 17 actualizadas
+[2021-17-14 21:17:54] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 14
+[2021-23-14 21:23:10] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-23-14 21:23:10] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-23-14 21:23:10] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-23-14 21:23:11] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [110, 111, 112, 113, 114] guardadas
+[2021-23-14 21:23:12] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-23-14 21:23:13] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 15: Producto de Testeo
+[2021-25-14 21:25:51] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-25-14 21:25:51] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-25-14 21:25:52] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-25-14 21:25:52] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [116, 117, 118, 119, 120] guardadas
+[2021-25-14 21:25:54] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-25-14 21:25:55] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 16: Producto de Testeo
+[2021-26-14 21:26:08] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 19 actualizadas
+[2021-26-14 21:26:09] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 16
+[2021-26-14 21:26:31] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 16
+[2021-26-14 21:26:32] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-26-14 21:26:32] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-26-14 21:26:32] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-26-14 21:26:33] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 19 obtenidas
+[2021-26-14 21:26:33] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] obtenidas
+[2021-26-14 21:26:42] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 19 actualizadas
+[2021-26-14 21:26:43] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 16
+[2021-26-14 21:26:56] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id eliminadas
+[2021-26-14 21:26:57] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-26-14 21:26:57] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 16
+[2021-28-14 21:28:39] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-28-14 21:28:39] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-28-14 21:28:40] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-28-14 21:28:41] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [122, 123, 124, 125, 126] guardadas
+[2021-28-14 21:28:42] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-28-14 21:28:43] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 17: Producto de Testeo
+[2021-30-14 21:30:14] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 17
+[2021-30-14 21:30:15] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-30-14 21:30:15] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-30-14 21:30:15] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-30-14 21:30:16] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 20 obtenidas
+[2021-30-14 21:30:19] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [126, 125, 124, 123, 122] obtenidas
+[2021-32-14 21:32:43] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-32-14 21:32:44] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-32-14 21:32:53] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 20 eliminadas
+[2021-32-14 21:32:55] [INFO ] [ImageService:121] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [126, 125, 124, 123, 122] eliminadas
+[2021-32-14 21:32:55] [INFO ] [ProductService:104] PRODUCT-DELETE: Se elimino producto con id 17
+[2021-33-14 21:33:32] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-33-14 21:33:33] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-33-14 21:33:42] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-33-14 21:33:42] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-33-14 21:33:42] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-33-14 21:33:43] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [128, 129, 130, 131, 132] guardadas
+[2021-33-14 21:33:44] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-33-14 21:33:45] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 18: Producto de Testeo
+[2021-33-14 21:33:46] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 18
+[2021-33-14 21:33:47] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-33-14 21:33:47] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-33-14 21:33:47] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-33-14 21:33:48] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 21 obtenidas
+[2021-33-14 21:33:51] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [132, 131, 130, 129, 128] obtenidas
+[2021-33-14 21:33:51] [INFO ] [ProductService:80] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-33-14 21:33:52] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-33-14 21:33:53] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-34-14 21:34:23] [ERROR] [CityService:66] CITY-API FALLO: [500] during [POST] to [http://localhost:9002/cities/find/ids] [CityFeignClient#findCitiesByIds(Collection)]: [{"timestamp":"2021-11-15T02:34:23.538+00:00","status":500,"error":"Internal Server Error","path":"/cities/find/ids"}]
+[2021-34-14 21:34:23] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-34-14 21:34:23] [INFO ] [ProductService:109] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-34-14 21:34:25] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-34-14 21:34:26] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-34-14 21:34:27] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-34-14 21:34:27] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-34-14 21:34:32] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 21 actualizadas
+[2021-34-14 21:34:32] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 18
+[2021-34-14 21:34:36] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 21 eliminadas
+[2021-34-14 21:34:36] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-34-14 21:34:37] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 18
+[2021-36-14 21:36:42] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-36-14 21:36:42] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-36-14 21:36:52] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-36-14 21:36:52] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-36-14 21:36:53] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-36-14 21:36:54] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [134, 135, 136, 137, 138] guardadas
+[2021-36-14 21:36:55] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-36-14 21:36:56] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 19: Producto de Testeo
+[2021-36-14 21:36:57] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 19
+[2021-36-14 21:36:58] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-36-14 21:36:58] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-36-14 21:36:58] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-36-14 21:36:59] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 22 obtenidas
+[2021-37-14 21:37:02] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [138, 137, 136, 135, 134] obtenidas
+[2021-37-14 21:37:03] [INFO ] [ProductService:80] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-37-14 21:37:03] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-37-14 21:37:04] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-37-14 21:37:05] [INFO ] [CityService:63] CITY-API-FIND: Cities con ids: [1, 1] obtenidas
+[2021-37-14 21:37:05] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-37-14 21:37:05] [INFO ] [ProductService:109] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-37-14 21:37:06] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-37-14 21:37:08] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-37-14 21:37:09] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-37-14 21:37:09] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-37-14 21:37:14] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 22 actualizadas
+[2021-37-14 21:37:14] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 19
+[2021-37-14 21:37:18] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 22 eliminadas
+[2021-37-14 21:37:18] [INFO ] [ImageService:120] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-37-14 21:37:19] [INFO ] [ProductService:103] PRODUCT-DELETE: Se elimino producto con id 19
+[2021-38-14 21:38:39] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-39-14 21:39:03] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-39-14 21:39:04] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-39-14 21:39:10] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-39-14 21:39:10] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-39-14 21:39:11] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-39-14 21:39:12] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [140, 141, 142, 143, 144] guardadas
+[2021-39-14 21:39:13] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-39-14 21:39:14] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 20: Producto de Testeo
+[2021-39-14 21:39:15] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 20
+[2021-39-14 21:39:15] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-39-14 21:39:15] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-39-14 21:39:15] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-39-14 21:39:17] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 23 obtenidas
+[2021-39-14 21:39:20] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [144, 143, 142, 141, 140] obtenidas
+[2021-39-14 21:39:20] [INFO ] [ProductService:80] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-39-14 21:39:20] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-39-14 21:39:22] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-39-14 21:39:23] [INFO ] [CityService:63] CITY-API-FIND: Cities con ids: [1, 1] obtenidas
+[2021-39-14 21:39:23] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-39-14 21:39:23] [INFO ] [ProductService:110] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-39-14 21:39:24] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-39-14 21:39:25] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-39-14 21:39:26] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-39-14 21:39:27] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-39-14 21:39:31] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 23 actualizadas
+[2021-39-14 21:39:32] [INFO ] [ProductService:93] PRODUCT-UPDATE: Se actualizo producto con id 20
+[2021-39-14 21:39:35] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 23 eliminadas
+[2021-39-14 21:39:36] [INFO ] [ImageService:120] IMAGES-SERVICE-DELETE-COLLECTION SUCCESS: imagenes con ids [] eliminadas
+[2021-39-14 21:39:36] [INFO ] [ProductService:104] PRODUCT-DELETE: Se elimino producto con id 20
+[2021-40-14 21:40:09] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-40-14 21:40:09] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-40-14 21:40:09] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-40-14 21:40:10] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [146, 147, 148, 149, 150] guardadas
+[2021-40-14 21:40:11] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-40-14 21:40:12] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 21: Producto de Testeo
+[2021-40-14 21:40:19] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 24 eliminadas
+[2021-40-14 21:40:20] [INFO ] [ImageService:120] IMAGES-SERVICE-DELETE-COLLECTION SUCCESS: imagenes con ids [150, 149, 148, 147, 146] eliminadas
+[2021-40-14 21:40:21] [INFO ] [ProductService:104] PRODUCT-DELETE: Se elimino producto con id 21
+[2021-40-14 21:40:53] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-40-14 21:40:53] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-40-14 21:40:54] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-40-14 21:40:54] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [152, 153, 154, 155, 156] guardadas
+[2021-40-14 21:40:56] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-40-14 21:40:57] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 22: Producto de Testeo
+[2021-43-14 21:43:06] [INFO ] [CacheCategories:38] CATEGORIES-CACHE MEMORY: Se guardaron las categorias con ids: [1, 2, 3, 4]
+[2021-43-14 21:43:07] [INFO ] [CacheImages:39] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+[2021-43-14 21:43:13] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-43-14 21:43:13] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-43-14 21:43:14] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-43-14 21:43:14] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [158, 159, 160, 161, 162] guardadas
+[2021-43-14 21:43:16] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-43-14 21:43:17] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 23: Producto de Testeo
+[2021-43-14 21:43:45] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 26 actualizadas
+[2021-43-14 21:43:45] [INFO ] [ProductService:95] PRODUCT-UPDATE: Se actualizo producto con id 23
+[2021-43-14 21:43:59] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 26 eliminadas
+[2021-44-14 21:44:00] [INFO ] [ImageService:120] IMAGES-SERVICE-DELETE-COLLECTION SUCCESS: imagenes con ids [158, 159, 160, 161, 162] eliminadas
+[2021-44-14 21:44:01] [INFO ] [ProductService:105] PRODUCT-DELETE: Se elimino producto con id 23
+[2021-44-14 21:44:07] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-44-14 21:44:07] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-44-14 21:44:08] [INFO ] [ImageService:33] IMAGES-API-SAVE: imagen Main Image de Testeo guardada
+[2021-44-14 21:44:08] [INFO ] [ImageService:50] IMAGES-API-SAVE: imagenes con ids [164, 165, 166, 167, 168] guardadas
+[2021-44-14 21:44:10] [INFO ] [SpecsService:30] SPECS-API-SAVE: specs con id null guardadas
+[2021-44-14 21:44:11] [INFO ] [ProductService:57] PRODUCT-SAVE: Se guardo el producto con Id 24: Producto de Testeo
+[2021-44-14 21:44:11] [INFO ] [ProductService:68] PRODUCT-FIND:Se busco producto con id 24
+[2021-44-14 21:44:12] [INFO ] [ImageService:63] IMAGES-SERVICE-FIND SUCCESS: imagen Main Image de Testeo obtenida
+[2021-44-14 21:44:12] [INFO ] [CategoryService:32] CATEGORY-API-FIND: category con id 1 obtenida
+[2021-44-14 21:44:12] [INFO ] [CityService:29] CITY-API-FIND: city con id 2 obtenida
+[2021-44-14 21:44:13] [INFO ] [SpecsService:43] SPECS-API-FIND: specs con id 27 obtenidas
+[2021-44-14 21:44:16] [INFO ] [ImageService:107] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [168, 167, 166, 165, 164] obtenidas
+[2021-44-14 21:44:17] [INFO ] [ProductService:80] PRODUCT-FIND-COLLECTION:Se busco categoría con titulo Chevrolet
+[2021-44-14 21:44:17] [INFO ] [ImageService:92] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [18, 35, 36, 37, 38, 39, 17, 30, 31, 32, 33, 34] obtenidas
+[2021-44-14 21:44:18] [INFO ] [SpecsService:77] SPECS-API-FIND-COLLECTION: Todas las specs con ids: [1, 2] han sido obtenidas
+[2021-44-14 21:44:19] [INFO ] [CityService:63] CITY-API-FIND: Cities con ids: [1, 1] obtenidas
+[2021-44-14 21:44:19] [INFO ] [CategoryService:62] CATEGORY-API-FIND: Categories con ids: [1, 2] obtenidas
+[2021-44-14 21:44:19] [INFO ] [ProductService:111] PRODUCT-FIND-COLLECTION: Se buscaron todos los productos
+[2021-44-14 21:44:20] [INFO ] [ImageService:80] IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas
+[2021-44-14 21:44:22] [INFO ] [SpecsService:60] SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas
+[2021-44-14 21:44:23] [INFO ] [CityService:46] CITY-API-FIND: Todas las cities han sido obtenidas
+[2021-44-14 21:44:23] [INFO ] [CategoryService:49] CATEGORY-API-FIND: Todas las categories han sido obtenida
+[2021-44-14 21:44:28] [INFO ] [SpecsService:90] SPECS-API-UPDATE: specs con id 27 actualizadas
+[2021-44-14 21:44:28] [INFO ] [ProductService:95] PRODUCT-UPDATE: Se actualizo producto con id 24
+[2021-44-14 21:44:31] [INFO ] [SpecsService:103] SPECS-API-DELETE: specs con id 27 eliminadas
+[2021-44-14 21:44:33] [INFO ] [ImageService:120] IMAGES-SERVICE-DELETE-COLLECTION SUCCESS: imagenes con ids [168, 167, 166, 165, 164] eliminadas
+[2021-44-14 21:44:33] [INFO ] [ProductService:105] PRODUCT-DELETE: Se elimino producto con id 24
