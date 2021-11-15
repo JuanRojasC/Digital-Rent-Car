@@ -20,53 +20,23 @@ spring:
           uri: lb://products-service
           predicates:
             - Path=/products/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: products-service
-                fallbackuri: forward:/productsAPIFallBackMethod
         - id: categories-service
           uri: lb://categories-service
           predicates:
             - Path=/categories/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: CATEGORIES-API
-                fallbackuri: forward:/categoriesAPIFallBackMethod
         - id: cities-service
           uri: lb://cities-service
           predicates:
             - Path=/cities/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: cities-service
-                fallbackuri: forward:/citiesAPIFallBackMethod
         - id: features-service
           uri: lb://features-service
           predicates:
             - Path=/features/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: features-service
-                fallbackuri: forward:/featuresAPIFallBackMethod
         - id: images-service
           uri: lb://images-service
           predicates:
             - Path=/images/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: images-service
-                fallbackuri: forward:/imagesAPIFallBackMethod
         - id: specs-service
           uri: lb://specs-service
           predicates:
             - Path=/specs/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: specs-service
-                fallbackuri: forward:/specsAPIFallBackMethod
