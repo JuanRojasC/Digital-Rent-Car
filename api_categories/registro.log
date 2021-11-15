@@ -160,3 +160,9 @@
 2021-43-14 21:43:06  INFO   [          ImageService:59          ] ----------- IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [16, 21, 25, 27] obtenidas
 2021-44-14 21:44:23  INFO   [          CategoryService:99          ] ----------- CATEGORY-FIND-COLLECTION: Se buscaron todas las categorías
 2021-44-14 21:44:23  INFO   [          ImageService:59          ] ----------- IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [16, 21, 25, 27] obtenidas
+2021-14-15 12:14:51  INFO   [          CacheImages:39          ] ----------- IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 21, 25, 27]
+2021-21-15 12:21:05  INFO   [          CacheImages:39          ] ----------- IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [16, 21, 25, 27]
+2021-21-15 12:21:19  INFO   [          CategoryService:60          ] ----------- CATEGORY-FIND-COLLECTION: Se buscaron todas las categorías con ids: [1, 2, 3, 4]
+2021-21-15 12:21:19  INFO   [          ImageService:59          ] ----------- IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [16, 21, 25, 27] obtenidas
+2021-21-15 12:21:33  INFO   [          CategoryService:99          ] ----------- CATEGORY-FIND-COLLECTION: Se buscaron todas las categorías
+2021-21-15 12:21:33  INFO   [          ImageService:59          ] ----------- IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids [16, 21, 25, 27] obtenidas

@@ -1,0 +1,13 @@
+server:
+  port: 9296
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: backend
+          uri: https://github.com/JuanRojasC/Digital-Rent-Car
+          search-paths: config-data
