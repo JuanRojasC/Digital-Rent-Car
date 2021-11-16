@@ -1,6 +1,6 @@
 USE digitalRentcarCategories;
 
-DROP TABLE categories;
+DROP TABLE IF EXISTS categories;
 
 CREATE TABLE `categories` (
   `id` bigint NOT NULL AUTO_INCREMENT,

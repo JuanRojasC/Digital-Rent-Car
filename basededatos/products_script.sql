@@ -1,7 +1,7 @@
 USE digitalRentcarProducts;
 
-DROP TABLE products;
-DROP TABLE product_images_ids;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS product_images_ids;
 
 CREATE TABLE `products` (
   `product_id` bigint NOT NULL AUTO_INCREMENT,

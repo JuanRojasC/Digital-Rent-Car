@@ -1,6 +1,6 @@
 USE digitalRentcarSpecs;
 
-DROP TABLE specs;
+DROP TABLE IF EXISTS specs;
 
 CREATE TABLE `specs` (
   `id` bigint NOT NULL AUTO_INCREMENT,

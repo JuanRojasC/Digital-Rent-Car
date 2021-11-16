@@ -1,7 +1,7 @@
 USE digitalRentcarCities;
 
-DROP TABLE countries;
-DROP TABLE cities;
+DROP TABLE IF EXISTS countries;
+DROP TABLE IF EXISTS cities;
 
 CREATE TABLE `countries` (
   `country_id` bigint NOT NULL AUTO_INCREMENT,
@@ -17,6 +17,6 @@ CREATE TABLE `cities` (
   `country_id` bigint DEFAULT NULL,
   PRIMARY KEY (`city_id`),
   FOREIGN KEY (`country_id`) REFERENCES countries(country_id)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 

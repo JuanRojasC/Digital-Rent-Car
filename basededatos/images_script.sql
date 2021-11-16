@@ -1,6 +1,6 @@
 USE digitalRentcarImages;
 
-DROP TABLE images;
+DROP TABLE IF EXISTS images;
 
 CREATE TABLE `images` (
   `id` bigint NOT NULL AUTO_INCREMENT,
