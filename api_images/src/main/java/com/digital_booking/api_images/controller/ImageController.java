@@ -5,6 +5,7 @@ import com.digital_booking.api_images.entity.Image;
 import com.digital_booking.api_images.exceptions.ResourceNotFound;
 import com.digital_booking.api_images.services.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

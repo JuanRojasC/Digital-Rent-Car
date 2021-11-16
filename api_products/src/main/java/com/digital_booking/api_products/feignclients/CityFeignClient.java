@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
-@FeignClient(name = "cities-service", url = "http://localhost:9002")
+@FeignClient(name = "cities-service")
 @RequestMapping("/cities")
 public interface CityFeignClient {
 
