@@ -101,8 +101,6 @@ spring:
         - id: images-service-public
           uri: lb://images-service
           predicates:
-            - Path=/images/find/all
-            - Path=/images/find/.*
             - Method=GET
         
         # SPECS PATHS
