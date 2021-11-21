@@ -42,12 +42,20 @@ spring:
             - Path=/categories/**
           filters:
             - AuthFilter
+        - id: categories-service-find
+          uri: lb://categories-service
+          predicates:
+            - Path=/categories/find/**
         - id: cities-service
           uri: lb://cities-service
           predicates:
             - Path=/cities/**
           filters:
             - AuthFilter
+        - id: cities-service-find
+          uri: lb://cities-service
+          predicates:
+            - Path=/cities/find/**
         - id: features-service
           uri: lb://features-service
           predicates:
@@ -60,6 +68,10 @@ spring:
             - Path=/images/**
           filters:
             - AuthFilter
+        - id: images-service-find
+          uri: lb://images-service
+          predicates:
+            - Path=/images/find/**
         - id: specs-service
           uri: lb://specs-service
           predicates:
