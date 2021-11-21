@@ -19,19 +19,28 @@ spring:
         - id: auth-service
           uri: lb://users-service
           predicates:
-            - Path=/auth/**            
+            - Path=/auth/**
+
+        # USERS PATHS
+          # PRIVATES
         - id: users-service
           uri: lb://users-service
           predicates:
             - Path=/users/**
           filters:
-            - AuthFilter            
+            - AuthFilter
+
+        # BOOKINGS PATHS
+          # PRIVATES
         - id: bookings-service
           uri: lb://products-service
           predicates:
             - Path=/bookings/**
           filters:
-            - AuthFilter            
+            - AuthFilter
+
+        # CATEGORIES PATHS
+          # PRIVATES
         - id: categories-service
           uri: lb://categories-service
           predicates:
@@ -41,10 +50,15 @@ spring:
             - Path=/categories/delete/**
           filters:
             - AuthFilter
+          # PUBLICS
         - id: categories-service-public
           uri: lb://categories-service
           predicates:
-            - Method=GET            
+            - Path=/categories/find/**
+            - Method=GET
+
+        # CITIES PATHS
+          # PRIVATES
         - id: cities-service
           uri: lb://cities-service
           predicates:
@@ -55,16 +69,24 @@ spring:
             - Path=/countries/**
           filters:
             - AuthFilter
+          # PUBLICS
         - id: cities-service-public
           uri: lb://cities-service
           predicates:
-            - Method=GET            
+            - Path=/cities/find/**
+            - Method=GET
+
+        # FEATURES PATHS
+          # PRIVATES
         - id: features-service
           uri: lb://features-service
           predicates:
             - Path=/features/**
           filters:
-            - AuthFilter            
+            - AuthFilter
+
+        # IMAGES PATHS
+          # PRIVATES
         - id: images-service
           uri: lb://images-service
           predicates:
@@ -75,16 +97,24 @@ spring:
             - Path=/images/delete/**
           filters:
             - AuthFilter
+          # PUBLICS
         - id: images-service-public
           uri: lb://images-service
           predicates:
-            - Method=GET                   
+            - Path=/images/find/**
+            - Method=GET
+        
+        # SPECS PATHS
+          # PRIVATES
         - id: specs-service
           uri: lb://specs-service
           predicates:
             - Path=/specs/**
           filters:
-            - AuthFilter            
+            - AuthFilter
+
+        # PRODUCTS PATHS
+          # PRIVATES
         - id: products-service
           uri: lb://products-service
           predicates:
@@ -93,7 +123,9 @@ spring:
             - Path=/products/delete/**
           filters:
             - AuthFilter
-        - id: products-service-public
+          # PUBLICS
+        - id: products-service-publics
           uri: lb://products-service
           predicates:
+            - Path=/products/find/**
             - Method=GET
