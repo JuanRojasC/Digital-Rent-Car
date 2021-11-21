@@ -10,7 +10,7 @@ eureka:
     instance:
       hostname: localhost
 
-user-paths:
+admin-paths:
   paths:
     - uri: "/products/save/new"
       method: "POST"
