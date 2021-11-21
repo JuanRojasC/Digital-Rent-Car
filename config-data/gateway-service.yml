@@ -53,11 +53,7 @@ spring:
         - id: images-service
           uri: lb://images-service
           predicates:
-            - Path=/images/save/new
-            - Path=/images/find/ids
-            - Path=/images/save/collection
-            - Path=/images/update/**
-            - Path=/images/delete/**
+            - Path=/images/**
           filters:
             - AuthFilter
         - id: specs-service
@@ -69,8 +65,6 @@ spring:
         - id: products-service
           uri: lb://products-service
           predicates:
-            - Path=/products/save/new
-            - Path=/products/update/product
-            - Path=/products/delete/**
+            - Path=/products/**
           filters:
             - AuthFilter
