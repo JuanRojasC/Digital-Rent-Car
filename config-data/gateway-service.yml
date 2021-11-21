@@ -26,10 +26,6 @@ spring:
             - Path=/users/**
           filters:
             - AuthFilter
-        - id: products-service
-          uri: lb://products-service
-          predicates:
-            - Path=/products/**
         - id: bookings-service
           uri: lb://products-service
           predicates:
@@ -42,20 +38,12 @@ spring:
             - Path=/categories/**
           filters:
             - AuthFilter
-        - id: categories-service-find
-          uri: lb://categories-service
-          predicates:
-            - Path=/categories/find/**
         - id: cities-service
           uri: lb://cities-service
           predicates:
             - Path=/cities/**
           filters:
             - AuthFilter
-        - id: cities-service-find
-          uri: lb://cities-service
-          predicates:
-            - Path=/cities/find/**
         - id: features-service
           uri: lb://features-service
           predicates:
@@ -65,16 +53,24 @@ spring:
         - id: images-service
           uri: lb://images-service
           predicates:
-            - Path=/images/**
+            - Path=/images/save/new
+            - Path=/images/find/ids
+            - Path=/images/save/collection
+            - Path=/images/update/**
+            - Path=/images/delete/**
           filters:
             - AuthFilter
-        - id: images-service-find
-          uri: lb://images-service
-          predicates:
-            - Path=/images/find/**
         - id: specs-service
           uri: lb://specs-service
           predicates:
             - Path=/specs/**
+          filters:
+            - AuthFilter
+        - id: products-service
+          uri: lb://products-service
+          predicates:
+            - Path=/products/save/new
+            - Path=/products/update/product
+            - Path=/products/delete/**
           filters:
             - AuthFilter
