@@ -54,7 +54,6 @@ spring:
         - id: categories-service-public
           uri: lb://categories-service
           predicates:
-            - Path=/categories/find/all
             - Method=GET
 
         # CITIES PATHS
@@ -73,7 +72,6 @@ spring:
         - id: cities-service-public
           uri: lb://cities-service
           predicates:
-            - Path=/cities/find/**
             - Method=GET
 
         # FEATURES PATHS
@@ -126,5 +124,4 @@ spring:
         - id: products-service-publics
           uri: lb://products-service
           predicates:
-            - Path=/products/find/**
             - Method=GET
