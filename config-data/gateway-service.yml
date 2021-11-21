@@ -26,10 +26,6 @@ spring:
             - Path=/users/**
           filters:
             - AuthFilter
-        - id: newUser-service
-          uri: lb://users-service
-          predicates:
-            - Path=/users/savve/new
         - id: products-service
           uri: lb://products-service
           predicates:
