@@ -118,9 +118,7 @@ spring:
         - id: products-service
           uri: lb://products-service
           predicates:
-            - Path=/products/save/new
-            - Path=/products/update/product
-            - Path=/products/delete/**
+            - Path=/products/save/new,/products/update/product,/products/delete/**
           filters:
             - AuthFilter
           # PUBLICS
