@@ -128,4 +128,3 @@ spring:
           uri: lb://products-service
           predicates:
             - Path=/products/find/**
-            - Path=/products/find/available/date/range
