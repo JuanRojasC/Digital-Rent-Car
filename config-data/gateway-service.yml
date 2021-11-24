@@ -44,10 +44,7 @@ spring:
         - id: categories-service
           uri: lb://categories-service
           predicates:
-            - Path=/categories/save/new
-            - Path=/categories/find/ids
-            - Path=/categories/update/category
-            - Path=/categories/delete/**
+            - Path=/categories/save/new,/categories/find/ids,/categories/update/category,/categories/delete/**
           filters:
             - AuthFilter
           # PUBLICS
@@ -62,11 +59,7 @@ spring:
         - id: cities-service
           uri: lb://cities-service
           predicates:
-            - Path=/cities/save/new
-            - Path=/cities/find/ids
-            - Path=/cities/update/city
-            - Path=/cities/delete/**
-            - Path=/countries/**
+            - Path=/cities/save/new,/cities/find/ids,/cities/update/city,/cities/delete/**,/countries/**
           filters:
             - AuthFilter
           # PUBLICS
@@ -90,11 +83,7 @@ spring:
         - id: images-service
           uri: lb://images-service
           predicates:
-            - Path=/images/save/new
-            - Path=/images/find/ids
-            - Path=/images/save/collection
-            - Path=/images/update/**
-            - Path=/images/delete/**
+            - Path=/images/save/new,/images/find/ids,/images/save/collection,/images/update/**,/images/delete/**
           filters:
             - AuthFilter
           # PUBLICS
