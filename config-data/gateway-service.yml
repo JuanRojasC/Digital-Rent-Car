@@ -129,4 +129,3 @@ spring:
           predicates:
             - Path=/products/find/**
             - Path=/products/find/available/date/range
-            - Method=GET
