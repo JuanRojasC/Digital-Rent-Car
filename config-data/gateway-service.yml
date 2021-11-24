@@ -16,11 +16,9 @@ spring:
           corsConfigurations:
             '[/**]':
               allowedOrigins: "*"
-              allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
+              allowedHeaders: "*"
+              allowedMethods: "*"
+              allowCredentials: true
       discovery:
         locator:
           enabled: true
