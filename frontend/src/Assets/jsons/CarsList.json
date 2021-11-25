@@ -1,6 +1,11 @@
 [
     {
-      "img": "/car-images/Chevrolet_Captiva-Image.png",
+      "id": 1,
+      "img": ["/car-images/Chevrolet_Captiva-Image.png",
+        "/car-images/Chevrolet_Captiva-Image2.png",
+        "/car-images/Chevrolet_Captiva-Image3.png",
+        "/car-images/Chevrolet_Captiva-Image4.jpg",
+        "/car-images/Chevrolet_Captiva-Image5.png"],
       "category": "SUV",
       "title": "Chevrolet Captiva",
       "location": "ARG/COL",
@@ -8,10 +13,12 @@
           "engine": "145 HP",
           "airConditioning": true,
           "seats": 7,
-          "type": "Diesel"
+          "type": "Diesel",
+          "text": "Captiva Turbo llega para desafiar todas las expectativas de lo que se espera de un SUV. Más allá de su atractivo diseño, tiene el espacio suficiente para todo y todos, gracias a su capacidad para 5 o 7 pasajeros. Está equipada con tecnología superior y atributos avanzados de seguridad."
       }
     },
     {
+      "id": 2,
       "img": "/car-images/Chevrolet_Camaro-Image.png",
       "category": "Deportive",
       "title": "Chevrolet Camaro",
@@ -24,6 +31,7 @@
       }
     },
     {
+      "id": 3,
       "img": "/car-images/Nissan_Frontier-Image.png",
       "category": "Pickup",
       "title": "Nissan Frontier",
@@ -37,6 +45,7 @@
     }
     ,
     {
+      "id": 4,
       "img": "/car-images/Chrysler_Town-Image.png",
       "category": "Monovolumen",
       "title": "Chrysler Town",
@@ -50,6 +59,7 @@
     }
     ,
     {
+      "id": 5,
       "img": "/car-images/Ford_Mustang-Image.png",
       "category": "Bolido",
       "title": "Ford Mustang",
@@ -63,6 +73,7 @@
     }
     ,
     {
+      "id": 6,
       "img": "/car-images/Honda_CRV-Image.png",
       "category": "SUV",
       "title": "Honda CRVs",
@@ -76,6 +87,7 @@
     }
     ,
     {
+      "id": 7,
       "img": "/car-images/Nissan_Versa-Image.png",
       "category": "Sedan",
       "title": "Nissan Versa",
@@ -89,6 +101,7 @@
     }
     ,
     {
+      "id": 8,
       "img": "/car-images/Renault_Sandero-Image.png",
       "category": "Hatchback",
       "title": "Renault Sandero",
@@ -102,6 +115,7 @@
     }
     ,
     {
+      "id": 9,
       "img": "/car-images/Toyota_Hilux-Image.png",
       "category": "Pickup",
       "title": "Toyota Hilux",
@@ -115,6 +129,7 @@
     }
     ,
     {
+      "id": 10,
       "img": "/car-images/Toyota_Vios-Image.png",
       "category": "Sedan",
       "title": "Toyota Vios",

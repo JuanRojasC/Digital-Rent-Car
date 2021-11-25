@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
-@FeignClient(name = "images-service", url = "http://localhost:9005")
+@FeignClient(name = "images-service" /*, url = "http://localhost:9005"*/)
 @RequestMapping("/images")
 public interface ImageFeignClient {
 

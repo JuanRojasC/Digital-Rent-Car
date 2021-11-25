@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import { UserProvider } from "../UserContext/UserContext";
+import { UserProvider } from "../../Hooks/UserContext/UserContext";
 
 export default function Layout(props) {
 	return (

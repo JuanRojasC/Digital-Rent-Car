@@ -1,0 +1,23 @@
+.booking_data_container{
+    background-color: var(--gray-color);
+    margin:17px;
+    width: 100%;
+    padding: 15px;
+}
+.booking_data_container_title{
+    font-size: 1.2vw;
+    padding-top: 10px;
+}
+
+.booking_data_container>p{
+    font-size: 0.7vw;
+    margin-top:10px;
+}
+.booking_data_container>form{
+    width: 100%;
+}
+.booking_data_container>input{
+    display: block;
+    width: 50%;
+    margin: 10px;
+}

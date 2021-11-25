@@ -2,6 +2,7 @@ package com.digital_booking.api_specs.service;
 
 import com.digital_booking.api_specs.exceptions.ResourceNotFound;
 import com.digital_booking.api_specs.feignclients.FeatureFeignClient;
+import com.digital_booking.api_specs.util.Log;
 import com.digital_booking.api_specs.vo.Feature;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +26,12 @@ public class FeatureService {
 
     public Feature saveFeature(Feature feature){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-SAVING", "Guardando nueva feature"));
             Feature featureReturn = featureFeignClient.saveFeature(feature);
-            log.info("FEATURES-API SUCCESS: feature" + feature.getName() + ": " + feature.getValue() + " guardada");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Feature con id " + feature.getId() + " guardada"));
             return featureReturn;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -38,15 +40,16 @@ public class FeatureService {
 
     public Collection<Feature> saveFeaturesCollection(Collection<Feature> features){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-SAVING", "Guardando coleccion de features"));
             Collection<Feature> featuresResponse = featureFeignClient.saveFeaturesCollection(features);
             Collection<Long> ids = new ArrayList<>();
             for(Feature feature : featuresResponse){
                 ids.add(feature.getId());
             }
-            log.info("FEATURES-API SUCCESS: features con ids " + ids + " guardadas");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Features con ids " + ids + " guardadas"));
             return featuresResponse;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -56,11 +59,12 @@ public class FeatureService {
 
     public Boolean updateFeature(Feature feature){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-UPDATING", "Actualizando feature con id " + feature.getId()));
             featureFeignClient.updateFeature(feature);
-            log.info("FEATURES-API SUCCESS: feature" + feature.getName() + ": " + feature.getValue() + " actualizada");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Feature con id " + feature.getId() + " actualizada"));
             return true;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return false;
         }
     }
@@ -69,15 +73,16 @@ public class FeatureService {
 
     public Boolean updateFeaturesById(Collection<Feature> features){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-UPDATING", "Actualizando coleccion de features con ids"));
             featureFeignClient.updateFeaturesById(features);
             Collection<Long> ids = new ArrayList<>();
             for(Feature feature : features){
                 ids.add(feature.getId());
             }
-            log.info("FEATURES-API SUCCESS: features con ids" + ids +" actualizadas");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Features con ids " + ids + " actualizadas"));
             return true;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return false;
         }
     }
@@ -86,11 +91,12 @@ public class FeatureService {
 
     public Feature getFeature(Long id){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-FINDING", "Buscando feature con id " + id));
             Feature feature = featureFeignClient.findFeatureById(id);
-            log.info("FEATURES-API SUCCESS: feature con id " + id + " obtenida");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Feature con id " + id + "encontrada"));
             return feature;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -99,11 +105,12 @@ public class FeatureService {
 
     public Collection<Feature> getFeaturesByIds(Collection<Long> ids){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-FINDING", "Buscando features con ids" + ids));
             Collection<Feature> featuresReturn = featureFeignClient.findFeaturesByIds(ids);
-            log.info("FEATURES-API SUCCESS: features con ids " + ids + " obtenidas");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Features con ids " + ids + " han sido obtenidas"));
             return featuresReturn;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -112,11 +119,12 @@ public class FeatureService {
 
     public Collection<Feature> getAllFeatures(){
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-FINDING", "Buscando todas las features"));
             Collection<Feature> features = featureFeignClient.findAllFeatures();
-            log.info("FEATURES-API SUCCESS: todas las features han sido obtenidas");
+            log.info(Log.formatLog("FEATURES-SERVICE-SUCCESS", "Todas las features han sido obtenidas"));
             return features;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -125,11 +133,12 @@ public class FeatureService {
 
     public Boolean deleteFeaturesByIds(Collection<Long> ids) throws ResourceNotFound {
         try{
+            log.info(Log.formatLog("FEATURES-SERVICE-DELETING", "Eliminando features con ids " + ids));
             featureFeignClient.deleteFeaturesByIds(ids);
-            log.info("FEATURES-API SUCCESS: features con ids " + ids + " eliminados");
+            log.info(Log.formatLog("FEATURES-SERVICE-DELETING", "Features con ids " + ids + " eliminadas"));
             return true;
         }catch (Exception e){
-            log.error("FEATURES-API FAIL: " + e.getMessage());
+            log.error(Log.formatLog("**FEATURES-SERVICE-FAIL**", e.getMessage()));
             String id = e.getMessage().replaceAll("\\D+", "");
             throw new ResourceNotFound("ERROR 404: No se encontro la feature con id " + id + "\n           " + "Verifique los ids enviados");
         }

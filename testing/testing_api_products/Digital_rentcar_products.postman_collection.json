@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "cf72b433-74cf-4bfe-af0c-f308b6702284",
+		"name": "Digital_rentcar_products",
+		"description": "Test para la API categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"id_product\",res.id);\r",
+							"    pm.collectionVariables.set(\"name_product\",res.name);\r",
+							"    pm.collectionVariables.set(\"description_product\",res.description);\r",
+							"    pm.collectionVariables.set(\"main_image_product\",res.mainImage);\r",
+							"    pm.collectionVariables.set(\"category_product\",res.category);\r",
+							"    pm.collectionVariables.set(\"city_product\",res.city);\r",
+							"    pm.collectionVariables.set(\"specs_product\",res.specs);\r",
+							"    pm.collectionVariables.set(\"images_product\",res.images);\r",
+							"    pm.expect(res.name).to.eql(\"Producto de Testeo\");\r",
+							"    pm.expect(res.mainImage.title).to.eql(\"Main Image de Testeo\");\r",
+							"    pm.expect(res.category.id).to.eql(1);\r",
+							"    pm.expect(res.city.id).to.eql(2);\r",
+							"    pm.expect(res.specs.enginePower.value).to.eql(\"145 HP de Testeo\");\r",
+							"    pm.expect(res.specs.airConditioning.value).to.eql(\"true de Testeo\");\r",
+							"    pm.expect(res.specs.seats.value).to.eql(\"7 de Testeo\");\r",
+							"    pm.expect(res.specs.combustible.value).to.eql(\"Diesel de Testeo\");\r",
+							"    pm.expect((res.images).length).to.eql(5);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Producto de Testeo\",\r\n    \"description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\",\r\n    \"mainImage\": {\r\n        \"title\": \"Main Image de Testeo\",\r\n        \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image.png\"\r\n    },\r\n    \"category\": {\r\n        \"id\": 1\r\n    },\r\n    \"city\": {\r\n        \"id\": 2\r\n    },\r\n    \"specs\": {\r\n        \"enginePower\": {\r\n            \"name\": \"enginePower\",\r\n            \"value\": \"145 HP de Testeo\",\r\n            \"icon\": {\r\n                \"id\": 7\r\n            }\r\n        },\r\n        \"airConditioning\": {\r\n            \"name\": \"airConditioning\",\r\n            \"value\": \"true de Testeo\",\r\n            \"icon\": {\r\n                \"id\": 5\r\n            }\r\n        },\r\n        \"seats\": {\r\n            \"name\": \"seats\",\r\n            \"value\": \"7 de Testeo\",\r\n            \"icon\": {\r\n                \"id\": 9\r\n            }\r\n        },\r\n        \"combustible\": {\r\n            \"name\": \"combustible\",\r\n            \"value\": \"Diesel de Testeo\",\r\n            \"icon\": {\r\n                \"id\": 8\r\n            }\r\n        }\r\n    },\r\n    \"images\": [\r\n        {\r\n            \"title\": \"Image Gallery 1 de Testeo\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image1.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 2 de Testeo\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image2.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 3 de Testeo\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image3.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 4 de Testeo\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image4.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 5 de Testeo\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image5.png\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save}}",
+					"host": [
+						"{{endpoint_save}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.id).to.eql(pm.collectionVariables.get(\"id_product\"));\r",
+							"    pm.expect(data.name).to.eql(pm.collectionVariables.get(\"name_product\"));\r",
+							"    pm.expect(data.description).to.eql(pm.collectionVariables.get(\"description_product\"));\r",
+							"    pm.expect(data.mainImage.id).to.eql(pm.collectionVariables.get(\"main_image_product\").id);\r",
+							"    pm.expect(data.category.id).to.eql(pm.collectionVariables.get(\"category_product\").id);\r",
+							"    pm.expect(data.city.id).to.eql(pm.collectionVariables.get(\"city_product\").id);\r",
+							"    pm.expect(data.specs.id).to.eql(pm.collectionVariables.get(\"specs_product\").id);\r",
+							"    pm.expect(data.images.length).to.eql(pm.collectionVariables.get(\"images_product\").length);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_id}}/{{id_product}}",
+					"host": [
+						"{{endpoint_find_id}}"
+					],
+					"path": [
+						"{{id_product}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.length).to.eql(2);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_title}}",
+					"host": [
+						"{{endpoint_find_title}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"El producto de Testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_product\");\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(id);\r",
+							"    pm.expect(ele.name).to.eql(pm.collectionVariables.get(\"name_product\"));\r",
+							"    pm.expect(ele.description).to.eql(pm.collectionVariables.get(\"description_product\"));\r",
+							"    pm.expect(ele.mainImage.id).to.eql(pm.collectionVariables.get(\"main_image_product\").id);\r",
+							"    pm.expect(ele.category.id).to.eql(pm.collectionVariables.get(\"category_product\").id);\r",
+							"    pm.expect(ele.city.id).to.eql(pm.collectionVariables.get(\"city_product\").id);\r",
+							"    pm.expect(ele.specs.id).to.eql(pm.collectionVariables.get(\"specs_product\").id);\r",
+							"    pm.expect(ele.images.length).to.eql(pm.collectionVariables.get(\"images_product\").length);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all}}",
+					"host": [
+						"{{endpoint_find_all}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos los disponibles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"El producto de Testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const ele1 = data.find(e => e.id === 1);\r",
+							"    const ele2 = data.find(e => e.id === 2)\r",
+							"    pm.expect(ele1).to.eql(undefined);\r",
+							"    pm.expect(ele2.id).to.eql(2);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"checkIn\": \"2021-11-14T15:00\",\r\n    \"checkOut\": \"2021-11-18T11:00\",\r\n    \"cityId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_find_all_date_range}}",
+					"host": [
+						"{{endpoint_find_all_date_range}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de actualizar\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de datos\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const findAll = pm.collectionVariables.get(\"endpoint_find_id\") + pm.collectionVariables.get(\"id_product\");\r",
+							"    pm.sendRequest({findAll, function (err, response) {\r",
+							"        const data = response.json();\r",
+							"        const id = pm.collectionVariables.get(\"id_product\");\r",
+							"        const ele = data.find(ele => ele.id === id);\r",
+							"        pm.expect(ele.name).to.eql(\"Producto de Testeo Actualizado\");\r",
+							"        pm.expect(ele.description).to.eql(pm.collectionVariables.get(\"description_product\"));\r",
+							"        pm.expect(ele.mainImage.title).to.eql(\"Main Image de Testeo Actualizado\");\r",
+							"        pm.expect(ele.category.id).to.eql(pm.collectionVariables.get(\"category_product\").id);\r",
+							"        pm.expect(ele.city.id).to.eql(pm.collectionVariables.get(\"city_product\").id);\r",
+							"        pm.expect(ele.specs.enginePower. value).to.eql(\"145 HP Testeo Actualizado\");\r",
+							"        pm.expect(ele.specs.airConditioning. value).to.eql(\"true Testeo Actualizado\");\r",
+							"        pm.expect(ele.specs.seats. value).to.eql(\"7 Testeo Actualizado\");\r",
+							"        pm.expect(ele.specs.combustible. value).to.eql(\"Diesel Testeo Actualizado\");\r",
+							"        pm.expect(ele.images.length).to.eql(pm.collectionVariables.get(\"images_product\").length);\r",
+							"        }\r",
+							"    })\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{id_product}},\r\n    \"name\": \"Producto de Testeo Actualizado\",\r\n    \"description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\",\r\n    \"mainImage\": {\r\n        \"title\": \"Main Image de Testeo Actualizado\",\r\n        \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image.png\"\r\n    },\r\n    \"category\": {\r\n        \"id\": 1\r\n    },\r\n    \"city\": {\r\n        \"id\": 2\r\n    },\r\n    \"specs\": {\r\n        \"enginePower\": {\r\n            \"name\": \"enginePower\",\r\n            \"value\": \"145 HP Testeo Actualizado\",\r\n            \"icon\": {\r\n                \"id\": 7\r\n            }\r\n        },\r\n        \"airConditioning\": {\r\n            \"name\": \"airConditioning\",\r\n            \"value\": \"true Testeo Actualizado\",\r\n            \"icon\": {\r\n                \"id\": 5\r\n            }\r\n        },\r\n        \"seats\": {\r\n            \"name\": \"seats\",\r\n            \"value\": \"7 Testeo Actualizado\",\r\n            \"icon\": {\r\n                \"id\": 9\r\n            }\r\n        },\r\n        \"combustible\": {\r\n            \"name\": \"combustible\",\r\n            \"value\": \"Diesel Testeo Actualizado\",\r\n            \"icon\": {\r\n                \"id\": 8\r\n            }\r\n        }\r\n    },\r\n    \"images\": [\r\n        {\r\n            \"title\": \"Image Gallery 1 de Testeo Actualizado\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image1.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 2 de Testeo Actualizado\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image2.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 3 de Testeo Actualizado\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image3.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 4 de Testeo Actualizado\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image4.png\"\r\n        },\r\n        {\r\n            \"title\": \"Image Gallery 5 de Testeo Actualizado\",\r\n            \"urlImage\": \"https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/vehicles/Chevrolet+Captiva/Chevrolet_Captiva-Image5.png\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_update}}",
+					"host": [
+						"{{endpoint_update}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_delete_id}}/{{id_product}}",
+					"host": [
+						"{{endpoint_delete_id}}"
+					],
+					"path": [
+						"{{id_product}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_endpoint",
+			"value": "http://localhost:9000/products"
+		},
+		{
+			"key": "endpoint_save",
+			"value": "{{base_endpoint}}/save/new"
+		},
+		{
+			"key": "endpoint_find_all",
+			"value": "{{base_endpoint}}/find/all"
+		},
+		{
+			"key": "endpoint_find_all_date_range",
+			"value": "{{base_endpoint}}/find/available/date/range"
+		},
+		{
+			"key": "endpoint_find_id",
+			"value": "{{base_endpoint}}/find"
+		},
+		{
+			"key": "endpoint_find_title",
+			"value": "{{base_endpoint}}/find/title?name=Chevrolet"
+		},
+		{
+			"key": "endpoint_update",
+			"value": "{{base_endpoint}}/update/product"
+		},
+		{
+			"key": "endpoint_delete_id",
+			"value": "{{base_endpoint}}/delete"
+		},
+		{
+			"key": "id_product",
+			"value": ""
+		},
+		{
+			"key": "name_product",
+			"value": ""
+		},
+		{
+			"key": "description_product",
+			"value": ""
+		},
+		{
+			"key": "main_image_product",
+			"value": ""
+		},
+		{
+			"key": "category_product",
+			"value": ""
+		},
+		{
+			"key": "city_product",
+			"value": ""
+		},
+		{
+			"key": "specs_product",
+			"value": ""
+		},
+		{
+			"key": "images_product",
+			"value": ""
+		}
+	]
+}

@@ -19,4 +19,3 @@ CREATE TABLE `product_images_ids` (
   `images_ids` bigint DEFAULT NULL,
   KEY `FKckslx18g4kv72jvqq6mria22c` (`product_product_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-

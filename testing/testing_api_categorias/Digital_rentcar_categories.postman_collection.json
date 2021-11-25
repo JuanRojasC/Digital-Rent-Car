@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "519ec815-2275-45f5-a8b3-c8d5b53acc00",
+		"name": "Digital_rentcar_categories",
+		"description": "Test para la API categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"id_category\",res.id);\r",
+							"    pm.collectionVariables.set(\"title_category\",res.title);\r",
+							"    pm.collectionVariables.set(\"description_category\",res.description);\r",
+							"    pm.collectionVariables.set(\"image_category\",res.image);\r",
+							"    pm.expect(res.title).to.eql(\"Categoria de Testeo\");\r",
+							"    pm.expect(res.image.id).to.eql(25);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Categoria de Testeo\",\r\n    \"description\" : \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in\",\r\n    \"image\": {\r\n        \"id\": 25\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save}}",
+					"host": [
+						"{{endpoint_save}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.id).to.eql(pm.collectionVariables.get(\"id_category\"));\r",
+							"    pm.expect(data.title).to.eql(pm.collectionVariables.get(\"title_category\"));\r",
+							"    pm.expect(data.description).to.eql(pm.collectionVariables.get(\"description_category\"));\r",
+							"    pm.expect(data.image.title).to.eql(pm.collectionVariables.get(\"image_category\").title);\r",
+							"    pm.expect(data.image.urlImage).to.eql(pm.collectionVariables.get(\"image_category\").urlImage);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_id}}/{{id_category}}",
+					"host": [
+						"{{endpoint_find_id}}"
+					],
+					"path": [
+						"{{id_category}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.title).to.eql(\"SUV\");\r",
+							"    pm.expect(data.image.id).to.eql(16);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_title}}",
+					"host": [
+						"{{endpoint_find_title}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"La Imagen de Testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_category\");\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(pm.collectionVariables.get(\"id_category\"));\r",
+							"    pm.expect(ele.title).to.eql(pm.collectionVariables.get(\"title_category\"));\r",
+							"    pm.expect(ele.description).to.eql(pm.collectionVariables.get(\"description_category\"));\r",
+							"    pm.expect(ele.image.title).to.eql(pm.collectionVariables.get(\"image_category\").title);\r",
+							"    pm.expect(ele.image.urlImage).to.eql(pm.collectionVariables.get(\"image_category\").urlImage);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all}}",
+					"host": [
+						"{{endpoint_find_all}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de actualizar\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de datos\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const findAll = pm.collectionVariables.get(\"endpoint_find_all\")\r",
+							"    pm.sendRequest({findAll, function (err, response) {\r",
+							"        const data = response.json();\r",
+							"        const id = pm.collectionVariables.get(\"id_category\");\r",
+							"        const ele = data.find(ele => ele.id === id);\r",
+							"        pm.expect(ele.title).to.eql(\"Categoria de Testeo Actualizada\");\r",
+							"        pm.expect(ele.image.id).to.eql(30);\r",
+							"        }\r",
+							"    })\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{id_category}},\r\n    \"title\":\"Categoria de Testeo Actualizada\",\r\n    \"description\" : \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in\",\r\n    \"image\": {\r\n        \"id\": 30\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_update}}",
+					"host": [
+						"{{endpoint_update}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_delete_id}}/{{id_category}}",
+					"host": [
+						"{{endpoint_delete_id}}"
+					],
+					"path": [
+						"{{id_category}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "http://localhost:9001/categories"
+		},
+		{
+			"key": "endpoint_save",
+			"value": "http://localhost:9001/categories/save/new"
+		},
+		{
+			"key": "endpoint_find_all",
+			"value": "http://localhost:9001/categories/find/all"
+		},
+		{
+			"key": "endpoint_find_id",
+			"value": "http://localhost:9001/categories/find"
+		},
+		{
+			"key": "endpoint_find_title",
+			"value": "http://localhost:9001/categories/find/title?category=SUV"
+		},
+		{
+			"key": "endpoint_update",
+			"value": "http://localhost:9001/categories/update/category"
+		},
+		{
+			"key": "endpoint_delete_id",
+			"value": "http://localhost:9001/categories/delete"
+		},
+		{
+			"key": "id_category",
+			"value": ""
+		},
+		{
+			"key": "title_category",
+			"value": ""
+		},
+		{
+			"key": "description_category",
+			"value": ""
+		},
+		{
+			"key": "image_category",
+			"value": ""
+		}
+	]
+}

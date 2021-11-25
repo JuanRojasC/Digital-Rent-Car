@@ -2,15 +2,13 @@ package com.digital_booking.api_products.service;
 
 import com.digital_booking.api_products.cache.CacheImages;
 import com.digital_booking.api_products.feignclients.ImageFeignClient;
+import com.digital_booking.api_products.util.Log;
 import com.digital_booking.api_products.vo.Image;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Log4j
 @Service
@@ -29,11 +27,13 @@ public class ImageService {
 
     public Image saveImage(Image image){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-SAVING", "Guardando nueva imagen"));
             Image imageResponse= imageFeignClient.saveImage(image);
-            log.info("IMAGES-API-SAVE: imagen " + image.getTitle() + " guardada");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagen con id " + image.getId() + " guardada"));
             return imageResponse;
         }catch (Exception e){
-            log.error("IMAGES-API FALLO: " + e.getMessage());
+            log.error("**IMAGES-SERVICE-FAIL**: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -42,15 +42,16 @@ public class ImageService {
 
     public Collection<Image> saveImagesCollection(Collection<Image> images){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-SAVING", "Guardando coleccion de imagenes"));
             Collection<Image> imagesResponse = imageFeignClient.saveImagesCollection(images);
             Collection<Long> ids = new ArrayList<>();
             for(Image img : imagesResponse){
                 ids.add(img.getId());
             }
-            log.info("IMAGES-API-SAVE: imagenes con ids " + ids + " guardadas");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagenes con ids " + ids + " guardadas"));
             return imagesResponse;
         }catch (Exception e){
-            log.error("IMAGES-API FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -59,11 +60,12 @@ public class ImageService {
 
     public Image getImage(Long id){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-FINDING", "Buscando imagen con id " + id));
             Image image = cacheImages.checkCacheForImage(id);
-            log.info("IMAGES-SERVICE-FIND SUCCESS: imagen " + image.getTitle() + " obtenida");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagen con id " + id + "encontrada"));
             return image;
         }catch (Exception e){
-            log.error("IMAGES-SERVICE FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -72,15 +74,16 @@ public class ImageService {
 
     public Map<Long, Image> getAllImages(){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-FINDING", "Buscando todas las imagenes"));
             Collection<Image> images = imageFeignClient.findAllImages();
             Map<Long, Image> imagesMap = new HashMap<>();
             for(Image image : images){
                 imagesMap.put(image.getId(), image);
             }
-            log.info("IMAGES-SERVICE-FIND-COLLECTION SUCCESS: Todas las imagenes han sido obtenidas");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Todas las imagenes han sido obtenidas"));
             return imagesMap;
         }catch (Exception e){
-            log.error("IMAGES-SERVICE FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -89,25 +92,28 @@ public class ImageService {
 
     public Map<Long, Image> getImagesByIds(Collection<Long> ids){
         try{
-            log.info("IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids " + ids +" obtenidas");
-            return cacheImages.checkCacheForImages(ids);
+            log.info(Log.formatLog("IMAGES-SERVICE-FINDING", "Buscando imagenenes con ids " + ids));
+            Map<Long, Image> images = cacheImages.checkCacheForImages(ids);
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagenes con ids " + ids +" obtenidas"));
+            return images;
         }catch (Exception e){
-            log.error("IMAGES-SERVICE FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
 
     public Collection<Image> getImagesByIdsCollection(Collection<Long> ids){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-FINDING", "Buscando imagenenes con ids " + ids));
             Map<Long, Image> images = cacheImages.checkCacheForImages(ids);
             Collection<Image> imagesResponse = new ArrayList<>();
             for (Image image : images.values()) {
                 imagesResponse.add(image);
             }
-            log.info("IMAGES-SERVICE-FIND-COLLECTION SUCCESS: imagenes con ids " + ids +" obtenidas");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagenes con ids " + ids +" obtenidas"));
             return imagesResponse;
         }catch (Exception e){
-            log.error("IMAGES-SERVICE FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -116,11 +122,12 @@ public class ImageService {
 
     public Boolean deleteAllImagesById(Collection<Long> ids){
         try{
+            log.info(Log.formatLog("IMAGES-SERVICE-DELETING", "Eliminando imagenenes con ids " + ids));
             imageFeignClient.deleteImagesByIds(ids);
-            log.info("IMAGES-SERVICE-DELETE-COLLECTION SUCCESS: imagenes con ids " + ids +" eliminadas");
+            log.info(Log.formatLog("IMAGES-SERVICE-SUCCESS", "Imagenes con ids " + ids +" eliminadas"));
             return true;
         }catch (Exception e){
-            log.error("IMAGES-SERVICE FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**IMAGES-SERVICE-FAIL**", e.getMessage()));
             return false;
         }
     }

@@ -1,0 +1,32 @@
+.bookingUserData_container{
+    width: 100%;
+    margin: 20px;
+    padding: 10px 15px 20px;
+    background-color: var(--gray-color);
+    border-radius: 5px;
+}
+.bookingUserData_container h3{
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 15px 15px 0 15px;
+}
+.bookingUserData_container form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bookingUserData_container div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+.bookingUserData_container div>label{
+    font-size: 0.8vw;
+}
+
+.bookingUserData_container div>input{
+    height: 30px;
+}

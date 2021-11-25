@@ -1,6 +1,7 @@
 package com.digital_booking.api_products.service;
 
 import com.digital_booking.api_products.feignclients.SpecsFeignClient;
+import com.digital_booking.api_products.util.Log;
 import com.digital_booking.api_products.vo.Specs;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,11 +27,12 @@ public class SpecsService {
 
     public Specs saveSpecs(Specs specs){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-SAVING", "Guardando nuevas specs"));
             Specs specsResponse = specsFeignClient.saveSpecs(specs);
-            log.info("SPECS-API-SAVE: specs con id " + specsResponse.getId() + " guardadas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Specs con id " + specs.getId() + " obtenidas"));
             return specsResponse;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return null;
         }
     }
@@ -39,11 +41,12 @@ public class SpecsService {
 
     public Specs getSpecs(Long id){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-FINDING", "Buscando specs con id " + id));
             Specs specs = specsFeignClient.findSpecsById(id);
-            log.info("SPECS-API-FIND: specs con id " + specs.getId() + " obtenidas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Specs con id " + id + " obtenida"));
             return specs;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return null;
         }
     }
@@ -52,15 +55,16 @@ public class SpecsService {
 
     public Map<Long, Specs> getAllSpecs(){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-FINDING", "Buscando todas las specs"));
             Collection<Specs> specs = specsFeignClient.findAllSpecs();
             Map<Long, Specs> specsMap = new HashMap<>();
             for(Specs s : specs){
                 specsMap.put(s.getId(), s);
             }
-            log.info("SPECS-API-FIND-COLLECTION: Todas las specs han sido obtenidas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Todas las specs han sido obtenidas"));
             return specsMap;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return null;
         }
     }
@@ -69,15 +73,16 @@ public class SpecsService {
 
     public Map<Long, Specs> getAllSpecsByIds(Collection<Long> specsIds){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-FINDING", "Buscando specs con ids " + specsIds));
             Collection<Specs> specs = specsFeignClient.findSpecsByIds(specsIds);
             Map<Long, Specs> specsMap = new HashMap<>();
             for(Specs s : specs){
                 specsMap.put(s.getId(), s);
             }
-            log.info("SPECS-API-FIND-COLLECTION: Todas las specs con ids: " + specsIds + " han sido obtenidas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Specs con ids " + specsIds + " han sido obtenidas"));
             return specsMap;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return null;
         }
     }
@@ -86,11 +91,12 @@ public class SpecsService {
 
     public Boolean updateSpecs(Specs specs){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-UPDATING", "Actualizando Specs con id " + specs.getId()));
             specsFeignClient.editSpecs(specs);
-            log.info("SPECS-API-UPDATE: specs con id " + specs.getId() + " actualizadas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Specs con id " + specs.getId() + " actualizadas"));
             return true;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return false;
         }
     }
@@ -99,11 +105,12 @@ public class SpecsService {
 
     public Boolean deleteSpecs(Long id){
         try{
+            log.info(Log.formatLog("SPECS-SERVICE-DELETING", "Eliminando specs con id " + id));
             specsFeignClient.deleteSpecs(id);
-            log.info("SPECS-API-DELETE: specs con id " + id + " eliminadas");
+            log.info(Log.formatLog("SPECS-SERVICE-SUCCESS", "Specs con id " + id + " eliminadas"));
             return true;
         }catch (Exception e){
-            log.error("SPECS-API FALLO: " + e.getMessage());
+            log.error(Log.formatLog("SPECS-SERVICE-FAIL", e.getMessage()));
             return false;
         }
     }

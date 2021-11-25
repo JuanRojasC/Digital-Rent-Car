@@ -1,0 +1,227 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+BASE URL
+--------------------------------------------------------------------------------------------------------------------------------------------
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+USERS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+LOGUEARSE
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/auth/login
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/find/{id}
+
+BUSCAR POR EMAIL (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/find/{email}
+
+BUSCAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/find/ids
+
+LISTAR TODOS (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/find/all
+
+GUARDAR
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/auth/save/new
+
+ACTUALIZAR (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/update/puser
+
+ELIMINAR (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/delete/{id}
+
+ELIMINAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/users/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+BOOKINGS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/find/{id}
+
+BUSCAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/find/ids
+
+LISTAR TODOS (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/find/all
+
+LISTAR POR USUARIO (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/find/user/{userId}
+
+GUARDAR (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/save/new
+
+ACTUALIZAR (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/update/booking
+
+ELIMINAR (requiere jwt nivel usuario)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/delete/{id}
+
+ELIMINAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/bookings/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+PRODUCTS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/find/{id}
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/find/all
+
+LISTAR POR NOMBRE
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/find/title?name=nombredelProductoSinEspacios
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/update/product
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/products/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+CATEGORIES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/find/ids
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/find/all
+
+LISTAR POR NOMBRE
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/find/title?category=nombreCategoriaSinEspacios
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/update/product
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/categories/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+CITIES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/find/ids
+
+LISTAR POR PAIS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/find/country/{country_id}
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/find/all
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/update/city
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/cities/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+SPECS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/find/ids
+
+LISTAR SPECS DE EJEMPLO
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/find/all
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/update/specs
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/specs/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/find/ids
+
+LISTAR features DE EJEMPLO
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/find/all
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/save/new
+
+GUARDAR VARIAS (POST: collection de features [{},{},{}...]) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/save/collection
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/update/feature
+
+ACTUALIZAR VARIAS (POST: collection de features [{},{},{}...]) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/update/ids
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/delete/{id}
+
+ELIMINAR POR IDS(POST: array de ids)  (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/features/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+IMAGES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/find/ids
+
+LISTAR TODOS
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/find/all
+
+GUARDAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/save/new
+
+GUARDAR VARIAS (POST: collection de images [{},{},{}...]) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/save/collection
+
+ACTUALIZAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/update/feature
+
+ACTUALIZAR VARIAS (POST: collection de images [{},{},{}...]) (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/update/ids
+
+ELIMINAR (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/delete/{id}
+
+ELIMINAR POR IDS(POST: array de ids)  (requiere jwt nivel admin)
+ec2-52-15-126-66.us-east-2.compute.amazonaws.com:8080/images/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------

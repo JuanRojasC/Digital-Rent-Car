@@ -1,6 +1,7 @@
 package com.digital_booking.api_products.service;
 
 import com.digital_booking.api_products.feignclients.CityFeignClient;
+import com.digital_booking.api_products.util.Log;
 import com.digital_booking.api_products.vo.City;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +26,12 @@ public class CityService {
 
     public City getCity(Long id){
         try{
+            log.info(Log.formatLog("CITIES-SERVICE-FINDING", "Buscando city con id " + id));
             City city = cityFeignClient.findCityById(id);
-            log.info("CITY-API-FIND: city con id " + city.getId() + " obtenida");
+            log.info(Log.formatLog("CITIES-SERVICE-SUCCESS", "City con id " + id + " encontrada"));
             return city;
         }catch (Exception e){
-            log.error("CITY-API FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**CITIES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -38,15 +40,16 @@ public class CityService {
 
     public Map<Long, City> getAllCities(){
         try{
+            log.info(Log.formatLog("CITIES-SERVICE-FINDING", "Buscando todas las cities"));
             Collection<City> cities = cityFeignClient.findAllCities();
             Map<Long, City> citiesMap = new HashMap<>();
             for(City c : cities){
                 citiesMap.put(c.getId(), c);
             }
-            log.info("CITY-API-FIND: Todas las cities han sido obtenidas");
+            log.info(Log.formatLog("CITIES-SERVICE-SUCCESS", "Todas las cities han sido obtenidas"));
             return citiesMap;
         }catch (Exception e){
-            log.error("CITY-API FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**CITIES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -55,15 +58,16 @@ public class CityService {
 
     public Map<Long, City> getAllCitiesById(Collection<Long> ids){
         try{
+            log.info(Log.formatLog("CITIES-SERVICE-FINDING", "Buscando cities con ids " + ids));
             Collection<City> cities = cityFeignClient.findCitiesByIds(ids);
             Map<Long, City> citiesMap = new HashMap<>();
             for(City c : cities){
                 citiesMap.put(c.getId(), c);
             }
-            log.info("CITY-API-FIND: Cities con ids: " + ids + " obtenidas");
+            log.info(Log.formatLog("CITIES-SERVICE-SUCCESS", "Cities con ids " + ids +" obtenidas"));
             return citiesMap;
         }catch (Exception e){
-            log.error("CITY-API FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**CITIES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }
@@ -72,11 +76,12 @@ public class CityService {
 
     public Collection<City> getAllCitiesByCountryId(Long id){
         try{
+            log.info(Log.formatLog("CITIES-SERVICE-FINDING", "Buscando cities con el pais_id " + id));
             Collection<City> city = cityFeignClient.findCityByCountryId(id);
-            log.info("CITY-API-FIND: Todas las cities con el country_id " + id + " han sido obtenidas");
+            log.info(Log.formatLog("CITIES-SERVICE-SUCCESS", "Todas las cities con el country_id \" + id + \" han sido obtenidas"));
             return city;
         }catch (Exception e){
-            log.error("CITY-API FALLO: " + e.getMessage());
+            log.info(Log.formatLog("**CITIES-SERVICE-FAIL**", e.getMessage()));
             return null;
         }
     }

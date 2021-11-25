@@ -625,3 +625,5 @@ hora de salida despues de guardar specs
 [2021-44-14 21:44:30] [INFO ] [SpecsService:51] SPECS: Se busco specs con id 27
 [2021-44-14 21:44:31] [INFO ] [FeatureService:129] FEATURES-API SUCCESS: features con ids [109, 110, 111, 112] eliminados
 [2021-44-14 21:44:31] [INFO ] [SpecsService:97] SPECS: Se elimino specs con id 27
+[2021-21-15 12:21:32] [INFO ] [SpecsService:105] SPECS: Se buscaron todos los specs
+[2021-21-15 12:21:33] [INFO ] [FeatureService:116] FEATURES-API SUCCESS: todas las features han sido obtenidas

@@ -1,0 +1,780 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Sample Template RDS_MySQL_55: Sample template showing how to create a highly-available, RDS DBInstance version 5.5 with alarming on important metrics that indicate the health of the database **WARNING** This template creates an Amazon Relational Database Service database instance and Amazon CloudWatch alarms. You will be billed for the AWS resources used if you create a stack from this template.",
+    "Parameters": {
+        "DBName": {
+            "Default": "MyDatabase",
+            "Description": "The database name",
+            "Type": "String",
+            "MinLength": "1",
+            "MaxLength": "64",
+            "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
+            "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
+        },
+        "DBUser": {
+            "NoEcho": "true",
+            "Description": "The database admin account username",
+            "Type": "String",
+            "MinLength": "1",
+            "MaxLength": "16",
+            "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
+            "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
+        },
+        "DBPassword": {
+            "NoEcho": "true",
+            "Description": "The database admin account password",
+            "Type": "String",
+            "MinLength": "8",
+            "MaxLength": "41",
+            "AllowedPattern": "[a-zA-Z0-9]*",
+            "ConstraintDescription": "must contain only alphanumeric characters."
+        },
+        "DBAllocatedStorage": {
+            "Default": "5",
+            "Description": "The size of the database (Gb)",
+            "Type": "Number",
+            "MinValue": "5",
+            "MaxValue": "1024",
+            "ConstraintDescription": "must be between 5 and 1024Gb."
+        },
+        "DBInstanceClass": {
+            "Default": "db.m1.small",
+            "Description": "The database instance type",
+            "Type": "String",
+            "AllowedValues": [
+                "db.m1.small",
+                "db.m1.large",
+                "db.m1.xlarge",
+                "db.m2.xlarge",
+                "db.m2.2xlarge",
+                "db.m2.4xlarge"
+            ],
+            "ConstraintDescription": "must select a valid database instance type."
+        },
+        "EC2SecurityGroup": {
+            "Default": "default",
+            "Description": "The EC2 security group that contains instances that need access to the database",
+            "Type": "String"
+        },
+        "AlarmTopic": {
+            "Description": "SNS topic to notify if there are operational issues",
+            "Type": "String"
+        },
+        "MultiAZ": {
+            "Default": "true",
+            "Description": "Create a multi-AZ RDS database instance",
+            "Type": "String",
+            "AllowedValues": [
+                "true",
+                "false"
+            ],
+            "ConstraintDescription": "must be either true or false."
+        }
+    },
+    "Mappings": {
+        "InstanceTypeMap": {
+            "db.m1.small": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            },
+            "db.m1.large": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            },
+            "db.m1.xlarge": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            },
+            "db.m2.xlarge": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            },
+            "db.m2.2xlarge": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            },
+            "db.m2.4xlarge": {
+                "CPULimit": "60",
+                "FreeStorageSpaceLimit": "1024",
+                "ReadIOPSLimit": "100",
+                "WriteIOPSLimit": "100"
+            }
+        }
+    },
+    "Resources": {
+        "MySQLDB": {
+            "Type": "AWS::RDS::DBInstance",
+            "Properties": {
+                "DBName": {
+                    "Ref": "Master"
+                },
+                "AllocatedStorage": {
+                    "Ref": "DBAllocatedStorage"
+                },
+                "DBInstanceClass": {
+                    "Ref": "DBInstanceClass"
+                },
+                "Engine": "MySQL",
+                "EngineVersion": "5.5",
+                "MasterUsername": {
+                    "Ref": "DBUser"
+                },
+                "MasterUserPassword": {
+                    "Ref": "DBPassword"
+                },
+                "MultiAZ": {
+                    "Ref": "MultiAZ"
+                }
+            },
+            "DeletionPolicy": "Snapshot",
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "00cbc170-6ae8-4d27-b698-f1ff7f3b35be"
+                }
+            }
+        },
+        "WebService": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": {
+                            "Ref": "EC2S2TOE0"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "6ad8c12c-c1d2-4c67-996d-d0575f108db6"
+                }
+            }
+        },
+        "APIREST": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": {
+                            "Ref": "EC2SJGPU"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f5deff86-5a2d-4532-ae03-88ad56e88fcf"
+                }
+            }
+        },
+        "Back": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "EC2VPC47DTU"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "716b99c8-4e39-4297-9f44-dcaedb5034bd"
+                }
+            }
+        },
+        "Front": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "DigitalRentCar"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f59b44e1-87fc-4ab1-95c9-f60fd21ef872"
+                }
+            }
+        },
+        "DigitalRentCar": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "3bd234ed-2886-4937-828b-69832dbf3e57"
+                }
+            }
+        },
+        "ELBLBTEAA": {
+            "Type": "AWS::ElasticLoadBalancing::LoadBalancer",
+            "Properties": {
+                "Instances": [
+                    {
+                        "Ref": "EC2I15L1G"
+                    },
+                    {
+                        "Ref": "WebService"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d5c7f80e-9aba-40e5-b8fa-a4ee82587ec2"
+                }
+            }
+        },
+        "EC2IG1AQDT": {
+            "Type": "AWS::EC2::InternetGateway",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "9bef7f03-4327-4bcc-8b46-42364dc74d1b"
+                }
+            }
+        },
+        "EC2S4D56P": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "DigitalRentCar"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d1678044-7feb-41bb-b771-d93f9c026516"
+                }
+            }
+        },
+        "EC2I15L1G": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": {
+                            "Ref": "EC2S4D56P"
+                        }
+                    },
+                    {
+                        "SubnetId": {
+                            "Ref": "EC2S4D56P"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d94cf37b-6032-462e-b255-22ea97c42e50"
+                }
+            }
+        },
+        "ASASG4684U": {
+            "Type": "AWS::AutoScaling::AutoScalingGroup",
+            "Properties": {
+                "VPCZoneIdentifier": [
+                    {
+                        "Ref": "Front"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "39660824-8bd2-4141-ac12-24c2c0a0f08f"
+                }
+            }
+        },
+        "ASASGF9HS": {
+            "Type": "AWS::AutoScaling::AutoScalingGroup",
+            "Properties": {
+                "VPCZoneIdentifier": [
+                    {
+                        "Ref": "EC2S4D56P"
+                    },
+                    {
+                        "Ref": "EC2S4D56P"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "40fe86d3-0ec6-4368-ab1a-ad5cb0d11b2d"
+                }
+            }
+        },
+        "EC2VPCG4COMV": {
+            "Type": "AWS::EC2::VPCGatewayAttachment",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "DigitalRentCar"
+                },
+                "InternetGatewayId": {
+                    "Ref": "EC2IG1AQDT"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "1e91ff47-9311-467f-8182-23d91c776b4e"
+                }
+            }
+        },
+        "Back2": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "DigitalRentCar"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "b39553c4-f768-45e7-ae9d-33c0e95c959e"
+                }
+            }
+        },
+        "APIREST2": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": {
+                            "Ref": "Back2"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d0ab0a5c-11d1-4b2a-b672-8a28dc5d22a7"
+                }
+            }
+        },
+        "ELBLB3T862": {
+            "Type": "AWS::ElasticLoadBalancing::LoadBalancer",
+            "Properties": {
+                "Subnets": [
+                    {
+                        "Ref": "Front"
+                    },
+                    {
+                        "Ref": "EC2S4D56P"
+                    }
+                ],
+                "Instances": [
+                    {
+                        "Ref": "APIREST2"
+                    },
+                    {
+                        "Ref": "APIREST"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "73dc1136-507f-4780-83b5-051e37ae66ba"
+                }
+            }
+        },
+        "MySQL2": {
+            "Type": "AWS::RDS::DBInstance",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "0771a1bd-6166-46ab-a688-3dc36a6494fd"
+                }
+            }
+        }
+    },
+    "Outputs": {
+        "JDBCConnectionString": {
+            "Description": "JDBC connection string for database",
+            "Value": {
+                "Fn::Join": [
+                    "",
+                    [
+                        "jdbc:mysql://",
+                        {
+                            "Fn::GetAtt": [
+                                "MyDB",
+                                "Endpoint.Address"
+                            ]
+                        },
+                        ":",
+                        {
+                            "Fn::GetAtt": [
+                                "MyDB",
+                                "Endpoint.Port"
+                            ]
+                        },
+                        "/",
+                        {
+                            "Ref": "DBName"
+                        }
+                    ]
+                ]
+            }
+        },
+        "DBAddress": {
+            "Description": "Address of database endpoint",
+            "Value": {
+                "Fn::GetAtt": [
+                    "MyDB",
+                    "Endpoint.Address"
+                ]
+            }
+        },
+        "DBPort": {
+            "Description": "Database endpoint port number",
+            "Value": {
+                "Fn::GetAtt": [
+                    "MyDB",
+                    "Endpoint.Port"
+                ]
+            }
+        }
+    },
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "00cbc170-6ae8-4d27-b698-f1ff7f3b35be": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -1120,
+                    "y": 590
+                },
+                "z": 3,
+                "parent": "716b99c8-4e39-4297-9f44-dcaedb5034bd",
+                "embeds": []
+            },
+            "6ad8c12c-c1d2-4c67-996d-d0575f108db6": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -970,
+                    "y": 320
+                },
+                "z": 3,
+                "parent": "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                "embeds": [],
+                "iscontainedinside": [
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872"
+                ]
+            },
+            "f5deff86-5a2d-4532-ae03-88ad56e88fcf": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -1010,
+                    "y": 590
+                },
+                "z": 3,
+                "parent": "716b99c8-4e39-4297-9f44-dcaedb5034bd",
+                "embeds": [],
+                "iscontainedinside": [
+                    "716b99c8-4e39-4297-9f44-dcaedb5034bd"
+                ]
+            },
+            "716b99c8-4e39-4297-9f44-dcaedb5034bd": {
+                "size": {
+                    "width": 270,
+                    "height": 120
+                },
+                "position": {
+                    "x": -1180,
+                    "y": 560
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [
+                    "f5deff86-5a2d-4532-ae03-88ad56e88fcf",
+                    "00cbc170-6ae8-4d27-b698-f1ff7f3b35be"
+                ],
+                "iscontainedinside": [
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57"
+                ]
+            },
+            "f59b44e1-87fc-4ab1-95c9-f60fd21ef872": {
+                "size": {
+                    "width": 240,
+                    "height": 100
+                },
+                "position": {
+                    "x": -1120,
+                    "y": 300
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [
+                    "39660824-8bd2-4141-ac12-24c2c0a0f08f",
+                    "6ad8c12c-c1d2-4c67-996d-d0575f108db6"
+                ],
+                "iscontainedinside": [
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57"
+                ]
+            },
+            "3bd234ed-2886-4937-828b-69832dbf3e57": {
+                "size": {
+                    "width": 750,
+                    "height": 570
+                },
+                "position": {
+                    "x": -1210,
+                    "y": 170
+                },
+                "z": 1,
+                "embeds": [
+                    "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "73dc1136-507f-4780-83b5-051e37ae66ba",
+                    "716b99c8-4e39-4297-9f44-dcaedb5034bd",
+                    "d5c7f80e-9aba-40e5-b8fa-a4ee82587ec2"
+                ]
+            },
+            "d5c7f80e-9aba-40e5-b8fa-a4ee82587ec2": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -860,
+                    "y": 170
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [],
+                "isassociatedwith": [
+                    "d94cf37b-6032-462e-b255-22ea97c42e50",
+                    "6ad8c12c-c1d2-4c67-996d-d0575f108db6"
+                ]
+            },
+            "9bef7f03-4327-4bcc-8b46-42364dc74d1b": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -860,
+                    "y": 60
+                },
+                "z": 1,
+                "embeds": []
+            },
+            "d1678044-7feb-41bb-b771-d93f9c026516": {
+                "size": {
+                    "width": 250,
+                    "height": 100
+                },
+                "position": {
+                    "x": -820,
+                    "y": 300
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [
+                    "40fe86d3-0ec6-4368-ab1a-ad5cb0d11b2d",
+                    "d94cf37b-6032-462e-b255-22ea97c42e50"
+                ],
+                "iscontainedinside": [
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57"
+                ]
+            },
+            "d94cf37b-6032-462e-b255-22ea97c42e50": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -770,
+                    "y": 320
+                },
+                "z": 3,
+                "parent": "d1678044-7feb-41bb-b771-d93f9c026516",
+                "embeds": [],
+                "iscontainedinside": [
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516"
+                ]
+            },
+            "39660824-8bd2-4141-ac12-24c2c0a0f08f": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -1080,
+                    "y": 320
+                },
+                "z": 3,
+                "parent": "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                "embeds": [],
+                "iscontainedinside": [
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872"
+                ]
+            },
+            "40fe86d3-0ec6-4368-ab1a-ad5cb0d11b2d": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -660,
+                    "y": 320
+                },
+                "z": 3,
+                "parent": "d1678044-7feb-41bb-b771-d93f9c026516",
+                "embeds": [],
+                "iscontainedinside": [
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516",
+                    "d1678044-7feb-41bb-b771-d93f9c026516"
+                ]
+            },
+            "1e91ff47-9311-467f-8182-23d91c776b4e": {
+                "source": {
+                    "id": "3bd234ed-2886-4937-828b-69832dbf3e57"
+                },
+                "target": {
+                    "id": "9bef7f03-4327-4bcc-8b46-42364dc74d1b"
+                },
+                "z": 1
+            },
+            "b39553c4-f768-45e7-ae9d-33c0e95c959e": {
+                "size": {
+                    "width": 280,
+                    "height": 110
+                },
+                "position": {
+                    "x": -812,
+                    "y": 564
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [
+                    "0771a1bd-6166-46ab-a688-3dc36a6494fd",
+                    "d0ab0a5c-11d1-4b2a-b672-8a28dc5d22a7"
+                ],
+                "iscontainedinside": [
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57",
+                    "3bd234ed-2886-4937-828b-69832dbf3e57"
+                ]
+            },
+            "d0ab0a5c-11d1-4b2a-b672-8a28dc5d22a7": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -770,
+                    "y": 590
+                },
+                "z": 3,
+                "parent": "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                "embeds": [],
+                "iscontainedinside": [
+                    "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                    "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                    "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                    "b39553c4-f768-45e7-ae9d-33c0e95c959e"
+                ]
+            },
+            "73dc1136-507f-4780-83b5-051e37ae66ba": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -880,
+                    "y": 450
+                },
+                "z": 2,
+                "parent": "3bd234ed-2886-4937-828b-69832dbf3e57",
+                "embeds": [],
+                "isassociatedwith": [
+                    "d0ab0a5c-11d1-4b2a-b672-8a28dc5d22a7",
+                    "f5deff86-5a2d-4532-ae03-88ad56e88fcf"
+                ],
+                "iscontainedinside": [
+                    "f59b44e1-87fc-4ab1-95c9-f60fd21ef872",
+                    "d1678044-7feb-41bb-b771-d93f9c026516"
+                ]
+            },
+            "0771a1bd-6166-46ab-a688-3dc36a6494fd": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -630,
+                    "y": 590
+                },
+                "z": 3,
+                "parent": "b39553c4-f768-45e7-ae9d-33c0e95c959e",
+                "embeds": []
+            },
+            "2e3ca0ec-27fd-4087-a01b-1df373ebb50a": {
+                "source": {
+                    "id": "73dc1136-507f-4780-83b5-051e37ae66ba"
+                },
+                "target": {
+                    "id": "d0ab0a5c-11d1-4b2a-b672-8a28dc5d22a7"
+                },
+                "z": 4
+            },
+            "9c27a2a5-ed26-4ed6-ac38-fe341f217dd2": {
+                "source": {
+                    "id": "73dc1136-507f-4780-83b5-051e37ae66ba"
+                },
+                "target": {
+                    "id": "f5deff86-5a2d-4532-ae03-88ad56e88fcf"
+                },
+                "z": 5
+            }
+        }
+    }
+}

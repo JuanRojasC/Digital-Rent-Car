@@ -1,7 +1,9 @@
 package com.digital_booking.api_products.exceptions;
 
+import com.digital_booking.api_products.util.Log;
 import lombok.extern.log4j.Log4j;
 import org.hibernate.PropertyValueException;
+import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -21,20 +23,26 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(ResourceNotFound.class)
     public ResponseEntity<?> resourceNotFound(ResourceNotFound ex){
-        log.error("Error en búsqueda ["+ex.getMessage()+"]");
+        log.info(Log.formatLog("**PRODUCTS-SERVICE-FAIL**", "Error en búsqueda" + ex.getMessage()));
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<?> DatoInconsistente(Exception ex){
-        log.error("Dato Inconsistente en registro ["+ex.getLocalizedMessage()+"]");
+        log.info(Log.formatLog("**PRODUCTS-SERVICE-FAIL**", "Dato Inconsistente en registro" + ex.getMessage()));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getLocalizedMessage());
     }
 
     @ExceptionHandler(PropertyValueException.class)
     public ResponseEntity<?> incompleteData(PropertyValueException ex){
-        log.error("Campos incompletos en el request");
-        String message = "name and description attributes can not be null";
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+        log.info(Log.formatLog("**PRODUCTS-SERVICE-FAIL**", "Campos incompletos en el request"));
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
+
+    @ExceptionHandler(InvalidDateBooking.class)
+    public ResponseEntity<?> invalidDateBooking(InvalidDateBooking ex){
+        log.info(Log.formatLog("**BOOKINGS-SERVICE-FAIL**", "Las fechas ingresadas no son secuencialmente correctas"));
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+    }
+
 }

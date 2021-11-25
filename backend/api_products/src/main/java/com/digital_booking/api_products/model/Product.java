@@ -1,12 +1,15 @@
 package com.digital_booking.api_products.model;
 
+import com.digital_booking.api_products.dto.BookingDTO;
 import com.digital_booking.api_products.dto.ProductDTO;
 import com.digital_booking.api_products.vo.Category;
 import com.digital_booking.api_products.vo.City;
 import com.digital_booking.api_products.vo.Image;
 import com.digital_booking.api_products.vo.Specs;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -15,6 +18,7 @@ import java.util.Collection;
 @Entity
 @Table(name = "products")
 @Getter @Setter
+@ToString
 public class Product {
 
     @Id
@@ -40,26 +44,17 @@ public class Product {
     @Column( name = "specs_id")
     private  Long specsId;
 
+    @OneToMany( mappedBy = "product", cascade = CascadeType.ALL)
+    @Column( name = "bookings_ids")
+    @JsonIgnoreProperties("product")
+    private Collection<Booking> bookings;
+
     @ElementCollection
     @Column(name = "images_ids")
     private Collection<Long> imagesIds = new ArrayList<>();
 
-    /*Map the Product to DTO class*/
-    public ProductDTO mapProductDTO(){
-        ProductDTO productDTO = new ProductDTO();
-        productDTO.setId(this.id);
-        productDTO.setName(this.name);
-        productDTO.setDescription(this.description);
-        productDTO.setMainImage(null);
-        productDTO.setCategory(null);
-        productDTO.setCity(null);
-        productDTO.setSpecs(null);
-        productDTO.setImages(null);
-        return productDTO;
-    }
-
     /*Map the Product to DTO class receiving attributes like args*/
-    public ProductDTO mapProductDTO(Image mainImage, Category category, City city, Specs specs, Collection<Image> images){
+    public ProductDTO mapProductDTO(Image mainImage, Category category, City city, Specs specs, Collection<Image> images, Collection<BookingDTO> bookings){
         ProductDTO productDTO = new ProductDTO();
         productDTO.setId(this.id);
         productDTO.setName(this.name);
@@ -69,6 +64,7 @@ public class Product {
         productDTO.setCity(city);
         productDTO.setSpecs(specs);
         productDTO.setImages(images);
+        productDTO.setBookings(bookings);
         return productDTO;
     }
 }

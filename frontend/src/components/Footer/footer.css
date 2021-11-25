@@ -6,6 +6,7 @@
     justify-content: space-between;
     margin-top: 2vw;
     padding: 0.75vw 2vw;
+    z-index: 999;
 }
 /*-----logo company-----*/
 .logo_company_footer{

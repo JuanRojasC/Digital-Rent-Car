@@ -176,3 +176,6 @@
 [2021-44-14 21:44:12] [INFO ] [CityService:49] Se busco city con id 2
 [2021-44-14 21:44:18] [INFO ] [CityService:57] Se bucaron las ciudades con ids: [1, 1]
 [2021-44-14 21:44:22] [INFO ] [CityService:81] Se buscaron todas las ciudades
+[2021-14-15 12:14:57] [INFO ] [CacheCities:42] CITIES-CACHE MEMORY: Se guardaron las cities con ids: [1, 2]
+[2021-21-15 12:21:16] [INFO ] [CacheCities:42] CITIES-CACHE MEMORY: Se guardaron las cities con ids: [1, 2]
+[2021-21-15 12:21:33] [INFO ] [CityService:81] Se buscaron todas las ciudades

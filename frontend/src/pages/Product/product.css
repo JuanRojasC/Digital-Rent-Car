@@ -1,0 +1,153 @@
+.section_product{
+    position: relative;
+    margin-top: 4vw;
+}
+
+.product_navbar{
+    padding: 1vw 4vw;
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+}
+.product_navbar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    color: black;
+    cursor: pointer;
+}
+.product_navbar_backbtn{
+    font-size: 1.5vw;
+    line-height: 1vw;
+    display: block;
+}
+
+.product_resum{
+    padding: 1vw 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_resum_location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product_resum_icon{
+    color: var(--secondary-color);
+    font-size: 1.5vw;
+}
+
+.product_resum_text{
+    display: block;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+
+.product_resum_qualification {
+    display: flex;
+    flex-direction: row;
+}
+
+.product_resum_qualification_text{
+    margin-right: 1vw;
+}
+
+.product_resum_qualification>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: var(--primary-color);
+    font-size: 1.6vw;
+    font-weight: 600;
+    border-radius: 0.5vw;
+}
+.product_location_map{
+    padding: 1vw 4vw 5vw;
+    height: 50vw;
+    width: 100%;
+}
+
+.product_location_map>h3{
+    font-size: 1.5vw;
+}
+.product_location_map>p{
+    font-size: 1vw;
+    margin: 1vw 0 2vw 0;
+}
+
+.map-container {
+    height: 35vw;
+    width: 100%;
+    }
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .section_product{
+        margin-top: 15vw;
+    }
+
+    .product_navbar_backbtn{
+        font-size: 3.5vw;
+    }
+    
+    .product_resum_icon {
+        font-size: 4vw;
+    }
+    
+    .product_resum_text {
+        font-size: 3vw;
+        margin-left: 3vw;
+    }
+
+    .product_resum_qualification_text{
+        margin-right: 3vw;
+    }
+    
+    .product_resum_qualification>p {
+        height: 8vw;
+        width: 8vw;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+}
+
+/*------------------Table Design------------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .section_product{
+        margin-top: 9vw;
+    }
+
+    .product_navbar_backbtn{
+        font-size: 2.5vw;
+    }
+    
+    .product_resum_icon{
+        font-size: 3vw;
+    }
+    
+    .product_resum_text{
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    
+    .product_resum_qualification_text{
+        margin-right: 2vw;
+    }
+    
+    .product_resum_qualification>p {
+        height: 5vw;
+        width: 5vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+    }
+}

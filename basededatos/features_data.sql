@@ -1,5 +1,6 @@
 USE digitalRentcarFeatures;
 
+-- Sprint II
 INSERT INTO features (name, value, image_id) VALUES ('enginePower', '145 HP', 7);
 INSERT INTO features (name, value, image_id) VALUES ('airConditioning', 'true', 5); 
 INSERT INTO features (name, value, image_id) VALUES ('seats', '7', 9);

@@ -5,6 +5,7 @@ import com.digital_booking.api_categories.exceptions.IncompleteData;
 import com.digital_booking.api_categories.exceptions.ResourceNotFound;
 import com.digital_booking.api_categories.model.Category;
 import com.digital_booking.api_categories.repository.ICategoryRepository;
+import com.digital_booking.api_categories.util.Log;
 import com.digital_booking.api_categories.vo.Image;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,25 +31,27 @@ public class CategoryService {
 
     /*-------------------------------------------Save Category-------------------------------------------*/
     public CategoryDTO saveCategory(CategoryDTO c){
+        log.info(Log.formatLog("CATEGORY-SERVICE-FINDING", "Guardando nueva category"));
         // Evita que se guarde un id no generado por la DB
         c.setId(null);
         // Guarda la imagen si no existe en la DB
         checkCategoryImage(c);
         Category category = categoryRepository.save(c.mapToCategory());
         c.setId(category.getId());
-        log.info("CATEGORY-SAVE: Se guardo categoría con titulo " + category.getTitle());
+        log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Category con id " + category.getId() + " guardada"));
         return c;
     }
 
     /*-------------------------------------------Find By Id-------------------------------------------*/
 
     public CategoryDTO findCategoryById(Long id) throws ResourceNotFound {
+        log.info(Log.formatLog("CATEGORY-SERVICE-FINDING", "Buscando category con id" + id));
         Optional<Category> categoryResponse = categoryRepository.findById(id);
         if(categoryResponse.isEmpty()){
             throw new ResourceNotFound("No se encontró categoría con id "+ id);
         }else {
             CategoryDTO categoryDTO = setImageToDTO(categoryResponse.get());
-            log.info("CATEGORY-FIND: Se busco categoría con id "+id);
+            log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Category con id " + id + " obtenida"));
             return categoryDTO;
         }
     }
@@ -56,20 +59,22 @@ public class CategoryService {
     /*-------------------------------------------Find All By Id-------------------------------------------*/
 
     public Collection<CategoryDTO> findAllCategoriesById(Collection<Long> ids){
+        log.info(Log.formatLog("CATEGORY-SERVICE-FINDING", "Buscando categories con ids " + ids));
         Collection<Category> categories = categoryRepository.findAllById(ids);
-        log.info("CATEGORY-FIND-COLLECTION: Se buscaron todas las categorías con ids: " + ids);
+        log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Categories con ids " + ids + " obtenidas"));
         return mapCollectionCategoryToCategoryDTO(categories);
     }
 
     /*-------------------------------------------Find By Title-------------------------------------------*/
 
     public CategoryDTO findCategoryByTitle(String title) throws ResourceNotFound{
+        log.info(Log.formatLog("CATEGORY-SERVICE-FINDING", "Buscando categories con title " + title));
         Category category = categoryRepository.findByTitle(title);
         if(category == null){
             throw  new ResourceNotFound("No se encontró categoría con title "+ title);
         }else{
             CategoryDTO categoryDTO = setImageToDTO(category);
-            log.info("CATEGORY-FIND: Se busco categoría con titulo "+ title);
+            log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Categories con title " + title + " obtenidas"));
             return categoryDTO;
         }
     }
@@ -77,19 +82,21 @@ public class CategoryService {
     /*-------------------------------------------Update Category-------------------------------------------*/
 
     public void updateCategory(CategoryDTO category) throws ResourceNotFound, IncompleteData {
+        log.info(Log.formatLog("CATEGORY-SERVICE-UPDATING", "Actualizando category con id " + category.getId()));
         if(category.getId() == null) throw new IncompleteData("Id attribute cannot be null, check your JSON and try again");
         checkExistenceCategoryById(category.getId());
         checkCategoryImage(category);
         categoryRepository.save(category.mapToCategory());
-        log.info("CATEGORY-UPDATE: Se actualizo categoría con id "+ category.getId());
+        log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Category con id " + category.getId() + " actualizada"));
     }
 
     /*-------------------------------------------Delete By Id-------------------------------------------*/
 
     public void deleteCategoryById(Long id) throws ResourceNotFound {
+        log.info(Log.formatLog("CATEGORY-SERVICE-DELETING", "Eliminando category con id " + id));
         checkExistenceCategoryById(id);
         categoryRepository.deleteById(id);
-        log.info("CATEGORY-DELETE: Se elimino categoría con id "+ id);
+        log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Category con id " + id + " eliminada"));
     }
 
     /*-------------------------------------------Find All-------------------------------------------*/
@@ -103,6 +110,7 @@ public class CategoryService {
     /*-------------------------------------------Mapping Collection-------------------------------------------*/
 
     public Collection<CategoryDTO> mapCollectionCategoryToCategoryDTO(Collection<Category> categories){
+        log.info(Log.formatLog("CATEGORY-SERVICE-FINDING", "Buscando todas las categories"));
         Collection<CategoryDTO> categoriesDTO = new ArrayList<>();
         Map<Long, Image> images = imageService.getImagesByIds(getAllIdsImages(categories));
         for(Category category : categories){
@@ -110,6 +118,7 @@ public class CategoryService {
             categoryDTO.setImage(images.get(category.getImageId()));
             categoriesDTO.add(categoryDTO);
         }
+        log.info(Log.formatLog("CATEGORY-SERVICE-SUCCESS", "Todas las categories han sido obtenidas"));
         return categoriesDTO;
     }
 

@@ -651,3 +651,18 @@
 [2021-44-14 21:44:27] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=109, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=110, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=111, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=112, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
 [2021-44-14 21:44:30] [INFO ] [FeatureService:127] Se buscaron las features con ids: [109, 110, 111, 112]
 [2021-44-14 21:44:31] [INFO ] [FeatureService:112] Se eliminaron features con ids: [109, 110, 111, 112]
+[2021-14-15 12:14:44] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-14-15 12:14:44] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-18-15 12:18:41] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-18-15 12:18:41] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-21-15 12:21:32] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-51-15 12:51:53] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-51-15 12:51:53] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-52-15 12:52:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-52-15 12:52:17] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-53-15 12:53:33] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: images-service executing POST http://images-service/images/find/ids
+[2021-53-15 12:53:33] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-13-15 13:13:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-13-15 13:13:15] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-14-15 16:14:57] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: images-service executing POST http://images-service/images/find/ids
+[2021-14-15 16:14:57] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]

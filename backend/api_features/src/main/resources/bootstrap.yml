@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: features-service
+  cloud:
+    config:
+      enabled: true
+      uri: ${CONFIG_SERVER:http://localhost:9296}
