@@ -115,3 +115,12 @@ spring:
           uri: lb://products-service
           predicates:
             - Path=/products/find/**
+
+        # T&C PATHS
+          # PRIVATES
+        - id: terms-and-conditions-service
+          uri: lb://products-service
+          predicates:
+            - Path=/terms-and-coditions/**
+          filters:
+            - AuthFilter

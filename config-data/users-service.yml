@@ -143,3 +143,7 @@ user-paths:
       method: "POST"
     - uri: "/users/find/ids"
       method: "POST"
+    - uri: "/terms-and-coditions/find/all"
+      method: "GET"
+    - uri: "/terms-and-coditions/save/new"
+      method: "POST"
