@@ -1,6 +1,8 @@
 # Digital Rent Car
 To receive the title of Certified Tech Developer, our final degree project was to create a website that would allow us to rent a vehicle. With a group of 4 people and implementing agile methodologies, we built a website that met the requirements, in addition to giving it different additional features that add value to the site.
 
+![final project](https://github.com/JuanRojasC/Digital-Rent-Car/blob/master/documentacion/Digital%20Rent%20Car.gif)
+
 <h2>Back-end</h2>
 We decided to implement a backend based on microservices in order to gain experience in this form of back, and it was a complete success, we managed to deploy all the necessary services so that the client could carry out its claims, all this with tools such as spring boot, eureka services, OpenFeign, cloud-server, cloud-gateway, resilience4j, lombok and log4j, with these, we were able to manage more than 10 business classes, which together shaped our system.
 
