@@ -1,0 +1,168 @@
+/*-------- global section-------*/
+.section_product{
+    position: relative;
+    margin-top: 4vw;
+}
+
+/*--------Header of product global-------*/
+.product_navbar{
+    padding: 0.8vw 3vw 0.8vw 1vw;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100vw;
+}
+
+/*--------Text in header-------*/
+.product_navbar_data h2{
+    font-size: 1.8vw;
+}
+.product_navbar_data h4{
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin-top: -0.7vw;
+}
+
+/*--------Location-------*/
+.product_navbar_location{
+    display: flex;
+    align-items: center;
+}
+
+.product_resum_location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product_location_icon{
+    color: var(--secondary-color);
+    font-size: 1.6vw;
+}
+
+.product_location_text{
+    font-size: 0.9vw;
+    margin-left: 0.5vw;
+    line-height: 0.8vw;
+}
+
+
+/*--------Location Map Interactive-------*/
+.product_location_map{
+    padding: 1vw 4vw;
+    width: 100%;
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+.product_location_map > h3{
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+}
+.product_location_map > p{
+    font-size: 1vw;
+    margin: 1vw 0 2vw 0;
+}
+.map-container {
+    height: 35vw;
+    width: 100%;
+}
+.marker_map{
+    width: 110px;
+    height: 50px;
+    background-size: cover;
+    margin: 10px;
+}
+
+
+
+/*------------------Table Design------------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .section_product{
+        margin-top: 9vw;
+
+    }
+
+    .product_navbar{
+        margin-top: 10vw;
+    }
+    .product_navbar_data h2{
+        font-size: 3.8vw;
+        margin-left: 8vw;
+    }
+
+    .product_navbar_backbtn{
+        font-size: 2.5vw;
+    }
+    
+    .product_resum_icon{
+        font-size: 3vw;
+    }
+    
+    .product_resum_text{
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    
+    .product_resum_qualification_text{
+        margin-right: 2vw;
+    }
+    
+    .product_resum_qualification>p {
+        height: 5vw;
+        width: 5vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+    }
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .product_navbar{
+        height:10vw;
+        margin-top: 10vw;
+        overflow-x: hidden;
+    }
+    .product_navbar_data h2{
+        font-size: 3.5vw;
+        margin-left: 3vw;
+    }
+    .product_location_icon {
+        font-size: 4.6vw;
+    }
+    .product_location_text {
+        font-size: 2.4vw;
+        line-height: 0.8vw;
+        margin-left: 2.5vw;
+        margin-right: 3.5vw;
+    }
+    .product_navbar_data h4 {
+        font-size: 2.3vw;
+        font-weight: 500;
+        margin-left: 3vw;
+        margin-top: -0.9vw;
+    }
+    .product_resum_icon {
+        font-size: 4vw;
+    }
+    .product_resum_text {
+        font-size: 3vw;
+        margin-left: 3vw;
+    }
+    .product_resum_qualification_text{
+        margin-right: 3vw;
+    }
+    .product_resum_qualification>p {
+        border-radius: 2vw;
+        font-size: 4vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    .product_location_map > h3 {
+        font-size: 3.3vw;
+        margin-bottom: 3vw;
+    }    
+}

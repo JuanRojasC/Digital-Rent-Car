@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "a3eb446a-d680-4b24-ae9e-ccadeca10535",
+		"name": "Digital_rentcar_users",
+		"description": "Test para la API categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test del Token\r",
+							"pm.test(\"Jwt Obtenido\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.status).to.eql(200);\r",
+							"    pm.expect(res.message).to.eql(\"Logged\");\r",
+							"    pm.collectionVariables.set(\"login_specs\", res.user);\r",
+							"    pm.collectionVariables.set(\"jwt\",res.jwt);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sergiogarcia@gmail.com\",\r\n    \"password\": \"sergiogarcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_login}}",
+					"host": [
+						"{{endpoint_login}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"id_user\",res.id);\r",
+							"    pm.collectionVariables.set(\"name_user\",res.name);\r",
+							"    pm.collectionVariables.set(\"last_name_user\",res.lastName);\r",
+							"    pm.collectionVariables.set(\"email_user\",res.email);\r",
+							"    pm.expect(res.name).to.eql(\"Sergio\");\r",
+							"    pm.expect(res.lastName).to.eql(\"Garcia\");\r",
+							"    pm.expect(res.email).to.eql(\"sergiogarcia@email.com\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sergio\",\r\n    \"lastName\": \"Garcia\",\r\n    \"email\": \"sergiogarcia@email.com\",\r\n    \"password\": \"sergiogarcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save}}",
+					"host": [
+						"{{endpoint_save}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos by Ids",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado con ids\r",
+							"pm.test(\"Los ids solicitados se encuentran en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const data_ids = data.map(e=>e.id)\r",
+							"    const ids = [1,2,3];\r",
+							"    for(let i = 0; i < data_ids.length; i++){\r",
+							"        const condition = data_ids.includes(ids[i]);\r",
+							"        pm.expect(condition).to.eql(true);\r",
+							"    }\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,2,3]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_find_by_ids}}",
+					"host": [
+						"{{endpoint_find_by_ids}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar todos by Ids",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body pero no jsonBody\", function (){\r",
+							"    pm.response.to.not.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[150,152,153,154]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_delete_by_ids}}",
+					"host": [
+						"{{endpoint_delete_by_ids}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.id).to.eql(pm.collectionVariables.get(\"id_user\"));\r",
+							"    pm.expect(data.name).to.eql(pm.collectionVariables.get(\"name_user\"));\r",
+							"    pm.expect(data.lastName).to.eql(pm.collectionVariables.get(\"last_name_user\"));\r",
+							"    pm.expect(data.email).to.eql(pm.collectionVariables.get(\"email_user\"));\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_id}}/{{id_user}}",
+					"host": [
+						"{{endpoint_find_id}}"
+					],
+					"path": [
+						"{{id_user}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"La Imagen de Testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_user\");\r",
+							"    const name = pm.collectionVariables.get(\"name_user\");\r",
+							"    const lastName = pm.collectionVariables.get(\"last_name_user\");\r",
+							"    const email = pm.collectionVariables.get(\"email_user\");\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(id);\r",
+							"    pm.expect(ele.name).to.eql(name);\r",
+							"    pm.expect(ele.lastName).to.eql(lastName);\r",
+							"    pm.expect(ele.email).to.eql(email);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all}}",
+					"host": [
+						"{{endpoint_find_all}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de actualizar\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"//Test de datos\r",
+							"// pm.test(\"Los datos del request corresponden\", function (){\r",
+							"//    const findAll = pm.collectionVariables.get(\"endpoint_find_all\")\r",
+							"//    pm.sendRequest({findAll, function (err, response) {\r",
+							"//        const data = response.json();\r",
+							"//        const id = pm.collectionVariables.get(\"id_user\");\r",
+							"//        const ele = data.find(ele => ele.id === id);\r",
+							"//        pm.expect(ele.id).to.eql(id);\r",
+							"//        pm.expect(ele.name).to.eql(\"Sergio Actualizado\"); \r",
+							"//        pm.expect(ele.lastName).to.eql(\"Garcia Actualizado\"); \r",
+							"//        }\r",
+							"//    })\r",
+							"//});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{id_user}},\r\n    \"name\":\"Sergio Actualizado\",\r\n    \"lastName\": \"Garcia Actualizado\",\r\n    \"email\": \"sergiogarciaactualizado@email.com\",\r\n    \"password\": \"sergiogarcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_update}}",
+					"host": [
+						"{{endpoint_update}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.id).to.eql(pm.collectionVariables.get(\"id_user\"));\r",
+							"    pm.expect(data.name).to.eql(pm.collectionVariables.get(\"name_user\"));\r",
+							"    pm.expect(data.lastName).to.eql(pm.collectionVariables.get(\"last_name_user\"));\r",
+							"    pm.expect(data.email).to.eql(pm.collectionVariables.get(\"email_user\"));\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_email}}/{{email_user}}",
+					"host": [
+						"{{endpoint_find_email}}"
+					],
+					"path": [
+						"{{email_user}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_delete_id}}/{{id_user}}",
+					"host": [
+						"{{endpoint_delete_id}}"
+					],
+					"path": [
+						"{{id_user}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{jwt}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "endpoint_public",
+			"value": "{{localhost}}/auth"
+		},
+		{
+			"key": "endpoint_private",
+			"value": "{{localhost}}/users"
+		},
+		{
+			"key": "endpoint_save",
+			"value": "{{endpoint_public}}/save/new"
+		},
+		{
+			"key": "endpoint_find_by_ids",
+			"value": "{{endpoint_private}}/find/ids"
+		},
+		{
+			"key": "endpoint_delete_by_ids",
+			"value": "{{endpoint_private}}/delete/ids"
+		},
+		{
+			"key": "endpoint_find_all",
+			"value": "{{endpoint_private}}/find/all"
+		},
+		{
+			"key": "endpoint_find_id",
+			"value": "{{endpoint_private}}/find"
+		},
+		{
+			"key": "endpoint_find_email",
+			"value": "{{endpoint_private}}/find/email"
+		},
+		{
+			"key": "endpoint_update",
+			"value": "{{endpoint_private}}/update/user"
+		},
+		{
+			"key": "endpoint_delete_id",
+			"value": "{{endpoint_private}}/delete"
+		},
+		{
+			"key": "endpoint_login",
+			"value": "{{localhost}}/auth/login"
+		}
+	]
+}

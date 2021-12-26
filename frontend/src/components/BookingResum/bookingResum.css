@@ -1,0 +1,149 @@
+
+/*-----Div global booking information card-----*/
+.bookin_aside{
+    background-color: var(--gray-color-reservation);
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 91%;
+    margin: 2vw 1vw;
+    width: 89%;
+}
+/*-----Title div booking information card-----*/
+.bookin_aside>h3{
+    font-size: 1.3vw;
+    padding: 2vw;
+}
+/*-----Image div booking information card-----*/
+.image_car_booking{
+    position: relative;
+}
+.bookin_aside > .image_car_booking > img{
+    margin-top: -1.5vw;
+    padding-right: 0.8vw;
+    transform: scaleX(-1);
+    width: 40vw;
+}
+/*-----Circle image booking information card-----*/
+.booking_circle_yellow {
+    background-color: #FBC02D;
+    border-radius: 41% 91%;
+    height: 13vw;
+    position: absolute;
+    right: -3vw;
+    bottom: -2vw;
+    width: 41vw;
+    z-index: -1;
+    border:  3px solid black;
+}
+.booking_aside_data{
+    margin-top: -1vw;
+    padding: 2vw;
+}
+.booking_aside_data>p {
+    font-size: 0.9vw;
+    margin-bottom: 0.5vw;
+}
+.booking_aside_data h3{
+    font-size: 1.1vw;
+    margin-bottom: 0.5vw;
+}
+.product_icon_start{
+    color: var(--primary-color);
+    font-size: 1.0vw;
+    margin-bottom: 2vw;
+    margin-top: 0.4vw;
+}
+.line_calendar{
+    background-color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    width: 33.5vw;
+}
+.product_icon_calendar{
+    font-size: 1.7vw;
+    margin: 1vw;
+}
+.p_booking_checkin{
+    font-weight: bold;
+    margin-right: 15.7vw;
+}
+.p_booking_checkout{
+    font-weight: bold;
+    margin-right: 15vw;
+}
+.booking_checkin , .booking_checkout{
+    align-items: center;
+    display: flex;
+    font-size: 0.9vw;
+}
+.booking_checkin input , .booking_checkout input{
+    height: 40px;
+    padding: 20px 0;
+    width: 100%;
+}
+#city{
+    background: rgba(248, 248, 249, 0.28);
+    border: 1px solid #AFA8A8;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .bookin_aside {
+        height: 100vw;
+        margin-left: 2vw;
+        width: 90vw;
+    }
+    .bookin_aside > .image_car_booking > img {
+        margin-top: 0.5vw;
+        padding-right: 5.8vw;
+        width: 84vw;
+    }
+    .bookin_aside>h3 {
+        font-size: 3.3vw;
+        padding: 4vw;
+    }
+    .booking_circle_yellow {
+        border: none;
+        bottom: -2vw;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        height: 23vw;
+        right: 3vw;
+        width: 86vw;
+    }    
+    .booking_aside_data{
+        margin-left: 4vw;
+        margin-top: 2vw;
+    }
+    .booking_aside_data>p {
+        font-size: 2.3vw;
+    }
+    .booking_aside_data h3 {
+        font-size: 2.7VW;
+    }
+    .line_calendar {
+        width: 78.5vw;
+    }
+    .booking_checkin, .booking_checkout {
+        font-size: 2.3vw;
+    }
+    .product_icon_calendar {
+        font-size: 3.7vw;
+        margin: 2vw 2vw 2vw 5vw;
+    }
+    .p_booking_checkin {
+        margin-right: 40.7vw;
+    }
+    .p_booking_checkout {
+        margin-right: 38.5vw;
+    }
+    .product_icon_start {
+        font-size: 2vw;
+    }
+        
+}

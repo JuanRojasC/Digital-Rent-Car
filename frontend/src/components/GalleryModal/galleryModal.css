@@ -1,0 +1,134 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.galleryModal_exitbtn{
+    z-index: 100;
+    position: absolute;
+    right: 25.5%;
+    top: 11%;
+    width: 2vw;
+    height: 2vw;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1vw;
+    border: none;
+    filter: drop-shadow(0 2px 2px #1a1a1a);
+    line-height: 0vw;
+}
+
+.galleryModal_exitbtn:hover{
+    transform: scale(1.1);
+}
+
+.image-gallery{
+    margin-top: 5vw;
+    width: 50vw;
+    height: 32vw;
+    background-color: white;
+    border-radius: 1vw 1vw 0 0;
+}
+
+.image-gallery-thumbnails-wrapper{
+    background-color: white;
+    border-radius: 0 0 1vw 1vw;
+}
+
+.image-gallery-content{
+    width: 100%;
+    height: 100%;
+}
+
+.image-gallery-slide-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.image-gallery-swipe{
+    width: 100%;
+    height: 100%;
+}
+
+.image-gallery-slides{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw 1vw 0 0;
+}
+
+.image-gallery-slide{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw 1vw 0 0;
+}
+
+.image-gallery-slide img{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+    color: var(--secondary-color);
+    font-size: 50px;
+    background-color: var(--primary-color);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+@media (max-width: 599px) {
+    .image-gallery {
+        margin-top: 50vw;
+        width: 90vw;
+        height: 67vw;
+        background-color: white;
+        border-radius: 1vw 1vw 0 0;
+    }
+    .Modal {
+        z-index: 600;
+        backdrop-filter: blur(8px);
+        width: 100vw;
+
+    }
+    .image-gallery-thumbnail .image-gallery-thumbnail-image {
+        vertical-align: middle;
+        width: 100%;
+        line-height: 0;
+        margin: 1vw 0vw 1vw;
+    }
+    .image-gallery-thumbnail {
+        width: 24vw;
+    }
+    .image-gallery-thumbnail+.image-gallery-thumbnail {
+        margin-left: 1vw;
+    }
+    .image-gallery-slide.center {
+        margin-top: 6vw;
+    }
+    .galleryModal_exitbtn {
+        right: 7.5%;
+        top: 18%;
+        width: 5vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+    .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
+        font-size: 50px;
+        width: 5vw;
+        height: 5vw;
+        font-weight: bold;
+    }
+    .image-gallery-left-nav, .image-gallery-right-nav {
+        top: 60%;
+    }
+}

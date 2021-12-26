@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.booking_container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: px;
+    margin-top: 4vw;
+    position: relative;
+}
+
+.booking_container > button{
+    background-color: #FBC02D;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    color: black;
+    cursor: pointer;
+    font-size: 1.15vw;
+    font-weight: bold;
+    margin-left: -4vw;
+    padding: 0.6vw 4vw;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    bottom: 25vw;
+}
+.booking_section{
+    display: flex;
+    width: 100%;
+    margin-left: 17px;
+}
+.bookin_sectionr{
+    width: 40vw;
+}
+.booking_sectionl{
+    width: 60vw;
+}
+.booking_thanks{
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.15vw;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: -2vw;
+    padding: 1vw 4vw;
+    width: 95vw;
+    margin-top: 2vw;
+}
+.booking_thanks p {
+    font-family: 'Work sans';
+}
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .booking_sectionl {
+        width: 90vw;
+    }
+    .booking_container > button {
+        bottom: 101vw;
+        font-size: 2.7vw;
+        padding: 1.6vw 4vw;
+    }
+    .booking_thanks {
+        font-size: 1.15vw;
+        margin: 4vw 0vw 3vw;
+        padding: 1.7vw 0vw;
+        width: 93vw;
+    }
+    .booking_thanks h4{
+        font-size: 3.0vw;
+    }
+    .booking_section {
+        flex-direction: column;
+    }
+}

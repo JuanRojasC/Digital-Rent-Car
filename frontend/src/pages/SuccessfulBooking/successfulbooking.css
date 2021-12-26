@@ -1,0 +1,248 @@
+.successful_booking {
+	margin-top: 4vw;
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.successful_booking_container {
+    width: fit-content;
+    background-color: var(--gray-color);
+    padding: 2vw 1vw 1vw 1vw;
+    border-radius: 1vw;
+    width: 32vw;
+    margin-top: 5vw;
+}
+.successful_booking_container_data img {
+    transform: scaleX(-1);
+    max-width: 24vw;
+    margin-left: 4vw;
+}
+.successful_icon{
+    background-image:url('../../Assets/atomo_check.png');
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-size: 4vw;
+    top: 5vw;
+    left: 57vw;
+}
+.successful_booking_container_data > h3 {
+	text-align: center;
+	font-size: 1.5vw;
+}
+.successful_line_calendar {
+    background-color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    width: 28.8vw;
+    margin-left: 1vw;
+}
+.successful_booking_container_data_car{
+    margin: 0.5vw 0 1vw 2vw;
+}
+.successful_booking_container_data_car p {
+	display: block;
+	text-align: left;
+    font-size: 0.8vw;
+}
+.successful_booking_container_data_car_category{
+    font-weight: 600;
+}
+.successful_booking_container_data_date{
+    display: flex;
+    width: 93%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1vw;
+}
+.successful_booking_container_data_date>div{
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5vw;
+}
+.successful_booking_container_data_date p {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 0.9vw;
+}
+.success_icon_calendar,.success_icon_user,.success_icon_email{
+    font-size: 1.3vw;
+    margin-left: 2vw;
+    
+}
+.successful_booking_container_data_date_data .date_p_start{
+    margin-right: 2.5vw;
+}
+.date_p_start, .date_p_finish{
+    margin-right: -6vw;
+}
+.date_p{
+    margin-right: -3vw;
+    margin-left: 7vw;
+}
+.date_title_checkin{
+    font-weight: bold;
+    font-size: 0.9vw;
+    margin-left: -6.5vw;
+}
+.date_title_checkout{
+    font-weight: bold;
+    margin-left: -6vw;
+    font-size: 0.9vw;
+}
+.successful_user_title {
+    font-weight: bold;
+    margin-left: -13.5vw;
+    font-size: 0.9vw;
+}
+.successful_user_title_email {
+    font-weight: bold;
+    margin-left: 3.8vw;
+    font-size: 0.9vw;
+    position: absolute;
+}
+.successful_user_email {
+    margin-right: 1.5vw;
+    font-size: 0.9vw;
+}
+.successful_booking_container_data_user{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.successful_booking_container_data_user span{
+    font-weight: 600;
+    font-size: 0.9vw;
+    margin-left: 0.5vw;
+}
+.successful_booking_container_data a {
+    margin: 1vw 9.5vw;
+    width: 12vw;
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 1vw;
+    margin-right: 1.5vw;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5vw 0vw;
+}
+.successful_booking_container_data a::before{
+    content:'';
+    background: black;
+    position:absolute;
+    bottom:-3px; 
+    width: 0;
+    height: 2px;
+    transition: all 700ms
+}
+.successful_booking_container_data a:hover::before{
+    width:100%;
+    background-color: black;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .successful_booking_container_data > h3 {
+        font-size: 4.3vw;
+        margin: 4vw 16vw 3vw;
+        text-align: start;
+    }
+    .successful_booking_container_data img {
+        max-width: 66vw;
+        margin-left: 4vw;
+    }
+    .successful_booking_container {
+        height: 80%;
+        width: 82vw;
+    }
+    .date_title_checkin {
+        margin-left: -5vw;
+        margin-right: 4vw;
+    }
+    .date_title_checkout {
+    margin-left: -9vw;
+    margin-right: 4vw;
+    }
+    .successful_booking_container_data_date p {
+        width: 75%;
+        font-size: 2.5vw;
+    }
+    .success_icon_calendar, .success_icon_user, .success_icon_email {
+        font-size: 4.3vw;
+        margin: 1vw -1vw 2vw 7vw;
+    }
+    .successful_line_calendar {
+        width: 74.8vw;
+        margin-left: 1vw;
+    }    
+    .successful_user_title_email {
+        margin-left: 12.8vw;
+        font-size: 2.5vw;
+        position: absolute;
+    }
+    .date_title_checkin {
+        margin-left: -11.5vw;
+    }
+    .successful_user_title {
+        margin-left: 12.5vw;
+        font-size: 2.5vw;
+        position: absolute;
+    }
+    .successful_user_email {
+        margin-right: 7.5vw;
+        font-size: 2.5vw;
+    }
+    .date_p {
+        margin-right: -7.5vw;
+    }
+    .date_p_start{ 
+        margin-right: -10.5vw;
+    }
+    .successful_booking_container_data_car {
+        margin: 5.5vw 0vw 3vw 5vw;
+    }
+    .successful_booking_container_data_car p {
+        font-size: 2.5vw;
+    }
+    .successful_booking {
+        margin-top: 4vw;
+        width: 100%;
+        height: 100%;
+    }
+    .successful_booking_container_data a {
+        margin: 3vw 21.5vw;
+        width: 34vw;
+        font-size: 3vw;
+        padding: 1.5vw 0vw;
+    }
+    .successful_icon {
+        width: 10vw;
+        height: 10vw;
+        background-size: 10vw;
+        top: 27vw;
+        left: 63vw;
+    }
+    .successful_booking_container_data_date>div {
+        align-items: center;
+    }
+    .date_p_start, .date_p_finish{
+        margin-right: -9vw;
+    }
+}

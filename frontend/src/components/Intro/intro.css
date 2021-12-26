@@ -1,0 +1,247 @@
+/*----div global----*/
+.intro_landing_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 4vw 0vw 4vw;
+    height: 100vh;
+    width: 100vw;
+}
+/*-----text section-----*/
+.intro_landing_page_text_section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+/*-----text div-----*/
+.intro_landing_page_text{
+    font-size: 1.3vw;
+    margin-bottom: 2vw;
+    position: relative;
+}
+/*-----title - text section-----*/
+.intro_landing_page_title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+    width: 90%;
+}
+/*-----text - text section-----*/
+.intro_landing_page_p{
+    margin-bottom: 2vw;
+}
+/*-----family car image-----*/
+.intro_car_family_image{
+    width: 55vw;
+    position: relative;
+}
+/*-----yellow circle-----*/
+.intro_circle_yellow{
+    background-color: #FBC02D;
+    border-radius: 50%;
+    height: 150vh;
+    width: 150vh;
+    position: absolute;
+    right: -60vh;
+    top: -40vh;
+    z-index: -1;
+}
+/*-----rent button-----*/
+.intro_landing_page_btn_rent{
+    background-color: #FBC02D;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.15vw;
+    font-weight: bold;
+    padding: 0.6vw 4vw;
+    text-decoration: none;
+}
+/*-----services div global-----*/
+.intro_landing_page_services_div{
+    display: flex;
+    position: absolute;
+    bottom: 2vw;
+    right: 3vw;
+}
+/*-----support div global-----*/
+.intro_landing_page_support_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    max-width: 7vw;
+    margin: 0vw 0.5vw;
+}
+/*-----support text-----*/
+.intro_landing_page_support_text{
+    margin-left: 0.5vw;
+    font-size: max(1vw, min(12px));
+}
+/*-----support icon-----*/
+.intro_landing_page_support_icon{
+    font-size: max(2vw, min(20px));
+}
+
+/*-----cars brands div global*/
+.intro_landing_page_brands_div{
+    display: flex;
+    position: absolute;
+    bottom: -8vw;
+}
+/*-----car brand icon*/
+.intro_brand_icon{
+    width: 3vw;
+    margin: 0.75vw;
+}
+
+/*-----finder bar section-----*/
+.intro_landing_page_finder_section{
+    align-self: flex-start;
+    position: relative;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+    /*----div global----*/
+    .intro_landing_page{
+        padding: 4vh 4vw 0vw 4vw;
+        margin-top: 5vh;
+        height: auto;
+    }
+    /*-----family car image-----*/
+    .intro_car_family_image{
+        width: 50vw;
+        position: relative;
+    }
+    /*-----title - text section-----*/
+    .intro_landing_page_title{
+        font-size: 2.8vw;
+        margin-bottom: 2vw;
+    }
+    /*-----text - text section-----*/
+    .intro_landing_page_p{
+        font-size: 1.8vw;
+    }
+    /*-----rent button-----*/
+    .intro_landing_page_btn_rent{
+        font-size: 1.8vw;
+    }
+    /*-----yellow circle-----*/
+    .intro_circle_yellow{
+        all: initial;
+        height: 70vw;
+        width: 70vw;
+        background-color: #FBC02D;
+        border-radius: 50%;
+        position: absolute;
+        right: -32vw;
+        top: -15vw;
+        z-index: -1;
+    }
+    /*-----services div global-----*/
+    .intro_landing_page_services_div{
+        top: 42vw;
+        right: 3vw;
+    }
+    /*-----support div global-----*/
+    .intro_landing_page_support_div{
+        max-width: 7vw;
+        margin: 0vw 0.5vw;
+    }
+    /*-----support text-----*/
+    .intro_landing_page_support_text{
+        margin-left: 0.5vw;
+        font-size: 1vw;
+    }
+    /*-----support icon-----*/
+    .intro_landing_page_support_icon{
+        font-size: max(2vw, min(20px));
+    }
+    
+    /*-------------------Finder Bar-----------------------*/
+
+    /*-----finder bar section-----*/
+    .intro_landing_page_finder_section{
+        align-self: flex-start;
+    }
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    /*----div global----*/
+    .intro_landing_page{
+        margin-top: 10vh;
+        padding: 0vh 4vw 0vw 4vw;
+        height: auto;
+        width: 100vw;
+    }
+    /*-----text section-----*/
+    .intro_landing_page_text_section {
+        flex-direction: column;
+        margin-top: 0vh;
+        margin-bottom: 6vh;
+    }
+    /*-----text div-----*/
+    .intro_landing_page_text {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+    /*-----title - text section-----*/
+    .intro_landing_page_title{
+        font-size: 8vw;
+        margin-bottom: 1vh;
+        text-align: center;
+        line-height: 8vw
+    }
+    /*-----text - text section-----*/
+    .intro_landing_page_p{
+        font-size: 4vw;
+        text-align: center;
+    }
+    /*-----family car div global-----*/
+    .intro_image_family_car{
+        position: relative;
+    }
+    /*-----family car image-----*/
+    .intro_car_family_image {
+        width: 85vw;
+    }
+    /*-----yellow circle-----*/
+    .intro_circle_yellow {
+        height: 15vw;
+        right: -2vw;
+        top: 33vw;
+        width: 88vw;  
+    }
+    /*-----rent button-----*/
+    .intro_landing_page_btn_rent{
+        display: none;
+        font-size: 2.65vw;
+    }
+    /*-----services div global-----*/
+    .intro_landing_page_services_div{
+        display: none;
+    }
+    /*-----cars brands div global*/
+    .intro_landing_page_brands_div{
+        bottom: -31vh;
+        display: none;
+    }
+    /*-----car brand icon*/
+    .intro_brand_icon{
+        width: 7vw;
+        margin: 1.25vw;
+    }
+    /*-----finder bar section-----*/
+    .intro_landing_page_finder_section{
+        align-self: center;
+        margin: 0vh 0vw;
+    }
+}
+

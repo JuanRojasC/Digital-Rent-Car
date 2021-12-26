@@ -1,0 +1,67 @@
+.bookingUserData_container{
+    margin: 2vw;
+    padding-top: 1vw;
+    width: 90%;
+}
+.bookingUserData_container h3{
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 1vw 0vw 0vw 0.5vw;
+}
+.bookingUserData_container form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bookingUserData_container div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+    padding: 4px 10px;
+    width: 50%;
+}
+.bookingUserData_container div>label{
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+}
+.bookingUserData_container div>input{
+    background: rgba(96, 125, 139, 0.28);
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    height: 35px;
+    padding: 1vw 1vw;
+}
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .bookingUserData_container h3 {
+        font-size: 3.3vw;
+        padding: 1vw 0vw 0vw 6.5vw;
+    }
+    .bookingUserData_container form {
+        margin-bottom: 4vw;
+        margin-left: 5vw;
+        margin-top: 3vw;
+    }
+    .bookingUserData_container div>label {
+        font-size: 2.9vw;
+    }
+    .bookingUserData_container div>input {
+        font-size: 2.8vw;        
+        height: 30px;
+        padding: 2vw 3vw;
+    }
+    .bookingUserData_container div {
+        width: 100%;
+    }
+}

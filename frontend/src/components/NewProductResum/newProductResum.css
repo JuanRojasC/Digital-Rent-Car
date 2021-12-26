@@ -1,0 +1,228 @@
+.aside_new_product_resum{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 2vw;
+}
+.new_product_resum_container {
+    position: sticky;
+    top: 5vw;
+    width: 90%;
+    height: 88vh;
+    text-align: left;
+    border-radius: 0.5vw;
+    padding: 1vw 2.5vw;
+    background-color: var(--gray-color-reservation);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 250ms;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*-----change of background color header-----*/
+html:is([data-scroll='0']) .new_product_resum_container {
+    transition: 0ms;
+    top: 10.5vw;
+}
+
+/*----------Title Product----------*/
+.new_product_resum_title{
+    font-size: 1.5vw;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.new_product_resum_title .product_navbar_location{
+    font-size: 1.3vw;
+}
+.new_product_resum_title .product_location_text{
+    width: 5vw;
+    font-size: 0.7vw;
+}
+
+/*----------Category Product----------*/
+.new_product_resum_category{
+    font-size: 1vw;
+    margin: -0.5vw 0vw 0vw 0vw;
+    align-self: flex-start;
+}
+
+/*----------Main Image Product----------*/
+.new_product_resum_main_image_car{
+    width: 15vw;
+    margin: 0.5vw auto;
+}
+
+/*----------Color Options Product - just visible when add links----------*/
+.new_product_resum_color_options{
+    display: flex;
+    justify-content: center;
+}
+.new_product_resum_circle_color_option{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+/*----------Div Container Values Product----------*/
+.new_product_container_values{
+    align-self: flex-start;
+    width: 100%;
+}
+
+/*----------Title Key Product----------*/
+.new_product_resum_title_key{
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+.new_product_resum_description_body{
+    font-size: 0.7vw;
+    margin-top: 0.5vw;
+    text-align: justify;
+}
+
+/*----------Div Container Features Product----------*/
+.new_product_resum_features{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5vw;
+}
+.new_product_resum_feature_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.new_product_resum_feature_icon{
+    width: 3vw;
+    margin-bottom: 0.35vw;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.5vw;
+}
+.new_product_resum_feature_value{
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+/*----------Div Container T&Cs Product----------*/
+.new_product_resum_tyc_div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5vw;
+}
+.new_product_resum_tyc{
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+.new_product_resum_tyc_icon{
+    width: 2.5vw;
+    padding: 0.4vw;
+    margin: 0.5vw;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+}
+.new_product_resum_tyc_title{
+    font-size: 0.7vw;
+    font-weight: bold;
+    margin-left: 0.5vw;
+}
+
+/*----------Hr----------*/
+.new_product_resum_hr{
+    background-color: black;
+    width: 100%;
+    height: 0.2vw;
+    margin: 0.5vw 0vw;
+}
+/*----------Without Results----------*/
+.new_product_resum_without_results{
+    font-size: 0.9vw;
+    width: 100%;
+    text-align: center;
+    padding: 2vw 0vw 2vw 0vw;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .new_product_resum_container {
+        /*display: none;*/
+        width: 85vw;
+        height: 75vh;
+        padding: 1vw 2.5vw;
+        margin-left: 7vw;
+        position: absolute;
+    }
+    .new_product_resum_title {
+        font-size: 3.3vw;
+        margin-top: 1.5vw;
+    }
+    .new_product_resum_category {
+        font-size: 2.5vw;
+        margin: -2vw 0vw 0vw 0vw;
+    }
+    .aside_new_product_resum {
+        width: 98%;
+    }
+    .new_product_resum_title .product_navbar_location {
+        font-size: 2.3vw;
+        margin: 2vw -9vw 2vw 0vw;
+    }
+    .new_product_resum_title .product_location_text {
+        width: 27vw;
+        font-size: 2.2vw;
+    }
+    .new_product_resum_main_image_car {
+        width: 40vw;
+        margin: 2vh 15vw;    
+    }
+    .new_product_resum_hr {
+        width: 94%;
+        margin: 1.5vw 0vw;
+    }
+    .new_product_resum_main_image_car {
+        width: 31vw;
+        margin: 0.5vw 18vw;
+    }
+    .new_product_resum_without_results {
+        font-size: 2.2vw;
+        width: 100%;
+        text-align: center;
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .new_product_resum_feature_icon {
+        width: 9vw;
+        margin-top: 2vw;
+    }
+    .new_product_resum_feature_value {
+        font-size: 2.2vw;
+    }
+    .new_product_resum_description_body {
+        font-size: 2.5vw;
+        text-align: justify;
+        margin: 1vw 4.5vw 1vw 6vw;
+    }
+    .new_product_resum_tyc_icon {
+        width: 8.5vw;
+        padding: 0.8vw;
+        margin: 0.5vw;
+    }
+    .new_product_resum_tyc_title {
+        font-size: 2.0vw;
+        margin-left: 0.5vw;
+    }
+    .new_product_resum_tyc {
+        width: 35%;
+        margin: 2vw 0vw 0vw 7vw;
+    }
+    .new_product_resum_circle_color_option {
+        width: 4.2vw;
+        height: 4.2vw;
+    }
+}

@@ -1,0 +1,38 @@
+.product_availability{
+    width: 90%;
+    padding: 2vw 4vw;
+}
+.product_availability > h3{
+    font-size: 1.4vw;
+}
+.product_availability_interaction{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .product_availability_interaction {
+        width: 100%;
+        height: 100%;
+        flex-direction:column;
+    }
+    .product_availability > h3 {
+        font-size: 3.3vw;
+        margin-left: 2vw;
+    }
+    .product_availability {
+        width: 94%;
+    }   
+}

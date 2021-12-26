@@ -1,0 +1,108 @@
+#not_bookings_div{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------Div Text----------*/
+.not_bookings_message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.not_bookings_text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2vw 5vw 1.5vw 0vw;
+}
+.not_bookings_text_icon{
+    color: var(--primary-color);
+    font-size: 3vw;
+    margin-right: 1vw;
+    display: inline-block;
+}
+.not_bookings_text_message{
+    font-size: 2vw;
+}
+
+/*----------Button Back Home----------*/
+.not_booking_btn_back_home{
+    font-weight: bold;
+    font-size: 1.2vw;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: black;
+    padding: 0.25vw 2vw;
+    border-radius: 10px;
+    margin: 0vw 5vw 2vw 0vw;
+}
+
+/*----------Car Image----------*/
+.not_bookings_data{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-left: 3vw;
+}
+.not_bookings_data .not_bookings_car_image{
+    all: initial;
+    position: absolute;
+    transform: rotateY(180deg);
+    width: 35vw;
+    top: 28vh;
+    left: 0vw;
+}
+.not_bookings_data .not_bookings_prop_background{
+    all: initial;
+    position: absolute;
+    width: 40vw;
+    top: 13vh;
+    left: 10vw;
+}
+
+/*-------------------Movile Design-----------------------*/
+@media (max-width: 599px)  {
+    #not_bookings_div{
+        flex-direction: column;
+        margin: 18vh 0vw 0vh 0vw;
+    }
+    
+    /*----------Div Text----------*/
+    .not_bookings_text{
+        margin: 2vw 0vw 5vw 0vw;
+    }
+    .not_bookings_text_icon{
+        font-size: 10vw;
+        margin-right: 3vw;
+    }
+    .not_bookings_text_message{
+        font-size: 5vw;
+    }
+    
+    /*----------Button Back Home----------*/
+    .not_booking_btn_back_home{
+        font-size: 4.5vw;
+        padding: 1vw 5vw;
+        margin: 0vw 0vw 9vh 0vw;
+    }
+    
+    /*----------Car Image----------*/
+    .not_bookings_data{
+        margin-left: 0vw;
+    }
+    .not_bookings_data .not_bookings_car_image{
+        width: 60vw;
+        top: 7vh;
+        left: -15vw;
+    }
+    .not_bookings_data .not_bookings_prop_background{
+        all: initial;
+        position: absolute;
+        width: 70vw;
+        top: 0vh;
+        left: 0vw;
+    }
+}

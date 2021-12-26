@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka_service" />
+        <module name="api_cities" />
+        <module name="api_specs" />
+        <module name="config_server" />
+        <module name="api_products" />
+        <module name="api_images" />
+        <module name="api_user" />
+        <module name="api_features" />
+        <module name="api_categories" />
+        <module name="gateway_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api_categories" target="17" />
+      <module name="api_cities" target="17" />
+      <module name="api_features" target="17" />
+      <module name="api_images" target="17" />
+      <module name="api_products" target="17" />
+      <module name="api_specs" target="17" />
+      <module name="api_user" target="16" />
+      <module name="auth_service" target="17" />
+      <module name="config_server" target="11" />
+      <module name="eureka_service" target="17" />
+      <module name="gateway_service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api_categories" options="-parameters" />
+      <module name="api_cities" options="-parameters" />
+      <module name="api_features" options="-parameters" />
+      <module name="api_images" options="-parameters" />
+      <module name="api_products" options="-parameters" />
+      <module name="api_specs" options="-parameters" />
+      <module name="api_user" options="-parameters" />
+      <module name="auth_service" options="-parameters" />
+      <module name="config_server" options="-parameters" />
+      <module name="eureka_service" options="-parameters" />
+      <module name="gateway_service" options="-parameters" />
+    </option>
+  </component>
+</project>

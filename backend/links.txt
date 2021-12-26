@@ -1,0 +1,227 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+BASE URL
+--------------------------------------------------------------------------------------------------------------------------------------------
+3.139.103.7/
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+USERS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+LOGUEARSE
+3.139.103.7/auth/login
+
+BUSCAR POR ID
+3.139.103.7/users/find/{id}
+
+BUSCAR POR EMAIL (requiere jwt nivel admin)
+3.139.103.7/users/find/{email}
+
+BUSCAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+3.139.103.7/users/find/ids
+
+LISTAR TODOS (requiere jwt nivel admin)
+3.139.103.7/users/find/all
+
+GUARDAR
+3.139.103.7/auth/save/new
+
+ACTUALIZAR (requiere jwt nivel usuario)
+3.139.103.7/users/update/puser
+
+ELIMINAR (requiere jwt nivel usuario)
+3.139.103.7/users/delete/{id}
+
+ELIMINAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+3.139.103.7/users/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+BOOKINGS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID (requiere jwt nivel usuario)
+3.139.103.7/bookings/find/{id}
+
+BUSCAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+3.139.103.7/bookings/find/ids
+
+LISTAR TODOS (requiere jwt nivel admin)
+3.139.103.7/bookings/find/all
+
+LISTAR POR USUARIO (requiere jwt nivel usuario)
+3.139.103.7/bookings/find/user/{userId}
+
+GUARDAR (requiere jwt nivel usuario)
+3.139.103.7/bookings/save/new
+
+ACTUALIZAR (requiere jwt nivel usuario)
+3.139.103.7/bookings/update/booking
+
+ELIMINAR (requiere jwt nivel usuario)
+3.139.103.7/bookings/delete/{id}
+
+ELIMINAR POR IDS (POST: array de ids) (requiere jwt nivel admin)
+3.139.103.7/bookings/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+PRODUCTS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/products/find/{id}
+
+LISTAR TODOS
+3.139.103.7/products/find/all
+
+LISTAR POR NOMBRE
+3.139.103.7/products/find/title?name=nombredelProductoSinEspacios
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/products/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/products/update/product
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/products/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+CATEGORIES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/categories/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+3.139.103.7/categories/find/ids
+
+LISTAR TODOS
+3.139.103.7/categories/find/all
+
+LISTAR POR NOMBRE
+3.139.103.7/categories/find/title?category=nombreCategoriaSinEspacios
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/categories/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/categories/update/product
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/categories/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+CITIES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/cities/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+3.139.103.7/cities/find/ids
+
+LISTAR POR PAIS
+3.139.103.7/cities/find/country/{country_id}
+
+LISTAR TODOS
+3.139.103.7/cities/find/all
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/cities/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/cities/update/city
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/cities/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+SPECS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/specs/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+3.139.103.7/specs/find/ids
+
+LISTAR SPECS DE EJEMPLO
+3.139.103.7/specs
+
+LISTAR TODOS
+3.139.103.7/specs/find/all
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/specs/save/new
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/specs/update/specs
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/specs/delete/{id}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/features/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+3.139.103.7/features/find/ids
+
+LISTAR features DE EJEMPLO
+3.139.103.7/features
+
+LISTAR TODOS
+3.139.103.7/features/find/all
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/features/save/new
+
+GUARDAR VARIAS (POST: collection de features [{},{},{}...]) (requiere jwt nivel admin)
+3.139.103.7/features/save/collection
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/features/update/feature
+
+ACTUALIZAR VARIAS (POST: collection de features [{},{},{}...]) (requiere jwt nivel admin)
+3.139.103.7/features/update/ids
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/features/delete/{id}
+
+ELIMINAR POR IDS(POST: array de ids)  (requiere jwt nivel admin)
+3.139.103.7/features/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+IMAGES
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSCAR POR ID
+3.139.103.7/images/find/{id}
+
+BUSCAR POR IDS(POST: array de ids)
+3.139.103.7/images/find/ids
+
+LISTAR TODOS
+3.139.103.7/images/find/all
+
+GUARDAR (requiere jwt nivel admin)
+3.139.103.7/images/save/new
+
+GUARDAR VARIAS (POST: collection de images [{},{},{}...]) (requiere jwt nivel admin)
+3.139.103.7/images/save/collection
+
+ACTUALIZAR (requiere jwt nivel admin)
+3.139.103.7/images/update/feature
+
+ACTUALIZAR VARIAS (POST: collection de images [{},{},{}...]) (requiere jwt nivel admin)
+3.139.103.7/images/update/ids
+
+ELIMINAR (requiere jwt nivel admin)
+3.139.103.7/images/delete/{id}
+
+ELIMINAR POR IDS(POST: array de ids)  (requiere jwt nivel admin)
+3.139.103.7/images/delete/ids
+
+--------------------------------------------------------------------------------------------------------------------------------------------

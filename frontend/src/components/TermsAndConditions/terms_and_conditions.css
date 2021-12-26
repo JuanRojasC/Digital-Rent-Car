@@ -1,0 +1,70 @@
+/*--------Terms and Conditions-------*/
+.product_terms_and_conditions{
+    padding: 1vw 4vw 0vw 4vw;
+}
+.terms_and_conditions_title{
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+}
+/*--------Terms and Conditions Divs-------*/
+.terms_and_conditions_divs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*--------Terms and Conditions Div-------*/
+.term_and_condition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: justify;
+    margin: 0.5vw 0vw;
+}
+.term_and_condition_icon{
+    width: 4vw;
+    border: 3px solid var(--primary-color);
+    padding: 1.2vw 0.7vw;
+    border-radius: 10px;
+    margin-right: 1vw;
+}
+.term_and_condition_title{
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+.term_and_condition_description{
+    font-size: 0.7vw;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .terms_and_conditions_title {
+        font-size: 3.3vw;
+        margin: 4vw 0vw 2vw;
+    }
+    .term_and_condition_title {
+        font-size: 2.6vw;
+        font-weight: bold;
+    }
+    .term_and_condition {
+        margin: 0.5vw 5vw;
+        width: 90%;
+    }
+    .term_and_condition_icon {
+        width: 7.5vw;
+        padding: 1.2vw 0.9vw;
+    }
+    .term_and_condition_text_div{
+        margin-left:1vw;
+    }
+    .term_and_condition_description {
+        font-size: 1.7vw;
+    }
+}

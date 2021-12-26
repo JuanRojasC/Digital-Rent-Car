@@ -1,0 +1,27 @@
+USE digitalRentcarSpecs;
+
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (1, 2, 3, 4);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (5, 6, 7, 8);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (9, 10, 11, 12);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (13, 14, 15, 16);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (17, 18, 19, 20);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (21, 22, 23, 24);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (25, 26, 27, 28);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (29, 30, 31, 32);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (33, 34, 35, 36);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (37, 38, 39, 40);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (41, 42, 43, 44);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (45, 46, 47, 48);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (49, 50, 51, 52);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (53, 54, 55, 56);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (57, 58, 59, 60);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (61, 62, 63, 64);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (65, 66, 67, 68);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (69, 70, 71, 72);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (73, 74, 75, 76);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (77, 78, 79, 80);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (81, 82, 83, 84);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (85, 86, 87, 88);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (89, 90, 91, 92);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (93, 94, 95, 96);
+INSERT INTO specs (engine_power_feature_id, air_conditioning_feature_id, seats_feature_id, combustible_feature_id ) VALUES (97, 98, 99, 100);

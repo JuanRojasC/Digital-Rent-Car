@@ -1,0 +1,66 @@
+.card{
+    width: 30vw;
+    margin: 8vw auto;
+}
+
+.card_header{
+    background-color: #FBC02D;
+    padding: 0.25vw 0vw;
+}
+
+.image_header{
+    width: 30%;
+}
+
+.card_body{
+    background-color: #FFF;
+    height: 30vh;
+    text-align: center;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text_body{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    font-size: 1vw;
+}
+
+.check-icon{
+    color: rgb(35, 184, 15);
+    font-size: 3vw;
+}
+
+.meeting{
+    font-weight: bold;
+    font-size: 1.25vw;
+    margin: 2vw 0vw 0vw 0vw; 
+}
+
+.btn_active_account{
+    display: block;
+    margin-top: 1vw;
+    margin: 1.2vw 6vw 0vw 6vw;
+    padding: 0.5vw 0vw;
+    border-radius: 10px;
+    background-color: #FBC02D;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card_footer{
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.75vw;
+    padding: 0.25vw;
+}
+
+.text_footer{
+    margin: 0vw;
+}

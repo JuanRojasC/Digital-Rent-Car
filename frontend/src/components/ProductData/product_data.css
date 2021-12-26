@@ -1,0 +1,213 @@
+/*--------Article global-------*/
+.product_data{
+    position: relative;
+    min-height: 82vh;
+}
+
+/*--------Background Yellow-------*/
+.background_yellow{
+    margin: -4vw 0vw 0vw -1vw;
+    background-image: url("../../Assets/props/background-yellow-product.svg");
+    width: 101vw;
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    position: relative;
+    padding: 0vw;
+}
+
+/*--------Background Yellow Prop-------*/
+.landscape_background{
+    z-index: -10;
+    position: absolute;
+    width: 65vw;
+    min-height: 80vh;
+}
+
+/*--------Image Car-------*/
+.car_image_div{
+    position: absolute;
+    height: 70vh;
+}
+.car_image{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 8vw;
+    left: 7vw;
+    width: 40vw;
+}
+
+/*--------Description Car-------*/
+.description_car{
+    color: black;
+    left: 10vw;
+    padding: 0.6vw 2vw;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 2vw 4vw;
+}
+.description_car_title{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0.25vw;
+}
+.description_car_body{
+    font-size: 1vw;
+    text-align: justify;
+}
+
+/*--------Features Car-------*/
+.features_car{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 2vw;
+    left: 5vw;
+    width: 44vw;
+}
+.feature_car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 6vw;
+    background-color: rgba(255, 255,255, 0.8);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 50%;
+}
+.feature_car_icon{
+    width: 2.8vw;
+    margin-bottom: 0.25vw;
+}
+.feature_car_value{
+    font-size: 0.9vw;
+}
+
+/*--------Score in header-------*/
+.product_resum_qualification {
+    display: flex;
+    margin-right: 5vw;
+}
+
+.product_resum_qualification_text p{
+    font-size: 1.5vw;
+}
+
+.product_icon_star{
+    font-size: 1.2vw;
+}
+
+/*--------Color Options-------*/
+.color_options_div{
+    display: flex;
+    position: absolute;
+    bottom: 2.25vw;
+    left: 7vw;
+    z-index: 500;
+    transform: rotateZ(18deg);
+}
+.circle_color_car{
+    width: 1.7vw;
+    height: 1.7vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0.3vw;
+}
+.circle_color_car:hover{
+    transform: scale(1.1);
+}
+.circle_color_car_white{
+    background-color: #FFF;
+}
+.circle_color_car_blue{
+    background-color: rgb(4, 0, 211);
+}
+.circle_color_car_red{
+    background-color: red;
+}
+.circle_color_car_black{
+    background-color: #000;
+}
+.circle_color_car_white:hover{
+    border: 2px solid #FFF;
+}
+.circle_color_car_blue:hover{
+    border: 2px solid rgb(4, 0, 211);
+}
+.circle_color_car_red:hover{
+    border: 2px solid red;
+}
+.circle_color_car_black:hover{
+    border: 2px solid #000;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .background_yellow {
+        width: 165vw;
+        height: 44vh;
+        background-size: contain;
+    }
+    .landscape_background {
+        width: 97vw;
+        min-height: 30vh;
+    }
+    .car_image {
+        top: 9vw;
+        width: 77vw;
+    }
+    .color_options_div {
+        top: 22vh;
+        left: 5vw;
+    }
+    .circle_color_car {
+        width: 3.7vw;
+        height: 3.7vw;
+    }
+    .product_icon_star {
+        font-size: 2.2vw;
+    }
+    .product_resum_qualification_text p {
+        font-size: 3.0vw;
+    }
+    .feature_car {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 2vw;
+    }
+    .features_car {
+        width: 87vw;
+        bottom: -2vw;
+        left: 6vw;
+    }
+    .feature_car_value {
+        font-size: 2.0vw;
+    }
+    .feature_car_icon {
+        width: 5.8vw;
+    }
+    .description_car {
+        margin: 6vw 3.5vw;
+    }
+    .description_car_title {
+        font-size: 3.3vw;
+        margin-bottom: 2.25vw;
+    }
+    .description_car_body {
+        font-size: 2vw;
+    }
+    .product_data {
+        position: relative;
+        min-height: 53vh;
+    }
+}

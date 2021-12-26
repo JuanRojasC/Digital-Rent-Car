@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="x-apple-disable-message-reformatting">
+	<title></title>
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+	<style>
+		table, td, div, h1, p {font-family: Arial, sans-serif;}
+	</style>
+</head>
+<body style="margin:0;padding:0;">
+	<table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+		<tr>
+			<td align="center" style="padding:0;">
+				<table role="presentation" style="width:600px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;tetxt-align:lef;">
+					<tr>
+						<td align="left" style="padding:5px 0px;background:#FBC02D;">
+							<img src="https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/logo-company/Digital+Rent+Car+Company+-+Full.png" 
+                                alt="Logo Company" 
+                                class="image_header" 
+                                title="Logo Company"
+                                width="180"
+                                height="50">
+						</td>
+					</tr>
+					<tr>
+						<td style="height: 320px;" align="center">
+                            <p class="meeting" style="
+                            font-weight: bold; 
+                            font-size: 24px;
+                            margin: 4px auto 30px auto;">
+                                Hola, <span class="subject" th:text="${username}">Juan Rojas</span></p>
+                            <p class="text_body" style="
+                            width: 500px;
+                            font-size: 18px;
+                            margin: 0px auto;">
+                                Bienvenido a la familiar Digital Rent Car, estas a un paso de poder usar nuestros servicios online, solamente debes activar tu cuenta.
+                            </p>
+                            <a th:href="${link_activation}" class="btn_active_account" style="
+                            display: block;
+                            margin: 50px auto 0px auto;
+                            background-color: #FBC02D; 
+                            font-weight: bold;
+                            font-size: 18px;
+                            cursor: pointer;
+                            color: black; 
+                            width: 200px;
+                            text-decoration: none;
+                            border-radius: 10px;
+                            padding: 10px 0px;">
+                                Activar Cuenta</a>
+						</td>
+					</tr>
+                    <tr>
+                        <td>
+                            <div class="card_footer" style="
+                            background-color: black; 
+                            color: #FFF; 
+                            text-align: center; 
+                            font-size: 14px;
+                            padding: 5px 0px 10px 0px;">
+                                <p class="text_footer" style="margin: 0vw;">Al dar click acepta nuestros Terminos y Condiciones</p>
+                                <p class="text_footer" style="margin: 0vw;">© Digital Rent Car Company</p>
+                            </div>
+                        </td>
+                    </tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

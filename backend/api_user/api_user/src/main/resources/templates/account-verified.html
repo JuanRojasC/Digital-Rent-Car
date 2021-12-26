@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css">
+    <title>Cuenta Verificada</title>
+</head>
+<body>
+    <div class="card" style="width: 30vw;margin: 8vw auto;">
+        <div class="card_header" style="background-color: #FBC02D;padding: 0.25vw 0vw;">
+            <img src="https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/logo-company/Digital+Rent+Car+Company+-+Full.png" alt="Logo Company" class="image_header" style="width: 30%;">
+        </div>
+        <div class="card_body" style="
+                background-color: #FFF;
+                height: 30vh;
+                text-align: center;
+                position: relative;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <div class="text_body" style="
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70%;
+                font-size: 1vw;">
+                <i class="far fa-check-circle check-icon" style="color: rgb(35, 184, 15);font-size: 3vw;"></i>
+                <p>Tu cuenta ha sido verificada exitosamente</p>
+            </div>
+        </div>
+        <div class="card_footer" style="
+            background-color: black;
+            color: #FFF;
+            text-align: center;
+            font-size: 0.75vw;
+            padding: 0.25vw;">
+            <p class="text_footer" style="margin: 0vw;">© Digital Rent Car Company</p>
+        </div>
+    </div>
+</body>
+</html>

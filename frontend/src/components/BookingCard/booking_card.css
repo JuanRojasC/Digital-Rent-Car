@@ -1,0 +1,138 @@
+/*----------Div Global----------*/
+.booking_card{
+    width: 35vw;
+    height: 15vw;
+    background-color: rgba(240, 238, 238, 0.8);
+    box-shadow: 2px 2px 10px black;
+    border: 4px solid var(--primary-color);
+    padding: 1vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0vw 0vw 2.5vw 0vw;
+}
+.booking_card:hover .booking_card_yellow_circle{
+    background-color: var(--primary-color);
+}
+
+/*----------Div Data----------*/
+.booking_card_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+    height: 9vw;
+}
+
+/*----------Image Car----------*/
+.booking_card_car_div{
+    width: 60%;
+    position: relative;
+}
+.booking_card_car_image{
+    width: 100%;
+    transform: rotateY(180deg);
+    position: relative;
+    z-index: 2;
+}
+.booking_card_yellow_circle{
+    width: 120%;
+    height: 5vw;
+    background-color: rgba(240, 238, 238, 0.8);
+    border-radius: 41% 91%;
+    position: absolute;
+    bottom: -0.25vw;
+    left: -2vw;
+    z-index: 1;
+}
+
+/*----------Name Car----------*/
+.booking_card_details{
+    position: relative;
+    z-index: 2;
+}
+.booking_card_details_title{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+/*----------Location Car----------*/
+.booking_card_details_location{
+    font-size: 0.8vw;
+}
+/*----------Score Car----------*/
+.booking_card_qualification .product_icon_star{
+    font-size: 0.8vw;
+    color: var(--primary-color);
+    margin: 0.35vw 0.2vw;
+}
+/*----------Detail Key----------*/
+.booking_card_details_key{
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+/*----------Detail Value----------*/
+.booking_card_details_value{
+    font-size: 0.8vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+
+/*----------Button View More----------*/
+.booking_card_view_details{
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 0.25vw 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .booking_card {
+        width: 85vw;
+        height: 38vw;
+        margin: 0vw 0vw 5.5vw 0vw;
+    }
+    .booking_card_details_title {
+        font-weight: bold;
+        font-size: 3.3vw;
+    }
+    .booking_card_details_location {
+        font-size: 1.8vw;
+    }
+    .booking_card_qualification .product_icon_star {
+        font-size: 1.8vw;
+    }
+    .booking_card_details_key {
+        font-size: 1.9vw;
+    }
+    .booking_card_details_value {
+        font-size: 1.8vw;
+    }
+    .booking_card_details {
+        margin-left: 1vw;
+    }
+    .booking_card_data {
+        justify-content: space-around;
+    }
+    .booking_card_view_details {
+        font-size: 2vw;
+        bottom: -8vw;
+        padding: 1.25vw 2vw;
+    }
+    .booking_card_yellow_circle {
+        width: 106%;
+        height: 16vw;
+        bottom: -0.25vw;
+    }  
+}

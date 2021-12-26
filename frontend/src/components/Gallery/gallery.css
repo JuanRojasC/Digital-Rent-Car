@@ -1,0 +1,67 @@
+/*--------Gallery Image-------*/
+.gallery_square{
+    position: absolute;
+    right: 7vw;
+    top: 4vw;
+    z-index: 10;
+    width: 38vw;
+    height: 80vh;
+    background-color: rgba(255, 255,255, 0.8);
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw 1vw 2vw 1vw;
+    justify-content: center;
+    align-items: center;
+}
+.square_image{
+    width: 15vw;
+    height: 12vw;
+    margin: 0vw 1vw -2vw 1vw;
+}
+.square_image:hover{
+    transform: scale(1.5);
+}
+.btn_view_more_gallery{
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+    font-size: 1.1vw;
+    padding: 0.25vw 4vw;
+    cursor: pointer!important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 3vw;
+}
+.btn_view_more_gallery:hover{
+    transform: scale(1.1);
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .gallery_square {
+        right: 3vw;
+        top: 57vw;
+        width: 94vw;
+        height: 13vh;
+        flex-wrap: nowrap;
+    }
+    .square_image {
+        width: 20vw;
+        height: 13vw;
+        margin: -5vw 1vw 0vw 1vw;
+    }
+    .btn_view_more_gallery {
+        font-size: 1.8vw;
+        position: absolute;
+        bottom: 2.5vw;
+    }
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    
+}
+

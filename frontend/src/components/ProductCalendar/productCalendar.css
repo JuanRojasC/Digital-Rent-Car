@@ -1,0 +1,147 @@
+.product_availability_calendars{
+    align-items: center;
+    background-color: #fff;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0px 8px 10px rgb(0 0 0 / 14%), 0px 3px 14px rgb(0 0 0 / 12%), 0px 5px 5px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    height: 21vw;
+    justify-content: space-between;
+    /* align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 2px;
+    margin-left: 17px;
+    height: 20vw;
+    padding: 1vw 1.5vw 4vw 1.5vw;
+    border: 5px solid var(--primary-color);
+    background-color: #fff; */
+    margin-left: 34px;
+    margin-right: 2px;
+    margin-top: 20px;
+    padding: 1vw 1.5vw 4vw 1.5vw;
+    width: 89%;
+    z-index: 50;
+}
+
+.product_availability_calendar{
+    height: 90%;
+    width: 40%;
+}
+
+.product_availability_calendars > hr{
+    height: 100%;
+    width: 1px;
+}
+
+/*---------hr vertical---------*/
+hr.calendar_vertical_line{
+    height: 95%;
+    width: 2px;
+    margin: 4vw 0vw 0vw 0vw;
+    padding: 0vw;
+}
+
+.product_availability_calendar_leftbtn , .product_availability_calendar_rightbtn{
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    font-size: 1.2vw;
+    height: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_availability_calendar_leftbtn:hover , .product_availability_calendar_rightbtn:hover{
+    transform: scale(1.1);
+}
+
+.product_availability_calendar_header_month{
+    height: 15%;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.product_availability_calendar_header_days>div{
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: bold;
+    height: 8%;
+    line-height: 2vw;
+    padding-top: 0.2vw;
+    position: relative;
+    text-align: center;
+    width: calc(100%/7);
+}
+
+.product_availability_calendar_weeks{
+    height: 84%;
+    width: 100%;
+}
+
+.product_availability_calendar_week{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: calc(100%/6);
+    justify-content: space-around;
+    width: 100%;
+}
+
+.product_availability_calendar_week div{
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9vw;
+    height: 100%;
+    line-height: 2vw;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 0.9vw;
+    line-height: 2vw;
+    position: relative;
+    text-align: center;
+    width: calc(70%/7);
+}
+
+.product_availability_calendar_day_selected{
+    background-color: var(--primary-color);
+}
+.product_availability_calendar_day_before{
+    color: gray;
+}
+.product_availability_calendar_day_today{
+    background-color: rgb(172, 172, 172);
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+@media (max-width: 599px) {
+    .product_availability_calendars {
+        height: 37vw;
+    }
+    .product_availability_calendar_header_month {
+        font-size: 2vw;
+    }
+    .product_availability_calendar_header_days>div {
+        font-size: 1.7vw;
+    }
+    .product_availability_calendar_week div {
+        font-size: 1.6vw;
+        margin-top: 3vw;
+    }
+    .product_availability_calendar_leftbtn, .product_availability_calendar_rightbtn {
+        font-size: 1.2vw;
+        height: 3vw;
+        width: 3vw;
+    }
+}

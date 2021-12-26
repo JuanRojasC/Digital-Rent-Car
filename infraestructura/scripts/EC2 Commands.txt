@@ -1,0 +1,69 @@
+MYSQL YUM
+------------------------------------------------------------------------------------------------------------------
+sudo yum install -y https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+sudo yum install -y mysql-community-server
+sudo systemctl start mysqld
+sudo systemctl enable mysqld
+sudo grep 'temporary password' /var/log/mysqld.log
+mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED BY '2Y4NKZh.';
+------------------------------------------------------------------------------------------------------------------
+MYSQL APT
+------------------------------------------------------------------------------------------------------------------
+sudo apt-get update
+sudo apt-get install gnupg
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.20-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.20-1_all.deb
+sudo apt update
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+------------------------------------------------------------------------------------------------------------------
+GIT
+------------------------------------------------------------------------------------------------------------------
+sudo yum install git -y
+------------------------------------------------------------------------------------------------------------------
+JAVA 17
+------------------------------------------------------------------------------------------------------------------
+sudo yum -y install wget curl
+wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+sudo rpm -ivh jdk-17_linux-x64_bin.rpm
+sudo vim /etc/profile
+-- export JAVA_HOME=/usr/java/default
+
+sudo yum -y install wget curl && wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm && sudo rpm -ivh jdk-17_linux-x64_bin.rpm && sudo vim /etc/profile
+------------------------------------------------------------------------------------------------------------------
+
+DOCKER DEBIAN
+------------------------------------------------------------------------------------------------------------------
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update
+apt-cache policy docker-ce
+sudo curl -O https://download.docker.com/linux/debian/dists/buster/pool/stable/amd64/containerd.io_1.4.3-1_amd64.deb
+sudo apt install ./containerd.io_1.4.3-1_amd64.deb
+sudo apt install docker-ce
+sudo systemctl status docker
+------------------------------------------------------------------------------------------------------------------
+
+DOCKER COMPOSE DEBIAN
+------------------------------------------------------------------------------------------------------------------
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo docker-compose --version
+------------------------------------------------------------------------------------------------------------------
+
+COMMANDS
+------------------------------------------------------------------------------------------------------------------
+puerto abierto: lsof -n -P | grep LISTEN
+procesos java: ps -A |grep java
+matar proceso java: kill - 9 PID
+------------------------------------------------------------------------------------------------------------------
+
+Run JAR in Background
+------------------------------------------------------------------------------------------------------------------
+nohup java -jay my_file.java &
+------------------------------------------------------------------------------------------------------------------
+
+
+sudo scp -i "Digital-Rentcar-Backend.pem" Digital-Rentcar-Backend.pem admin@3.136.234.111:

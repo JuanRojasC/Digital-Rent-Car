@@ -1,0 +1,126 @@
+server:
+  port: 8080
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+    instance:
+      hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: auth-service
+          uri: lb://users-service
+          predicates:
+            - Path=/auth/**
+
+        # USERS PATHS
+          # PRIVATES
+        - id: users-service
+          uri: lb://users-service
+          predicates:
+            - Path=/users/**
+          filters:
+            - AuthFilter
+
+        # BOOKINGS PATHS
+          # PRIVATES
+        - id: bookings-service
+          uri: lb://products-service
+          predicates:
+            - Path=/bookings/**
+          filters:
+            - AuthFilter
+
+        # CATEGORIES PATHS
+          # PRIVATES
+        - id: categories-service
+          uri: lb://categories-service
+          predicates:
+            - Path=/categories/save/new,/categories/find/ids,/categories/update/category,/categories/delete/**
+          filters:
+            - AuthFilter
+          # PUBLICS
+        - id: categories-service-public
+          uri: lb://categories-service
+          predicates:
+            - Path=/categories/find/**
+            - Method=GET
+
+        # CITIES PATHS
+          # PRIVATES
+        - id: cities-service
+          uri: lb://cities-service
+          predicates:
+            - Path=/cities/save/new,/cities/find/ids,/cities/update/city,/cities/delete/**,/countries/**
+          filters:
+            - AuthFilter
+          # PUBLICS
+        - id: cities-service-public
+          uri: lb://cities-service
+          predicates:
+            - Path=/cities/find/**
+            - Method=GET
+
+        # FEATURES PATHS
+          # PRIVATES
+        - id: features-service
+          uri: lb://features-service
+          predicates:
+            - Path=/features/**
+          filters:
+            - AuthFilter
+
+        # IMAGES PATHS
+          # PRIVATES
+        - id: images-service
+          uri: lb://images-service
+          predicates:
+            - Path=/images/save/new,/images/find/ids,/images/save/collection,/images/update/**,/images/delete/**
+          filters:
+            - AuthFilter
+          # PUBLICS
+        - id: images-service-public
+          uri: lb://images-service
+          predicates:
+            - Path=/images/find/**
+            - Method=GET
+        
+        # SPECS PATHS
+          # PRIVATES
+        - id: specs-service
+          uri: lb://specs-service
+          predicates:
+            - Path=/specs/**
+          filters:
+            - AuthFilter
+
+        # PRODUCTS PATHS
+          # PRIVATES
+        - id: products-service
+          uri: lb://products-service
+          predicates:
+            - Path=/products/save/new,/products/update/product,/products/delete/**
+          filters:
+            - AuthFilter
+          # PUBLICS
+        - id: products-service-publics
+          uri: lb://products-service
+          predicates:
+            - Path=/products/find/**
+
+        # T&C PATHS
+          # PRIVATES
+        - id: terms-and-conditions-service
+          uri: lb://products-service
+          predicates:
+            - Path=/terms-and-coditions/**
+          filters:
+            - AuthFilter

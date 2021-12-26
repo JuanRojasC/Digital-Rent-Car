@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.booking_data_container{
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgb(0 0 0 / 14%), 0px 3px 14px rgb(0 0 0 / 12%), 0px 5px 5px rgb(0 0 0 / 20%);
+    height: 15vw;
+    margin-left: -15px;
+    padding: 1vw 2vw;
+    width: 95%;
+}
+.booking_data_container_title{
+    font-size: 1.2vw;
+}
+
+.booking_data_container>p{
+    font-size: 0.8vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+.booking_data_container>form{
+    display: flex;
+    width: 100%;
+}
+.booking_data_container_form_group{
+    display: flex;
+    margin: 10px;
+    width: 50%;
+}
+.booking_data_container_form_group label{
+    display: block;
+    width: 30%;
+}
+.booking_data_container_form_group select{
+    background: rgba(248, 248, 249, 0.28);
+    border-radius: 12px;
+    border: 1px solid #AFA8A8;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    height: 35px;
+    padding-left: 1vw;
+    width: 94%;
+}
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .booking_data_container {
+        height: 50vw;
+        padding: 1vw 2vw;
+        width: 92%;
+        margin-top: 5vw;
+        margin-left: 0vw;
+    }
+    .booking_data_container_title {
+        font-size: 3.3vw;
+        margin: 2vw;
+    }
+    .booking_data_container>p {
+        font-size: 2.3vw;
+        margin-left: 3vw;
+        margin-top: -1vw;
+    }
+    .booking_data_container_form_group {
+        margin: 1vw 6vw;
+        width: 85%;
+    }
+    .booking_data_container>form {
+        flex-direction: column;
+    }
+    .booking_data_container_form_group select {
+        width: 100%;
+        margin-top: 2vw;
+        font-size: 2.7vw;
+        height: 8vw;
+    }
+}

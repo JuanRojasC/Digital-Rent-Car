@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api_categories/api_categories.iml" filepath="$PROJECT_DIR$/api_categories/api_categories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_cities/api_cities.iml" filepath="$PROJECT_DIR$/api_cities/api_cities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_features/api_features.iml" filepath="$PROJECT_DIR$/api_features/api_features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_images/api_images.iml" filepath="$PROJECT_DIR$/api_images/api_images.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_products/api_products.iml" filepath="$PROJECT_DIR$/api_products/api_products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_specs/api_specs.iml" filepath="$PROJECT_DIR$/api_specs/api_specs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_user/api_user/api_user.iml" filepath="$PROJECT_DIR$/api_user/api_user/api_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config_server/config_server.iml" filepath="$PROJECT_DIR$/config_server/config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka_service/eureka_service.iml" filepath="$PROJECT_DIR$/eureka_service/eureka_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway_service/gateway_service.iml" filepath="$PROJECT_DIR$/gateway_service/gateway_service.iml" />
+    </modules>
+  </component>
+</project>

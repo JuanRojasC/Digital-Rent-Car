@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "c28257c0-dfae-406a-80da-ab9a8e663165",
+		"name": "Digital_rentcar_images",
+		"description": "Test para la API categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test del Token\r",
+							"pm.test(\"Jwt Obtenido\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.status).to.eql(200);\r",
+							"    pm.expect(res.message).to.eql(\"Logged\");\r",
+							"    pm.collectionVariables.set(\"login_images\", res.user);\r",
+							"    pm.collectionVariables.set(\"jwt_images\",res.jwt);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sergiogarcia@gmail.com\",\r\n    \"password\": \"sergiogarcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_login}}",
+					"host": [
+						"{{endpoint_login}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.title).to.eql(\"Imagen de Testeo\");\r",
+							"    pm.collectionVariables.set(\"id_image\",res.id);\r",
+							"    pm.collectionVariables.set(\"title_image\",res.title);\r",
+							"    pm.collectionVariables.set(\"url_image\",res.urlImage);\r",
+							"    pm.expect(res.urlImage).to.eql(\"https://i.blogs.es/0a15be/skoda-kushaq-2021-07/1366_2000.jpeg\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwt_images}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Imagen de Testeo\",\r\n    \"urlImage\": \"https://i.blogs.es/0a15be/skoda-kushaq-2021-07/1366_2000.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save}}",
+					"host": [
+						"{{endpoint_save}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos by Ids",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado con ids\r",
+							"pm.test(\"Los ids solicitados se encuentran en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const data_ids = data.map(e=>e.id)\r",
+							"    const ids = [1,5,15,25];\r",
+							"    pm.expect(JSON.stringify(data_ids)).to.eql(JSON.stringify(ids));\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwt_images}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,5,15,25]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_find_by_ids}}",
+					"host": [
+						"{{endpoint_find_by_ids}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar todos by Ids",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body pero no jsonBody\", function (){\r",
+							"    pm.response.to.not.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwt_images}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[278,279,280,281]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_delete_by_ids}}",
+					"host": [
+						"{{endpoint_delete_by_ids}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    pm.expect(data.id).to.eql(pm.collectionVariables.get(\"id_image\"));\r",
+							"    pm.expect(data.title).to.eql(pm.collectionVariables.get(\"title_image\"));\r",
+							"    pm.expect(data.urlImage).to.eql(pm.collectionVariables.get(\"url_image\"));\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_id}}/{{id_image}}",
+					"host": [
+						"{{endpoint_find_id}}"
+					],
+					"path": [
+						"{{id_image}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"La Imagen de Testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_image\")\r",
+							"    const title = pm.collectionVariables.get(\"title_image\")\r",
+							"    const urlImage = pm.collectionVariables.get(\"url_image\")\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(id);\r",
+							"    pm.expect(ele.title).to.eql(title);\r",
+							"    pm.expect(ele.urlImage).to.eql(urlImage);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all}}",
+					"host": [
+						"{{endpoint_find_all}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de actualizar\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de datos\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const findAll = pm.collectionVariables.get(\"endpoint_find_all\")\r",
+							"    pm.sendRequest({findAll, function (err, response) {\r",
+							"        const data = response.json();\r",
+							"        const id = pm.collectionVariables.get(\"id_image\");\r",
+							"        const ele = data.find(ele => ele.id === id);\r",
+							"        pm.expect(ele.title).to.eql(\"Imagen de Testeo Actualizacion\"); }\r",
+							"    })\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwt_images}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{id_image}},\r\n    \"title\":\"Imagen de Testeo Actualizacion\",\r\n    \"urlImage\": \"https://i.blogs.es/0a15be/skoda-kushaq-2021-07/1366_2000.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_update}}",
+					"host": [
+						"{{endpoint_update}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwt_images}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{endpoint_delete_id}}/{{id_image}}",
+					"host": [
+						"{{endpoint_delete_id}}"
+					],
+					"path": [
+						"{{id_image}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:80"
+		},
+		{
+			"key": "endpoint",
+			"value": "{{localhost}}/images"
+		},
+		{
+			"key": "endpoint_save",
+			"value": "{{endpoint}}/save/new"
+		},
+		{
+			"key": "endpoint_find_by_ids",
+			"value": "{{endpoint}}/find/ids"
+		},
+		{
+			"key": "endpoint_delete_by_ids",
+			"value": "{{endpoint}}/delete/ids"
+		},
+		{
+			"key": "endpoint_find_all",
+			"value": "{{endpoint}}/find/all"
+		},
+		{
+			"key": "endpoint_find_id",
+			"value": "{{endpoint}}/find"
+		},
+		{
+			"key": "endpoint_update",
+			"value": "{{end_point}}/update/image"
+		},
+		{
+			"key": "endpoint_delete_id",
+			"value": "{{endpoint}}/delete"
+		},
+		{
+			"key": "endpoint_login",
+			"value": "{{localhost}}/auth/login"
+		},
+		{
+			"key": "login_images",
+			"value": ""
+		},
+		{
+			"key": "jwt_images",
+			"value": ""
+		},
+		{
+			"key": "id_image",
+			"value": ""
+		},
+		{
+			"key": "title_image",
+			"value": ""
+		},
+		{
+			"key": "url_image",
+			"value": ""
+		}
+	]
+}

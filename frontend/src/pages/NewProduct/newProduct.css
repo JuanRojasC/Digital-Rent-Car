@@ -1,0 +1,51 @@
+/*-------- global section-------*/
+.section_new_product {
+	margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+.section_new_product_data {
+	display: flex;
+	position: relative;
+}
+.section_new_product_button {
+    align-self: center;
+	background-color: #fbc02d;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	color: black;
+	cursor: pointer;
+	font-size: 1.15vw;
+	font-weight: bold;
+	margin-left: -4vw;
+    width: 30%;
+	padding: 0.6vw 4vw;
+	text-align: center;
+	text-decoration: none;
+	bottom: 25vw;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+	.section_new_product_button {
+		font-size: 4vw;
+		width: 50%;
+		padding: 0.6vw 5vw;
+		margin: 1vw 0vw 8vw 0vw;
+	}
+	.view_resum_btn_mobile{
+		width: 100vw;
+		font-size: 5vw;
+		font-weight: bold;
+		padding: 0.7vh 0vw;
+		background-color: var(--primary-color);
+		border: none;
+		position: sticky;
+		bottom: 0vh;
+	}
+}

@@ -1,0 +1,668 @@
+[2021-50-12 18:50:41] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 8, 7, 5, 9, 6] obtenidas
+[2021-08-12 19:08:08] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-08-12 19:08:08] [INFO ] [FeatureService:77] Se buscaron todas las caracteristicas
+[2021-08-12 19:08:10] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-08-12 19:08:10] [INFO ] [FeatureService:77] Se buscaron todas las caracteristicas
+[2021-08-12 19:08:58] [INFO ] [ImageService:36] IMAGES-SERVICE SUCCESS: imagen Engine Icon obtenida
+[2021-08-12 19:08:58] [INFO ] [FeatureService:51] Se busco caracteristica con id 5
+[2021-09-12 19:09:51] [INFO ] [ImageService:36] IMAGES-SERVICE SUCCESS: imagen seat Icon obtenida
+[2021-09-12 19:09:51] [INFO ] [FeatureService:51] Se busco caracteristica con id 15
+[2021-10-12 19:10:03] [INFO ] [ImageService:36] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-10-12 19:10:03] [INFO ] [FeatureService:51] Se busco caracteristica con id 10
+[2021-18-12 20:18:01] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-18-12 20:18:01] [INFO ] [FeatureService:77] Se buscaron todas las caracteristicas
+[2021-27-12 20:27:48] [INFO ] [FeatureService:80] Se buscaron todas las caracteristicas
+[2021-27-12 20:27:49] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-27-12 20:27:58] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-27-12 20:27:58] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-27-12 20:27:59] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [5, 6, 7, 8]
+[2021-28-12 20:28:00] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:00] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [9, 10, 11, 12]
+[2021-28-12 20:28:01] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:01] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [13, 14, 15, 16]
+[2021-28-12 20:28:02] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:03] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [17, 18, 19, 20]
+[2021-28-12 20:28:03] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:04] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [21, 22, 23, 24]
+[2021-28-12 20:28:05] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:05] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [25, 26, 27, 28]
+[2021-28-12 20:28:06] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:06] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [29, 30, 31, 32]
+[2021-28-12 20:28:07] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:08] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [33, 34, 35, 36]
+[2021-28-12 20:28:08] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:09] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [37, 38, 39, 40]
+[2021-28-12 20:28:10] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 9] obtenidas
+[2021-28-12 20:28:24] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-28-12 20:28:25] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:25] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [5, 6, 7, 8]
+[2021-28-12 20:28:26] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:27] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [9, 10, 11, 12]
+[2021-28-12 20:28:27] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:28] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [13, 14, 15, 16]
+[2021-28-12 20:28:28] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:29] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [17, 18, 19, 20]
+[2021-28-12 20:28:30] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:30] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [21, 22, 23, 24]
+[2021-28-12 20:28:31] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:32] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [25, 26, 27, 28]
+[2021-28-12 20:28:32] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:33] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [29, 30, 31, 32]
+[2021-28-12 20:28:33] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:34] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [33, 34, 35, 36]
+[2021-28-12 20:28:35] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-28-12 20:28:35] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [37, 38, 39, 40]
+[2021-28-12 20:28:36] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 9] obtenidas
+[2021-28-12 20:28:53] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-28-12 20:28:54] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-30-12 20:30:02] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-30-12 20:30:03] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:27] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-32-12 20:32:28] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:34] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [1, 2, 3, 4]
+[2021-32-12 20:32:34] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:35] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [5, 6, 7, 8]
+[2021-32-12 20:32:36] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:36] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [9, 10, 11, 12]
+[2021-32-12 20:32:37] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:37] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [13, 14, 15, 16]
+[2021-32-12 20:32:38] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:39] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [17, 18, 19, 20]
+[2021-32-12 20:32:39] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:40] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [21, 22, 23, 24]
+[2021-32-12 20:32:41] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:41] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [25, 26, 27, 28]
+[2021-32-12 20:32:42] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:42] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [29, 30, 31, 32]
+[2021-32-12 20:32:43] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:44] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [33, 34, 35, 36]
+[2021-32-12 20:32:44] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 7, 8, 9] obtenidas
+[2021-32-12 20:32:45] [INFO ] [FeatureService:88] Se buscaron las imagenes con ids: [37, 38, 39, 40]
+[2021-32-12 20:32:45] [INFO ] [ImageService:47] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 9] obtenidas
+[2021-20-12 21:20:02] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-20-12 21:20:03] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:12] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-20-12 21:20:12] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:13] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-20-12 21:20:13] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:14] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-20-12 21:20:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:15] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-20-12 21:20:16] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:16] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-20-12 21:20:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:18] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-20-12 21:20:18] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:19] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-20-12 21:20:20] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:20] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-20-12 21:20:21] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:21] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-20-12 21:20:22] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 21:20:23] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-20-12 21:20:23] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-21-12 21:21:03] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-21-12 21:21:03] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:12] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-21-12 21:21:12] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:13] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-21-12 21:21:13] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:13] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-21-12 21:21:13] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:14] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-21-12 21:21:14] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:14] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-21-12 21:21:14] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:15] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-21-12 21:21:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:15] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-21-12 21:21:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:16] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-21-12 21:21:16] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:16] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-21-12 21:21:16] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:17] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-21-12 21:21:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:17] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-21-12 21:21:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:17] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-21-12 21:21:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-21-12 21:21:17] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-21-12 21:21:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:18] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-21-12 21:21:18] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:18] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-21-12 21:21:18] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:19] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-21-12 21:21:19] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:20] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-21-12 21:21:20] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:20] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-21-12 21:21:20] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:21] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-21-12 21:21:21] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-21-12 21:21:21] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-21-12 21:21:21] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-21-12 21:21:51] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-21-12 21:21:51] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:46] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-24-12 21:24:46] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:47] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-24-12 21:24:47] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:47] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-24-12 21:24:47] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:48] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-24-12 21:24:48] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:48] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-24-12 21:24:48] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:49] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-24-12 21:24:49] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:50] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-24-12 21:24:50] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:50] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-24-12 21:24:50] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:51] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-24-12 21:24:51] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-24-12 21:24:52] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-24-12 21:24:52] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-48-12 21:48:45] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-48-12 21:48:45] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T02:48:45.868+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-52-12 21:52:04] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-52-12 21:52:04] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T02:52:04.782+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-52-12 21:52:44] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-52-12 21:52:44] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T02:52:44.544+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-56-12 21:56:36] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-56-12 21:56:36] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T02:56:36.478+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-57-12 21:57:52] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-57-12 21:57:53] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T02:57:53.016+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-00-12 22:00:30] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-00-12 22:00:31] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T03:00:30.975+00:00","status":500,"error":"Internal Server Error","path":"/images/find/Ids"}]
+[2021-13-12 22:13:06] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-13-12 22:13:06] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [405] during [POST] to [http://localhost:9005/images/find/Ids] [ImageFeignClient#findImagesByIds(Map)]: [{"timestamp":"2021-11-13T03:13:06.475+00:00","status":405,"error":"Method Not Allowed","path":"/images/find/Ids"}]
+[2021-18-12 22:18:27] [INFO ] [FeatureService:80] Se buscaron todas las features
+[2021-18-12 22:18:27] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 8, 9]} obtenidas
+[2021-18-12 22:18:42] [INFO ] [FeatureService:80] Se buscaron todas las features
+[2021-18-12 22:18:42] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:48] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-19-12 22:19:48] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:48] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-19-12 22:19:48] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:49] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-19-12 22:19:49] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:50] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-19-12 22:19:50] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:50] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-19-12 22:19:50] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:51] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-19-12 22:19:51] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:51] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-19-12 22:19:51] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:52] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-19-12 22:19:52] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:52] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-19-12 22:19:52] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-19-12 22:19:53] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-19-12 22:19:53] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-20-12 22:20:00] [INFO ] [FeatureService:88] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-20-12 22:20:00] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:00] [INFO ] [FeatureService:88] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-20-12 22:20:00] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:01] [INFO ] [FeatureService:88] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-20-12 22:20:01] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:02] [INFO ] [FeatureService:88] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-20-12 22:20:02] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:02] [INFO ] [FeatureService:88] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-20-12 22:20:02] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:03] [INFO ] [FeatureService:88] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-20-12 22:20:03] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:03] [INFO ] [FeatureService:88] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-20-12 22:20:03] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:04] [INFO ] [FeatureService:88] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-20-12 22:20:04] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:04] [INFO ] [FeatureService:88] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-20-12 22:20:04] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 7, 8, 9]} obtenidas
+[2021-20-12 22:20:05] [INFO ] [FeatureService:88] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-20-12 22:20:05] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids {features-ids=[5, 6, 7, 9]} obtenidas
+[2021-31-13 09:31:48] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: Connection refused: no further information executing POST http://localhost:9005/images/find/ids
+[2021-31-13 09:31:48] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-35-13 09:35:32] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-35-13 09:35:32] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-35-13 09:35:58] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-35-13 09:35:58] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-39-13 09:39:00] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/ids] [ImageFeignClient#findImagesByIds(Collection)]: [{"timestamp":"2021-11-13T14:39:00.428+00:00","status":500,"error":"Internal Server Error","path":"/images/find/ids"}]
+[2021-39-13 09:39:00] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-39-13 09:39:41] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-39-13 09:39:41] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-39-13 09:39:47] [INFO ] [FeatureService:90] Se buscaron todas las features
+[2021-01-13 12:01:44] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-01-13 12:01:44] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-01-13 12:01:55] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-01-13 12:01:56] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo
+[2021-01-13 12:01:57] [INFO ] [ImageService:27] IMAGES-API: imagen Imagen de Testeo de feature guardada
+[2021-01-13 12:01:57] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo Con Imagen
+[2021-01-13 12:01:58] [INFO ] [FeatureService:98] Se buscaron las features con ids: [1, 5, 15, 25]
+[2021-01-13 12:01:58] [INFO ] [FeatureService:98] Se buscaron las features con ids: [150, 152, 153, 154]
+[2021-02-13 12:02:00] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-02-13 12:02:00] [INFO ] [FeatureService:58] Se busco feature con id 42
+[2021-02-13 12:02:00] [INFO ] [FeatureService:90] Se buscaron todas las features
+[2021-02-13 12:02:01] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-02-13 12:02:02] [INFO ] [FeatureService:58] Se busco feature con id 41
+[2021-02-13 12:02:02] [INFO ] [FeatureService:68] Se actualizo feature con id 41
+[2021-02-13 12:02:03] [INFO ] [FeatureService:58] Se busco feature con id 41
+[2021-02-13 12:02:03] [INFO ] [FeatureService:76] Se elimino feature con id 41
+[2021-06-13 12:06:23] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-06-13 12:06:23] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-07-13 12:07:56] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-07-13 12:07:57] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo
+[2021-07-13 12:07:57] [INFO ] [ImageService:27] IMAGES-API: imagen Imagen de Testeo de feature guardada
+[2021-07-13 12:07:58] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo Con Imagen
+[2021-07-13 12:07:58] [INFO ] [FeatureService:103] Se buscaron las features con ids: [1, 5, 15, 25]
+[2021-07-13 12:07:59] [ERROR] [GlobalExceptionHandler:17] Error en búsqueda [ERROR 404: No se encontro la feature con id 150
+           Verifique los ids enviados]
+[2021-08-13 12:08:00] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 12:08:00] [INFO ] [FeatureService:58] Se busco feature con id 44
+[2021-08-13 12:08:01] [INFO ] [FeatureService:95] Se buscaron todas las features
+[2021-08-13 12:08:01] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 12:08:02] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 12:08:03] [INFO ] [FeatureService:58] Se busco feature con id 43
+[2021-08-13 12:08:03] [INFO ] [FeatureService:68] Se actualizo feature con id 43
+[2021-08-13 12:08:04] [INFO ] [FeatureService:58] Se busco feature con id 43
+[2021-08-13 12:08:04] [INFO ] [FeatureService:76] Se elimino feature con id 43
+[2021-09-13 12:09:19] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-09-13 12:09:19] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo
+[2021-09-13 12:09:20] [INFO ] [ImageService:27] IMAGES-API: imagen Imagen de Testeo de feature guardada
+[2021-09-13 12:09:20] [INFO ] [FeatureService:45] Se guardo feature con nombre Feature de Testeo Con Imagen
+[2021-09-13 12:09:21] [INFO ] [FeatureService:103] Se buscaron las features con ids: [1, 5, 15, 25]
+[2021-09-13 12:09:21] [ERROR] [GlobalExceptionHandler:17] Error en búsqueda [ERROR 404: No se encontro la feature con id 150
+           Verifique los ids enviados]
+[2021-09-13 12:09:23] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-09-13 12:09:23] [INFO ] [FeatureService:58] Se busco feature con id 46
+[2021-09-13 12:09:23] [INFO ] [FeatureService:95] Se buscaron todas las features
+[2021-09-13 12:09:24] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-09-13 12:09:25] [INFO ] [FeatureService:58] Se busco feature con id 45
+[2021-09-13 12:09:25] [INFO ] [FeatureService:68] Se actualizo feature con id 45
+[2021-09-13 12:09:26] [INFO ] [FeatureService:58] Se busco feature con id 45
+[2021-09-13 12:09:26] [INFO ] [FeatureService:76] Se elimino feature con id 45
+[2021-32-13 13:32:34] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-32-13 13:32:34] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-33-13 13:33:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-33-13 13:33:02] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-33-13 13:33:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-33-13 13:33:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-33-13 13:33:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-33-13 13:33:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-33-13 13:33:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-33-13 13:33:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-33-13 13:33:06] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-33-13 13:33:06] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-33-13 13:33:33] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-33-13 13:33:33] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-33-13 13:33:34] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-33-13 13:33:35] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-33-13 13:33:35] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-33-13 13:33:36] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-33-13 13:33:36] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-33-13 13:33:37] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-33-13 13:33:37] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-33-13 13:33:38] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-34-13 13:34:39] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-34-13 13:34:58] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-52-13 14:52:31] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-52-13 14:52:31] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-52-13 14:52:59] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-53-13 14:53:00] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-53-13 14:53:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-53-13 14:53:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-53-13 14:53:02] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-53-13 14:53:02] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-53-13 14:53:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-53-13 14:53:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-53-13 14:53:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-53-13 14:53:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-53-13 14:53:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-53-13 14:53:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-53-13 14:53:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-53-13 14:53:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-53-13 14:53:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-53-13 14:53:06] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-53-13 14:53:06] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-53-13 14:53:07] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-53-13 14:53:08] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-53-13 14:53:08] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-07-13 15:07:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-07-13 15:07:17] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-07-13 15:07:50] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-07-13 15:07:50] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-07-13 15:07:51] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-07-13 15:07:51] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-07-13 15:07:52] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-07-13 15:07:52] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-07-13 15:07:53] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-07-13 15:07:54] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-07-13 15:07:54] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-07-13 15:07:55] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-09-13 15:09:08] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-09-13 15:09:08] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-09-13 15:09:09] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-09-13 15:09:10] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-09-13 15:09:10] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-09-13 15:09:11] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-09-13 15:09:11] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-09-13 15:09:12] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-09-13 15:09:12] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-09-13 15:09:13] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-14-13 15:14:56] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-14-13 15:14:56] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-14-13 15:14:57] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-14-13 15:14:58] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-14-13 15:14:58] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-14-13 15:14:59] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-14-13 15:14:59] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-15-13 15:15:00] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-15-13 15:15:00] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-15-13 15:15:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-16-13 15:16:35] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Engine Icon obtenida
+[2021-16-13 15:16:35] [INFO ] [FeatureService:45] Se guardo feature con nombre enginePower
+[2021-16-13 15:16:36] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-16-13 15:16:36] [INFO ] [FeatureService:45] Se guardo feature con nombre airConditioning
+[2021-16-13 15:16:37] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen seat Icon obtenida
+[2021-16-13 15:16:37] [INFO ] [FeatureService:45] Se guardo feature con nombre seats
+[2021-16-13 15:16:38] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Gasoline Icon obtenida
+[2021-16-13 15:16:38] [INFO ] [FeatureService:45] Se guardo feature con nombre combustible
+[2021-16-13 15:16:40] [INFO ] [FeatureService:111] Se buscaron las features con ids: [47, 48, 49, 50]
+[2021-16-13 15:16:41] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-16-13 15:16:42] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-16-13 15:16:42] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-16-13 15:16:43] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-16-13 15:16:43] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-16-13 15:16:44] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-16-13 15:16:45] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-16-13 15:16:45] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-16-13 15:16:46] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-16-13 15:16:46] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-16-13 15:16:47] [INFO ] [FeatureService:111] Se buscaron las features con ids: [47, 48, 49, 50]
+[2021-16-13 15:16:48] [INFO ] [FeatureService:111] Se buscaron las features con ids: [47, 48, 49, 50]
+[2021-16-13 15:16:49] [INFO ] [FeatureService:58] Se busco feature con id 47
+[2021-16-13 15:16:49] [INFO ] [FeatureService:58] Se busco feature con id 48
+[2021-16-13 15:16:50] [INFO ] [FeatureService:58] Se busco feature con id 49
+[2021-16-13 15:16:50] [INFO ] [FeatureService:58] Se busco feature con id 50
+[2021-16-13 15:16:51] [INFO ] [FeatureService:76] Se actualizaron los features con ids [FeatureDTO(id=47, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=48, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=49, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=50, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-16-13 15:16:53] [INFO ] [FeatureService:111] Se buscaron las features con ids: [47, 48, 49, 50]
+[2021-16-13 15:16:54] [INFO ] [FeatureService:96] Se eliminaron feature con ids: [47, 48, 49, 50]
+[2021-17-13 15:17:53] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Engine Icon obtenida
+[2021-17-13 15:17:54] [INFO ] [FeatureService:45] Se guardo feature con nombre enginePower
+[2021-17-13 15:17:54] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-17-13 15:17:55] [INFO ] [FeatureService:45] Se guardo feature con nombre airConditioning
+[2021-17-13 15:17:55] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen seat Icon obtenida
+[2021-17-13 15:17:56] [INFO ] [FeatureService:45] Se guardo feature con nombre seats
+[2021-17-13 15:17:57] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Gasoline Icon obtenida
+[2021-17-13 15:17:57] [INFO ] [FeatureService:45] Se guardo feature con nombre combustible
+[2021-17-13 15:17:59] [INFO ] [FeatureService:111] Se buscaron las features con ids: [51, 52, 53, 54]
+[2021-18-13 15:18:00] [INFO ] [FeatureService:111] Se buscaron las features con ids: [1, 2, 3, 4]
+[2021-18-13 15:18:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [5, 6, 7, 8]
+[2021-18-13 15:18:01] [INFO ] [FeatureService:111] Se buscaron las features con ids: [9, 10, 11, 12]
+[2021-18-13 15:18:02] [INFO ] [FeatureService:111] Se buscaron las features con ids: [13, 14, 15, 16]
+[2021-18-13 15:18:02] [INFO ] [FeatureService:111] Se buscaron las features con ids: [17, 18, 19, 20]
+[2021-18-13 15:18:03] [INFO ] [FeatureService:111] Se buscaron las features con ids: [21, 22, 23, 24]
+[2021-18-13 15:18:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [25, 26, 27, 28]
+[2021-18-13 15:18:04] [INFO ] [FeatureService:111] Se buscaron las features con ids: [29, 30, 31, 32]
+[2021-18-13 15:18:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [33, 34, 35, 36]
+[2021-18-13 15:18:05] [INFO ] [FeatureService:111] Se buscaron las features con ids: [37, 38, 39, 40]
+[2021-18-13 15:18:06] [INFO ] [FeatureService:111] Se buscaron las features con ids: [51, 52, 53, 54]
+[2021-18-13 15:18:07] [INFO ] [FeatureService:111] Se buscaron las features con ids: [51, 52, 53, 54]
+[2021-18-13 15:18:08] [INFO ] [FeatureService:58] Se busco feature con id 51
+[2021-18-13 15:18:08] [INFO ] [FeatureService:58] Se busco feature con id 52
+[2021-18-13 15:18:09] [INFO ] [FeatureService:58] Se busco feature con id 53
+[2021-18-13 15:18:10] [INFO ] [FeatureService:58] Se busco feature con id 54
+[2021-18-13 15:18:10] [INFO ] [FeatureService:76] Se actualizaron los features con ids [FeatureDTO(id=51, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=52, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=53, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=54, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-18-13 15:18:12] [INFO ] [FeatureService:111] Se buscaron las features con ids: [51, 52, 53, 54]
+[2021-18-13 15:18:13] [INFO ] [FeatureService:96] Se eliminaron feature con ids: [51, 52, 53, 54]
+[2021-29-13 15:29:55] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-29-13 15:29:55] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-30-13 15:30:11] [INFO ] [FeatureService:103] Se buscaron todas las features
+[2021-30-13 15:30:11] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-30-13 15:30:12] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-30-13 15:30:12] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-31-13 15:31:23] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Engine Icon obtenida
+[2021-31-13 15:31:24] [INFO ] [FeatureService:45] Se guardo feature con nombre enginePower
+[2021-31-13 15:31:24] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-31-13 15:31:25] [INFO ] [FeatureService:45] Se guardo feature con nombre airConditioning
+[2021-31-13 15:31:25] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen seat Icon obtenida
+[2021-31-13 15:31:26] [INFO ] [FeatureService:45] Se guardo feature con nombre seats
+[2021-31-13 15:31:26] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Gasoline Icon obtenida
+[2021-31-13 15:31:27] [INFO ] [FeatureService:45] Se guardo feature con nombre combustible
+[2021-31-13 15:31:29] [INFO ] [FeatureService:111] Se buscaron las features con ids: [55, 56, 57, 58]
+[2021-31-13 15:31:30] [INFO ] [FeatureService:103] Se buscaron todas las features
+[2021-31-13 15:31:31] [INFO ] [FeatureService:111] Se buscaron las features con ids: [55, 56, 57, 58]
+[2021-31-13 15:31:32] [INFO ] [FeatureService:58] Se busco feature con id 55
+[2021-31-13 15:31:33] [INFO ] [FeatureService:58] Se busco feature con id 56
+[2021-31-13 15:31:33] [INFO ] [FeatureService:58] Se busco feature con id 57
+[2021-31-13 15:31:34] [INFO ] [FeatureService:58] Se busco feature con id 58
+[2021-31-13 15:31:34] [INFO ] [FeatureService:76] Se actualizaron los features con ids [FeatureDTO(id=55, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=56, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=57, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=58, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-31-13 15:31:36] [INFO ] [FeatureService:111] Se buscaron las features con ids: [55, 56, 57, 58]
+[2021-31-13 15:31:37] [INFO ] [FeatureService:96] Se eliminaron feature con ids: [55, 56, 57, 58]
+[2021-32-13 15:32:27] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-32-13 15:32:27] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-33-13 15:33:29] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Engine Icon obtenida
+[2021-33-13 15:33:29] [INFO ] [FeatureService:45] Se guardo feature con nombre enginePower
+[2021-33-13 15:33:30] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Air conditioner Icon obtenida
+[2021-33-13 15:33:30] [INFO ] [FeatureService:45] Se guardo feature con nombre airConditioning
+[2021-33-13 15:33:31] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen seat Icon obtenida
+[2021-33-13 15:33:31] [INFO ] [FeatureService:45] Se guardo feature con nombre seats
+[2021-33-13 15:33:32] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Gasoline Icon obtenida
+[2021-33-13 15:33:32] [INFO ] [FeatureService:45] Se guardo feature con nombre combustible
+[2021-33-13 15:33:34] [INFO ] [FeatureService:111] Se buscaron las features con ids: [59, 60, 61, 62]
+[2021-33-13 15:33:36] [INFO ] [FeatureService:103] Se buscaron todas las features
+[2021-33-13 15:33:36] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 15:33:37] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 15:33:37] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 15:33:39] [INFO ] [FeatureService:111] Se buscaron las features con ids: [59, 60, 61, 62]
+[2021-33-13 15:33:39] [INFO ] [FeatureService:58] Se busco feature con id 59
+[2021-33-13 15:33:40] [INFO ] [FeatureService:58] Se busco feature con id 60
+[2021-33-13 15:33:40] [INFO ] [FeatureService:58] Se busco feature con id 61
+[2021-33-13 15:33:41] [INFO ] [FeatureService:58] Se busco feature con id 62
+[2021-33-13 15:33:42] [INFO ] [FeatureService:76] Se actualizaron los features con ids [FeatureDTO(id=59, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=60, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=61, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=62, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-33-13 15:33:43] [INFO ] [FeatureService:111] Se buscaron las features con ids: [59, 60, 61, 62]
+[2021-33-13 15:33:44] [INFO ] [FeatureService:96] Se eliminaron feature con ids: [59, 60, 61, 62]
+[2021-53-13 15:53:36] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-53-13 15:53:36] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-55-13 15:55:00] [INFO ] [FeatureService:57] Se guardaron las features con ids: [null, null, null, null]
+[2021-55-13 15:55:02] [INFO ] [FeatureService:127] Se buscaron las features con ids: [null, null, null, null]
+[2021-55-13 15:55:03] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-55-13 15:55:04] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-55-13 15:55:05] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-55-13 15:55:05] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-55-13 15:55:06] [INFO ] [FeatureService:127] Se buscaron las features con ids: [null, null, null, null]
+[2021-55-13 15:55:08] [INFO ] [FeatureService:127] Se buscaron las features con ids: [null, null, null, null]
+[2021-57-13 15:57:24] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-08-13 16:08:39] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-08-13 16:08:39] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-08-13 16:08:53] [INFO ] [FeatureService:54] Se guardaron las features con ids: [67, 68, 69, 70]
+[2021-08-13 16:08:55] [INFO ] [FeatureService:124] Se buscaron las features con ids: [null, null, null, null]
+[2021-08-13 16:08:56] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-08-13 16:08:57] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 16:08:57] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 16:08:58] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-08-13 16:08:59] [INFO ] [FeatureService:124] Se buscaron las features con ids: [null, null, null, null]
+[2021-09-13 16:09:01] [INFO ] [FeatureService:124] Se buscaron las features con ids: [null, null, null, null]
+[2021-09-13 16:09:29] [INFO ] [FeatureService:124] Se buscaron las features con ids: [null, null, null, null]
+[2021-09-13 16:09:51] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-11-13 16:11:19] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-32-13 16:32:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-32-13 16:32:15] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-33-13 16:33:00] [INFO ] [FeatureService:54] Se guardaron las features con ids: [71, 72, 73, 74]
+[2021-33-13 16:33:02] [INFO ] [FeatureService:124] Se buscaron las features con ids: [71, 72, 73, 74]
+[2021-33-13 16:33:04] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-33-13 16:33:04] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 16:33:05] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 16:33:05] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-33-13 16:33:07] [INFO ] [FeatureService:124] Se buscaron las features con ids: [71, 72, 73, 74]
+[2021-33-13 16:33:07] [INFO ] [FeatureService:67] Se busco feature con id 71
+[2021-33-13 16:33:08] [INFO ] [FeatureService:67] Se busco feature con id 72
+[2021-33-13 16:33:08] [INFO ] [FeatureService:67] Se busco feature con id 73
+[2021-33-13 16:33:09] [INFO ] [FeatureService:67] Se busco feature con id 74
+[2021-33-13 16:33:09] [INFO ] [FeatureService:89] Se actualizaron los features con ids [FeatureDTO(id=71, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=72, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=73, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=74, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-33-13 16:33:11] [INFO ] [FeatureService:124] Se buscaron las features con ids: [71, 72, 73, 74]
+[2021-33-13 16:33:12] [INFO ] [FeatureService:109] Se eliminaron feature con ids: [71, 72, 73, 74]
+[2021-27-13 18:27:51] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-27-13 18:27:51] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-29-13 18:29:01] [INFO ] [FeatureService:54] Se guardaron las features con ids: [75, 76, 77, 78]
+[2021-29-13 18:29:03] [INFO ] [FeatureService:124] Se buscaron las features con ids: [75, 76, 77, 78]
+[2021-29-13 18:29:04] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-29-13 18:29:05] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-29-13 18:29:06] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-29-13 18:29:06] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-29-13 18:29:07] [INFO ] [FeatureService:124] Se buscaron las features con ids: [75, 76, 77, 78]
+[2021-29-13 18:29:08] [INFO ] [FeatureService:67] Se busco feature con id 75
+[2021-29-13 18:29:09] [INFO ] [FeatureService:67] Se busco feature con id 76
+[2021-29-13 18:29:09] [INFO ] [FeatureService:67] Se busco feature con id 77
+[2021-29-13 18:29:10] [INFO ] [FeatureService:67] Se busco feature con id 78
+[2021-29-13 18:29:10] [INFO ] [FeatureService:89] Se actualizaron los features con ids [FeatureDTO(id=75, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=76, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=77, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=78, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-29-13 18:29:12] [INFO ] [FeatureService:124] Se buscaron las features con ids: [75, 76, 77, 78]
+[2021-29-13 18:29:13] [INFO ] [FeatureService:109] Se eliminaron feature con ids: [75, 76, 77, 78]
+[2021-31-13 18:31:17] [INFO ] [FeatureService:54] Se guardaron las features con ids: [79, 80, 81, 82]
+[2021-31-13 18:31:18] [INFO ] [FeatureService:124] Se buscaron las features con ids: [79, 80, 81, 82]
+[2021-31-13 18:31:20] [INFO ] [FeatureService:116] Se buscaron todas las features
+[2021-31-13 18:31:21] [INFO ] [FeatureService:124] Se buscaron las features con ids: [79, 80, 81, 82]
+[2021-31-13 18:31:22] [INFO ] [FeatureService:67] Se busco feature con id 79
+[2021-31-13 18:31:22] [INFO ] [FeatureService:67] Se busco feature con id 80
+[2021-31-13 18:31:23] [INFO ] [FeatureService:67] Se busco feature con id 81
+[2021-31-13 18:31:23] [INFO ] [FeatureService:67] Se busco feature con id 82
+[2021-31-13 18:31:24] [INFO ] [FeatureService:89] Se actualizaron los features con ids [FeatureDTO(id=79, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=80, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=81, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=82, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-31-13 18:31:25] [INFO ] [FeatureService:124] Se buscaron las features con ids: [79, 80, 81, 82]
+[2021-31-13 18:31:26] [INFO ] [FeatureService:109] Se eliminaron feature con ids: [79, 80, 81, 82]
+[2021-46-13 18:46:59] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-46-13 18:46:59] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-47-13 18:47:10] [INFO ] [FeatureService:54] Se guardaron las features con ids: [83, 84, 85, 86]
+[2021-47-13 18:47:12] [INFO ] [FeatureService:127] Se buscaron las features con ids: [83, 84, 85, 86]
+[2021-47-13 18:47:13] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-47-13 18:47:14] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-47-13 18:47:15] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-47-13 18:47:15] [INFO ] [ImageService:38] IMAGES-SERVICE SUCCESS: imagen Imagen de Testeo de feature obtenida
+[2021-47-13 18:47:16] [INFO ] [FeatureService:127] Se buscaron las features con ids: [83, 84, 85, 86]
+[2021-47-13 18:47:18] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=83, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=84, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=85, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=86, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-47-13 18:47:19] [INFO ] [FeatureService:127] Se buscaron las features con ids: [83, 84, 85, 86]
+[2021-47-13 18:47:20] [INFO ] [FeatureService:112] Se eliminaron feature con ids: [83, 84, 85, 86]
+[2021-52-13 18:52:48] [INFO ] [FeatureService:54] Se guardaron las features con ids: [41, 42, 43, 44]
+[2021-52-13 18:52:50] [INFO ] [FeatureService:127] Se buscaron las features con ids: [41, 42, 43, 44]
+[2021-52-13 18:52:51] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-52-13 18:52:52] [INFO ] [FeatureService:127] Se buscaron las features con ids: [41, 42, 43, 44]
+[2021-52-13 18:52:54] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=41, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=42, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=43, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=44, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-52-13 18:52:55] [INFO ] [FeatureService:127] Se buscaron las features con ids: [41, 42, 43, 44]
+[2021-52-13 18:52:56] [INFO ] [FeatureService:112] Se eliminaron feature con ids: [41, 42, 43, 44]
+[2021-53-13 18:53:10] [INFO ] [FeatureService:54] Se guardaron las features con ids: [45, 46, 47, 48]
+[2021-53-13 18:53:12] [INFO ] [FeatureService:127] Se buscaron las features con ids: [45, 46, 47, 48]
+[2021-53-13 18:53:13] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-53-13 18:53:15] [INFO ] [FeatureService:127] Se buscaron las features con ids: [45, 46, 47, 48]
+[2021-53-13 18:53:16] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=45, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=46, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=47, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=48, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-53-13 18:53:17] [INFO ] [FeatureService:127] Se buscaron las features con ids: [45, 46, 47, 48]
+[2021-53-13 18:53:18] [INFO ] [FeatureService:112] Se eliminaron feature con ids: [45, 46, 47, 48]
+[2021-56-13 18:56:09] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-56-13 18:56:09] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-56-13 18:56:29] [INFO ] [FeatureService:54] Se guardaron las features con ids: [49, 50, 51, 52]
+[2021-56-13 18:56:31] [INFO ] [FeatureService:130] Se buscaron las features con ids: [49, 50, 51, 52]
+[2021-56-13 18:56:32] [INFO ] [FeatureService:122] Se buscaron todas las features
+[2021-56-13 18:56:34] [INFO ] [FeatureService:130] Se buscaron las features con ids: [49, 50, 51, 52]
+[2021-56-13 18:56:34] [INFO ] [FeatureService:86] entrada al metodo--------------------------------
+[2021-56-13 18:56:34] [INFO ] [FeatureService:92] salida del metodo--------------------------------
+[2021-56-13 18:56:35] [INFO ] [FeatureService:94] salida del metodo de guarda en db--------------------------------
+[2021-56-13 18:56:35] [INFO ] [FeatureService:95] Se actualizaron los features con ids [FeatureDTO(id=49, name=enginePower actualizado, value=284 HP, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=50, name=airConditioning actualizado, value=true, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=51, name=seats actualizado, value=2, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=52, name=combustible actualizado, value=Gasoline, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-56-13 18:56:36] [INFO ] [FeatureService:130] Se buscaron las features con ids: [49, 50, 51, 52]
+[2021-56-13 18:56:37] [INFO ] [FeatureService:115] Se eliminaron features con ids: [49, 50, 51, 52]
+[2021-57-14 19:57:12] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: [500] during [POST] to [http://localhost:9005/images/find/ids] [ImageFeignClient#findImagesByIds(Collection)]: [{"timestamp":"2021-11-15T00:57:12.839+00:00","status":500,"error":"Internal Server Error","path":"/images/find/ids"}]
+[2021-57-14 19:57:12] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-03-14 20:03:45] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-03-14 20:03:45] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-06-14 20:06:48] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-07-14 20:07:30] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-49-14 20:49:28] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-49-14 20:49:28] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-50-14 20:50:17] [INFO ] [FeatureService:54] Se guardaron las features con ids: [53, 54, 55, 56]
+[2021-50-14 20:50:21] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-50-14 20:50:29] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-51-14 20:51:23] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-51-14 20:51:37] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-55-14 20:55:51] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-56-14 20:56:41] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-57-14 20:57:09] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-57-14 20:57:34] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-58-14 20:58:23] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-02-14 21:02:49] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-03-14 21:03:05] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-03-14 21:03:54] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-09-14 21:09:30] [INFO ] [FeatureService:54] Se guardaron las features con ids: [57, 58, 59, 60]
+[2021-11-14 21:11:09] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-13-14 21:13:23] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-14-14 21:14:42] [INFO ] [FeatureService:54] Se guardaron las features con ids: [61, 62, 63, 64]
+[2021-14-14 21:14:54] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-17-14 21:17:38] [INFO ] [FeatureService:128] Se buscaron las features con ids: [null, null, null, null]
+[2021-17-14 21:17:45] [INFO ] [FeatureService:54] Se guardaron las features con ids: [65, 66, 67, 68]
+[2021-17-14 21:17:53] [INFO ] [FeatureService:92] salida del metodo de guarda en db--------------------------------
+[2021-17-14 21:17:53] [INFO ] [FeatureService:93] Se actualizaron los features con ids [FeatureDTO(id=null, name=enginePower de Testeo Actualizado, value=145 HP, icon=Image(id=7, title=null, urlImage=null)), FeatureDTO(id=null, name=airConditioning de Testeo Actualizado, value=true, icon=Image(id=5, title=null, urlImage=null)), FeatureDTO(id=null, name=seats de Testeo Actualizado, value=7, icon=Image(id=9, title=null, urlImage=null)), FeatureDTO(id=null, name=combustible de Testeo Actualizado, value=Diesel, icon=Image(id=8, title=null, urlImage=null))]
+[2021-23-14 21:23:12] [INFO ] [FeatureService:54] Se guardaron las features con ids: [73, 74, 75, 76]
+[2021-25-14 21:25:53] [INFO ] [FeatureService:54] Se guardaron las features con ids: [77, 78, 79, 80]
+[2021-26-14 21:26:08] [INFO ] [FeatureService:92] salida del metodo de guarda en db--------------------------------
+[2021-26-14 21:26:08] [INFO ] [FeatureService:93] Se actualizaron los features con ids [FeatureDTO(id=77, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=78, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=79, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=80, name=combustible de , value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-26-14 21:26:33] [INFO ] [FeatureService:128] Se buscaron las features con ids: [77, 78, 79, 80]
+[2021-26-14 21:26:42] [INFO ] [FeatureService:92] salida del metodo de guarda en db--------------------------------
+[2021-26-14 21:26:42] [INFO ] [FeatureService:93] Se actualizaron los features con ids [FeatureDTO(id=77, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=78, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=79, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=80, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-26-14 21:26:55] [INFO ] [FeatureService:128] Se buscaron las features con ids: [77, 78, 79, 80]
+[2021-26-14 21:26:56] [INFO ] [FeatureService:113] Se eliminaron features con ids: [77, 78, 79, 80]
+[2021-28-14 21:28:41] [INFO ] [FeatureService:54] Se guardaron las features con ids: [81, 82, 83, 84]
+[2021-30-14 21:30:16] [INFO ] [FeatureService:128] Se buscaron las features con ids: [81, 82, 83, 84]
+[2021-32-14 21:32:52] [INFO ] [FeatureService:128] Se buscaron las features con ids: [81, 82, 83, 84]
+[2021-32-14 21:32:53] [INFO ] [FeatureService:113] Se eliminaron features con ids: [81, 82, 83, 84]
+[2021-33-14 21:33:44] [INFO ] [FeatureService:54] Se guardaron las features con ids: [85, 86, 87, 88]
+[2021-33-14 21:33:48] [INFO ] [FeatureService:128] Se buscaron las features con ids: [85, 86, 87, 88]
+[2021-33-14 21:33:53] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-34-14 21:34:26] [INFO ] [FeatureService:120] Se buscaron todas las features
+[2021-34-14 21:34:31] [INFO ] [FeatureService:92] salida del metodo de guarda en db--------------------------------
+[2021-34-14 21:34:31] [INFO ] [FeatureService:93] Se actualizaron los features con ids [FeatureDTO(id=85, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=86, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=87, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=88, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-34-14 21:34:34] [INFO ] [FeatureService:128] Se buscaron las features con ids: [85, 86, 87, 88]
+[2021-34-14 21:34:35] [INFO ] [FeatureService:113] Se eliminaron features con ids: [85, 86, 87, 88]
+[2021-36-14 21:36:33] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-36-14 21:36:33] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-36-14 21:36:55] [INFO ] [FeatureService:54] Se guardaron las features con ids: [89, 90, 91, 92]
+[2021-36-14 21:36:59] [INFO ] [FeatureService:127] Se buscaron las features con ids: [89, 90, 91, 92]
+[2021-37-14 21:37:04] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-37-14 21:37:08] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-37-14 21:37:13] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=89, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=90, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=91, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=92, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-37-14 21:37:16] [INFO ] [FeatureService:127] Se buscaron las features con ids: [89, 90, 91, 92]
+[2021-37-14 21:37:17] [INFO ] [FeatureService:112] Se eliminaron features con ids: [89, 90, 91, 92]
+[2021-39-14 21:39:12] [INFO ] [FeatureService:54] Se guardaron las features con ids: [93, 94, 95, 96]
+[2021-39-14 21:39:17] [INFO ] [FeatureService:127] Se buscaron las features con ids: [93, 94, 95, 96]
+[2021-39-14 21:39:22] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-39-14 21:39:25] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-39-14 21:39:31] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=93, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=94, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=95, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=96, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-39-14 21:39:34] [INFO ] [FeatureService:127] Se buscaron las features con ids: [93, 94, 95, 96]
+[2021-39-14 21:39:35] [INFO ] [FeatureService:112] Se eliminaron features con ids: [93, 94, 95, 96]
+[2021-40-14 21:40:11] [INFO ] [FeatureService:54] Se guardaron las features con ids: [97, 98, 99, 100]
+[2021-40-14 21:40:17] [INFO ] [FeatureService:127] Se buscaron las features con ids: [97, 98, 99, 100]
+[2021-40-14 21:40:18] [INFO ] [FeatureService:112] Se eliminaron features con ids: [97, 98, 99, 100]
+[2021-40-14 21:40:55] [INFO ] [FeatureService:54] Se guardaron las features con ids: [101, 102, 103, 104]
+[2021-43-14 21:43:15] [INFO ] [FeatureService:54] Se guardaron las features con ids: [105, 106, 107, 108]
+[2021-43-14 21:43:44] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=105, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=106, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=107, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=108, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-43-14 21:43:57] [INFO ] [FeatureService:127] Se buscaron las features con ids: [105, 106, 107, 108]
+[2021-43-14 21:43:58] [INFO ] [FeatureService:112] Se eliminaron features con ids: [105, 106, 107, 108]
+[2021-44-14 21:44:09] [INFO ] [FeatureService:54] Se guardaron las features con ids: [109, 110, 111, 112]
+[2021-44-14 21:44:13] [INFO ] [FeatureService:127] Se buscaron las features con ids: [109, 110, 111, 112]
+[2021-44-14 21:44:18] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-44-14 21:44:22] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-44-14 21:44:27] [INFO ] [FeatureService:92] Se actualizaron los features con ids [FeatureDTO(id=109, name=enginePower, value=145 HP Testeo Actualizado, icon=Image(id=7, title=Engine Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/engine.png)), FeatureDTO(id=110, name=airConditioning, value=true Testeo Actualizado, icon=Image(id=5, title=Air conditioner Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/air-conditioner.png)), FeatureDTO(id=111, name=seats, value=7 Testeo Actualizado, icon=Image(id=9, title=seat Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/seat.png)), FeatureDTO(id=112, name=combustible, value=Diesel Testeo Actualizado, icon=Image(id=8, title=Gasoline Icon, urlImage=https://digital-rentcar-bucket.s3.us-east-2.amazonaws.com/Icons/gasoline.png))]
+[2021-44-14 21:44:30] [INFO ] [FeatureService:127] Se buscaron las features con ids: [109, 110, 111, 112]
+[2021-44-14 21:44:31] [INFO ] [FeatureService:112] Se eliminaron features con ids: [109, 110, 111, 112]
+[2021-14-15 12:14:44] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-14-15 12:14:44] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-18-15 12:18:41] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-18-15 12:18:41] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-21-15 12:21:32] [INFO ] [FeatureService:119] Se buscaron todas las features
+[2021-51-15 12:51:53] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-51-15 12:51:53] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-52-15 12:52:17] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-52-15 12:52:17] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-53-15 12:53:33] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: images-service executing POST http://images-service/images/find/ids
+[2021-53-15 12:53:33] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-13-15 13:13:15] [INFO ] [ImageService:49] IMAGES-SERVICE SUCCESS: imagenes con ids [5, 6, 7, 8, 9] obtenidas
+[2021-13-15 13:13:15] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]
+[2021-14-15 16:14:57] [ERROR] [ImageService:52] IMAGES-SERVICE FALLO: images-service executing POST http://images-service/images/find/ids
+[2021-14-15 16:14:57] [INFO ] [CacheImages:38] IMAGES-CACHE MEMORY: Se guardaron las imagenes con ids: [5, 6, 7, 8, 9]

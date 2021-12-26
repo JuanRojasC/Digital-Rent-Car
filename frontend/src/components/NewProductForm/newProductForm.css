@@ -1,0 +1,340 @@
+.new_product_container {
+	width: 60%;
+    padding-top: 1vh;
+}
+
+.new_product_container_form {
+	width: 90%;
+	margin: auto;
+    margin: 0vw;
+}
+.new_product_navbar{
+    margin-bottom: 2vw;
+}
+
+/*-----select----*/
+.new_product_container_form select {
+    background: var(--gray-color-reservation);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    height: 35px;
+    width: 98%;
+}
+#categories, #cities{
+    padding-left: 1vw;
+}
+
+.form_new_product_section {
+    width: 100%;
+    padding: 0.8vw;
+    padding-left: 1.8vw;
+    padding-bottom: 2vw;
+    border-radius: 0.8vw;
+    margin-bottom: 2vw;
+    margin-left: 2.5vw;
+}
+
+.form_new_product_section>h2{
+    font-size: 1.1vw;
+    margin-bottom: 1.0vw;
+}
+.form_new_product_divider_images{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1vw;
+}
+/*----------Div Global T&C Cards----------*/
+.form_new_product_divider_terms_and_conditions_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*----------T&C Card----------*/
+.form_new_product_divider_terms_and_conditions_item{
+    width: 45%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    margin: 2.5%;
+    background-color: white;
+    padding: 0vw 0.75vw 0vw 1vw;
+    border-radius: 1vw;
+    text-align: justify;
+    position: relative;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: 1px solid #afa8a8;
+}
+
+/*----------T&C Card Text Div <Title and Description>----------*/
+.form_term_and_condition_text_div{
+    margin: 0vw 0.75vw 0vw 1vw;
+}
+
+/*----------T&C Card Title----------*/
+.form_new_product_term_and_condition_title{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+/*----------T&C Card Description----------*/
+.form_new_product_term_and_condition_description{
+    font-size: 0.55vw;
+}
+
+/*----------T&C Card Checkbox----------*/
+.form_new_product_divider_terms_and_conditions_item input{
+    transform: scale(1.4);
+    margin-right: 1vw;
+}
+
+/*----------T&C Card Icon----------*/
+.form_new_product_divider_terms_and_conditions_item > img{
+    display: block;
+    height: 4vw;
+    width: 4vw;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+}
+/*-----divider----*/
+.form_new_product_divider{
+	justify-content: space-between;
+	width: 100%;
+    display: flex;
+}
+
+/*-----form group----*/
+.form_new_product_group {
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	width: 100%;
+    position: relative;
+    margin-bottom: 0.5vw;
+    margin-left: 1vw;
+}
+/*-----label----*/
+.form_new_product_group label {
+	color: var(--secondary-color);
+	font-size: max(1vw, min(15px));
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+    width: 100%;
+    font-size: 0.9vw;
+}
+/*-----input----*/
+.form_new_product_group input {
+    border-radius: 5px;
+    color: var( --secondary-color);
+    font-size: 0.8vw;
+    line-height: 25px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 10px;
+    height: 2.5vw;
+    position: relative;
+    border: none;
+    background: var(--gray-color-reservation);
+}
+
+#form_new_product_divider_name_description{
+    flex-direction: column;
+}
+#form_new_product_divider_name_description input{
+    width: 97%;
+}
+#form_new_product_divider_name_description textarea {
+    resize: none;
+    width: 97%;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    font-size: 0.8vw;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 5vw;
+    position: relative;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background: var(--gray-color-reservation);
+    border: none;
+}
+.form_new_product_group_spec{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_new_product_group_spec label{
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 0.5vw auto 1vw;
+}
+/*----------Image Specs Form----------*/
+.form_new_product_group_spec img{
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.7vw;
+    border: 3px solid black;
+}
+
+
+
+
+
+/*----------Title Spec Form----------*/
+.form_new_product_spec_title{
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+
+
+
+.form_new_product_group_spec>input, .form_new_product_group_spec>select{
+    text-align: center;
+    background: var(--gray-color-reservation);
+	border-radius: 5px;
+	border: 1px solid #757575;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	height: 35px;
+    width: 70%;
+}
+.new_product_container_form .form_new_product_features_section{
+    margin-top: -3vw;
+}
+.new_product_container_form .form_new_product_image_section{
+    background: var(--gray-color-reservation);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.new_product_container_form .form_new_product_image_section input{
+    background-color: #ffffff;
+}
+
+/*-------------------Tablet Design-----------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+}
+
+/*-------------------Mobile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .section_new_product_data {
+        flex-direction: column;
+    }
+    .form_new_product_section {
+        width: 88vw;
+        margin-left: 5.5vw;
+        padding: 2vw 3vw;
+    }
+    .form_new_product_section>h2 {
+        font-size: 3.3vw;
+    }
+    .form_new_product_group label {
+        margin-bottom: 1.5vw;
+        font-size: 2.8vw;
+        margin-top: 1.5vw;
+    }
+    .form_new_product_group input {
+        height: 6.5vw;        
+        font-size: 2.8vw;
+    }
+    #form_new_product_divider_name_description textarea {
+        height: 20vw;
+        margin-bottom: 1vw;
+        font-size: 2.8vw;
+    }
+    .new_product_container_form select {
+        height: 6.5vw;
+        width: 96%;
+    }
+    #categories, #cities {
+        font-size: 2.8vw;
+    }
+    .new_product_container_form .form_new_product_features_section {
+        margin: 2vw 6vw 5vw;
+    }
+    .form_new_product_group_spec {
+        width: 40%;
+        margin-top: 2vw;
+    }
+    .form_new_product_divider {
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .form_new_product_spec_title {
+        font-size: 2.8vw;
+    }
+    .form_new_product_group_spec>input::placeholder, .form_new_product_group_spec>select {
+        font-size: 2.8vw;
+        color: #000;
+        height: 5vw;
+    }
+    .form_new_product_group_spec>input, .form_new_product_group_spec>select {
+        height: 7vw;
+    }
+    .new_product_container_form .form_new_product_image_section input {
+        background-color: #ffffff;
+        height: 5.5vw;
+        margin: 1.5vw 2vw;
+        font-size: 2.8vw;
+        padding: 2vw;
+    }
+    #input_text_new_product_image_gallery {
+        height: 5.5vw!important;
+        margin: 0vw 2vw!important;
+        width: 100%;
+    }
+    .form_new_product_divider_images_color h3{
+        font-size:2.8vw;
+        margin: 1vw 1.5vw;
+    }
+    .form_new_product_color_div p {
+        font-size: 2.8vw;
+        margin-left: 1.4vw;
+        margin-right: 6vw;
+    }
+    .form_new_product_image_color {
+        width: 3.25vw;
+        height: 3.25vw;
+        border-radius: 5px;
+    }
+    .form_new_image_icon_type_input {
+        font-size: 2.9vw;
+        margin-left: 1.5vw;
+    }
+    .btn_add_new_image {
+        font-size: 2.7vw;
+        width: 35%;
+        margin: 4vw 0vw 2vw 28vw;
+    }
+    .form_new_product_term_and_condition_title {
+        font-size: 2.5vw;
+    }
+    .form_new_product_divider_terms_and_conditions_item {
+        width: 95%;
+        height: 20vw;
+        padding: 0vw 1vw 0vw 3vw;
+    }
+    .form_new_product_term_and_condition_description {
+        font-size: 1.9vw;
+    }
+    .form_term_and_condition_text_div {
+        margin: 2vw 2.75vw 2vw 2vw;
+    }
+    .form_new_product_divider_terms_and_conditions_item > img {
+        height: 13vw;
+        width: 14vw;
+        padding: 10px;
+        margin-left: 1vw;
+    }
+    
+    
+}
+

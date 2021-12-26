@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "d93e7c80-80cc-4419-be2e-aafecccdd9cb",
+		"name": "Digital_rentcar_cities",
+		"description": "Test para la API categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test del Token\r",
+							"pm.test(\"Jwt Obtenido\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.status).to.eql(200);\r",
+							"    pm.expect(res.message).to.eql(\"Logged\");\r",
+							"    pm.collectionVariables.set(\"login_cities\", res.user);\r",
+							"    pm.collectionVariables.set(\"jwt\",res.jwt);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sergiogarcia@gmail.com\",\r\n    \"password\": \"sergiogarcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_login}}",
+					"host": [
+						"{{endpoint_login}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"id_city\",res.id);\r",
+							"    pm.collectionVariables.set(\"name_city\",res.name);\r",
+							"    pm.collectionVariables.set(\"latitude_city\",res.latitude);\r",
+							"    pm.collectionVariables.set(\"longitude_city\",res.longitude);\r",
+							"    pm.collectionVariables.set(\"country_city\",res.country);\r",
+							"    pm.expect(res.id).to.eql(pm.collectionVariables.get(\"id_city\"));\r",
+							"    pm.expect(res.name).to.eql(\"Medellin\");\r",
+							"    pm.expect(res.latitude).to.eql(6.25184);\r",
+							"    pm.expect(res.longitude).to.eql(-75.56359);\r",
+							"    pm.expect(res.country.id).to.eql(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Medellin\",\r\n   \"latitude\": 6.25184,\r\n   \"longitude\": -75.56359,\r\n   \"country\": {\r\n       \"id\": 2\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save_city}}",
+					"host": [
+						"{{endpoint_save_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"El id retorna la respuesta correcta\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.id).to.eql(pm.collectionVariables.get(\"id_city\"));\r",
+							"    pm.expect(res.name).to.eql(pm.collectionVariables.get(\"name_city\"));\r",
+							"    pm.expect(res.latitude).to.eql(pm.collectionVariables.get(\"latitude_city\"));\r",
+							"    pm.expect(res.longitude).to.eql(pm.collectionVariables.get(\"longitude_city\"));\r",
+							"    pm.expect(res.country.id).to.eql(pm.collectionVariables.get(\"country_city\").id);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_id_city}}/{{id_city}}",
+					"host": [
+						"{{endpoint_find_id_city}}"
+					],
+					"path": [
+						"{{id_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista por Country Id City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Testeo del status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Buscar por Id\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de Respuesta esperada\r",
+							"pm.test(\"Lista solo contiene cities en determinado pais\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    data.forEach(city => pm.expect(city.country.id).to.eql(2))\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_country_city}}",
+					"host": [
+						"{{endpoint_find_country_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado de Test1\r",
+							"pm.test(\"La city de testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_city\");\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(id);\r",
+							"    pm.expect(ele.name).to.eql(pm.collectionVariables.get(\"name_city\"));\r",
+							"    pm.expect(ele.latitude).to.eql(pm.collectionVariables.get(\"latitude_city\"));\r",
+							"    pm.expect(ele.longitude).to.eql(pm.collectionVariables.get(\"longitude_city\"));\r",
+							"    pm.expect(ele.country.id).to.eql(pm.collectionVariables.get(\"country_city\").id);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all_city}}",
+					"host": [
+						"{{endpoint_find_all_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de actualizar\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de datos\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const findAll = pm.collectionVariables.get(\"endpoint_find_all_city\")\r",
+							"    pm.sendRequest({findAll, function (err, response) {\r",
+							"        const data = pm.response.json();\r",
+							"        const id = pm.collectionVariables.get(\"id_city\");\r",
+							"        const ele = data.find(ele => ele.id === id);\r",
+							"        pm.expect(ele.id).to.eql(id);\r",
+							"        pm.expect(ele.name).to.eql(\"Medellin Actualizado\");\r",
+							"        pm.expect(ele.latitude).to.eql(pm.collectionVariables.get(\"latitude_city\"));\r",
+							"        pm.expect(ele.longitude).to.eql(pm.collectionVariables.get(\"longitude_city\"));\r",
+							"        pm.expect(ele.country.id).to.eql(1);\r",
+							"        }\r",
+							"    })\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{id_city}},\r\n   \"name\": \"Medellin Actualizado\",\r\n   \"latitude\": 6.25184,\r\n   \"longitude\": -75.56359,\r\n   \"country\": {\r\n       \"id\": 1\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_update_city}}",
+					"host": [
+						"{{endpoint_update_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_delete_id_city}}/{{id_city}}",
+					"host": [
+						"{{endpoint_delete_id_city}}"
+					],
+					"path": [
+						"{{id_city}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de registro\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de registro\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"//Test de datos\r",
+							"\r",
+							"pm.test(\"Los datos del request corresponden\", function (){\r",
+							"    const res = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"id_country\",res.id);\r",
+							"    pm.collectionVariables.set(\"name_country\",res.name);\r",
+							"    pm.expect(res.id).to.eql(pm.collectionVariables.get(\"id_country\"));\r",
+							"    pm.expect(res.name).to.eql(\"Perú\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Perú\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint_save_country}}",
+					"host": [
+						"{{endpoint_save_country}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos Country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de Listar todos\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test de body de Listar todos\r",
+							"pm.test(\"La respuesta contiene un body\", function (){\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    pm.response.to.have.body();\r",
+							"})\r",
+							"\r",
+							"//Test de listado\r",
+							"pm.test(\"El country de testeo se encuentra en la lista\", function (){\r",
+							"    const data = pm.response.json();\r",
+							"    const id = pm.collectionVariables.get(\"id_country\");\r",
+							"    const ele = data.find(ele => ele.id === id);\r",
+							"    pm.expect(ele.id).to.eql(id);\r",
+							"    pm.expect(ele.name).to.eql(pm.collectionVariables.get(\"name_country\"));\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_find_all_country}}",
+					"host": [
+						"{{endpoint_find_all_country}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test de eliminado de id_category\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_delete_id_country}}/{{id_country}}",
+					"host": [
+						"{{endpoint_delete_id_country}}"
+					],
+					"path": [
+						"{{id_country}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{jwt}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "endpoint",
+			"value": "{{localhost}}/cities"
+		},
+		{
+			"key": "endpoint_save_city",
+			"value": "{{endpoint}}/save/new"
+		},
+		{
+			"key": "endpoint_find_all_city",
+			"value": "{{endpoint}}/find/all"
+		},
+		{
+			"key": "endpoint_find_id_city",
+			"value": "{{endpoint}}/cities/find"
+		},
+		{
+			"key": "endpoint_find_country_city",
+			"value": "{{endpoint}}/find/country/2"
+		},
+		{
+			"key": "endpoint_update_city",
+			"value": "{{endpoint}}/update/city"
+		},
+		{
+			"key": "endpoint_delete_id_city",
+			"value": "{{endpoint}}/delete"
+		},
+		{
+			"key": "endpoint_country",
+			"value": "{{localhost}}/countries"
+		},
+		{
+			"key": "endpoint_save_country",
+			"value": "{{localhost}}/countries/save/new"
+		},
+		{
+			"key": "endpoint_find_all_country",
+			"value": "{{localhost}}/countries/find/all"
+		},
+		{
+			"key": "endpoint_delete_id_country",
+			"value": "{{localhost}}/countries/delete"
+		},
+		{
+			"key": "endpoint_login",
+			"value": "{{localhost}}/auth/login"
+		},
+		{
+			"key": "login_cities",
+			"value": ""
+		},
+		{
+			"key": "jwt",
+			"value": ""
+		},
+		{
+			"key": "id_city",
+			"value": ""
+		},
+		{
+			"key": "name_city",
+			"value": ""
+		},
+		{
+			"key": "latitude_city",
+			"value": ""
+		},
+		{
+			"key": "longitude_city",
+			"value": ""
+		},
+		{
+			"key": "country_city",
+			"value": ""
+		}
+	]
+}
